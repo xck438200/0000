@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2017.4.24-js</title>
+</head>
+<body>
+</body>
+<script>
+    var obj = {
+        a : 5,
+        b : "acc",
+        c : "thdd"
+    }
+
+    obj.__proto__.d = "fdsa";
+    Object.prototype.f = "fffaddd";
+
+    console.log(obj.__proto__.__proto__==Object.prototype); //true
+    console.log(obj.__proto__==Object.prototype)
+    // 这个方法定义在 Object.prototype 对象上面，
+    // 所以任何一个Object 都能够拥有这个方法。
+    // 这个方法返回 布尔值，表示自己是否拥有这个属性，不考虑原型链。
+    // 就看自己身上有没有这个属性，不进行原型链查找
+
+//    for( var k in obj){
+//        obj.hasOwnProperty(k) && console.log("自己身上的属性" + k + '----' + obj[k]);
+//    }
+</script>
+</html>
