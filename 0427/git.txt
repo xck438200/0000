@@ -1,0 +1,30 @@
+1. git config --global user.name "用户名"
+
+2. git config --global user.email "邮箱"
+
+3. mkdir name
+
+4. git clone 地址 name
+
+5. pwd
+
+6. cd name
+
+7. git add .
+
+8. git status
+
+9. git commit -m "解释"
+
+10. git push -u origin master
+
+以后上传
+
+1. git add .
+
+2. git status
+
+3. git commit -m "解释"
+
+4. git push origin master
+
