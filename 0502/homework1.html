@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业1</title>
+    <script src="jquery.js"></script>
+    <style>
+        *{margin: 0;padding:0;list-style: none;}
+        #ul{position: relative;}
+        .li{
+            float: left;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            border-top: 2px solid #00BFFF;
+            text-align: center;
+            background-color: #999;
+        }
+        .li>ul{width:320px;height:200px;
+            background-color: #FFF;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <ul id="ul">
+        <li class="li">Op
+            <ul class="ul1">
+                <li>称号:机枪兵,医疗兵,装甲兵</li>
+                <li>年龄:20</li>
+                <li>国籍:中国</li>
+                <li>所属战队:IG</li>
+                <li>擅长英雄:地精修补匠,火女,火猫</li>
+            </ul>
+        </li>
+        <li class="li">miracle
+            <ul class="ul2">
+                <li>称号:奇迹哥,九千岁</li>
+                <li>年龄:19</li>
+                <li>国籍:波兰</li>
+                <li>所属战队:Liqud</li>
+                <li>擅长英雄:卡尔</li>
+            </ul>
+        </li>
+        <li class="li">Sumail
+            <ul class="ul3">
+                <li>称号:苏跳跳</li>
+                <li>年龄:18</li>
+                <li>国籍:美国</li>
+                <li>所属战队:EG</li>
+                <li>擅长英雄:火女,卡尔,圣堂刺客,蓝猫</li>
+            </ul>
+        </li>
+        <li class="li">w33
+            <ul class="ul4">
+                <li>称号:未知</li>
+                <li>年龄:20</li>
+                <li>国籍:罗马尼亚</li>
+                <li>所属战队:OG</li>
+                <li>擅长英雄:女王,火猫,卡尔,蓝猫</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+<script>
+    $("#ul").css({"width":"400px","margin":"0 auto"});
+//    $(".li").css("position","relative");
+    $(".ul2,.ul3,.ul4" ).css(
+        {
+            "display":"none",
+            "width":"320px",
+            "height":"200px",
+            "position":"absolute"
+        }
+    )
+    $(".li:eq(0)").click(function(){
+         $(".ul1").show();
+         $(".ul2,.ul3,.ul4").hide();
+         $(" .li:eq(0)").css({
+            "border":"0px solid",
+            "border-top": "2px solid red",
+        })
+        $(".li:eq(1),.li:eq(2),.li:eq(3)").css(
+            "border-top", "2px solid #00BFFF"
+        )
+     });
+    $(".li:eq(1)").click(function(){
+        $(".ul2").show();
+        $(".ul2").css("left","0px");
+        $(".ul1,.ul3,.ul4").hide();
+        $(" .li:eq(1)").css({
+            "border":"0px solid",
+            "border-top": "2px solid red"
+        });
+        $(".li:eq(0),.li:eq(2),.li:eq(3)").css(
+            "border-top", "2px solid #00BFFF"
+        )
+    });
+    $(".li:eq(2)").click(function(){
+        $(".ul3").show();
+        $(".ul3").css("left","0px");
+        $(".ul1,.ul2,.ul4").hide();
+        $(" .li:eq(2)").css({
+            "border":"0px solid",
+            "border-top": "2px solid red"
+        });
+        $(".li:eq(0),.li:eq(1),.li:eq(3)").css(
+            "border-top", "2px solid #00BFFF"
+        )
+    });
+    $(".li:eq(3)").click(function(){
+        $(".ul4").show();
+        $(".ul4").css("left","0px");
+        $(".ul1,.ul2,.ul3").hide();
+        $(" .li:eq(3)").css({
+            "border":"0px solid",
+            "border-top": "2px solid red"
+        });
+        $(".li:eq(0),.li:eq(1),.li:eq(2)").css(
+            "border-top", "2px solid #00BFFF"
+        )
+    });
+
+</script>
+</html>
