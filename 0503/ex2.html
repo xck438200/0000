@@ -6,10 +6,32 @@
     <script src="jquery.js"></script>
 </head>
 <body>
-    <p><input class="" type="form"  placeholder="请输入你的邮箱地址"></p>
-    <p><input class="" type="form"  placeholder="请输入用户名"></p>
+    <p><input class="email" type="form"  placeholder="请输入你的邮箱地址"></p>
+    <p><input class="user" type="form"  placeholder="请输入用户名"></p>
 </body>
     <script>
-        var str1=
+        $(".email").blur(function(){
+            var reg1=/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+            var str1=$(this).val();
+            if (reg1.test(str1)){
+//                console.log(reg1.test(str1));
+                alert("邮箱地址输入正确");
+            }else{
+                alert("你输入的是什么鬼地址!");
+                return
+            }
+        });
+
+        $(".user").blur(function(){
+            var reg2=/^[a-z0-9_-]{3,16}$/;
+            var str2=$(this).val();
+            if (reg2.test(str2)){
+                alert("好名字");
+            }else{
+                alert("这是什么破名字");
+                return
+            }
+        });
+
     </script>
 </html>
