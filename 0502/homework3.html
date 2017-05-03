@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉二级菜单</title>
+    <script src="jquery.js"></script>
+    <style>
+        *{margin: 0;padding: 0;list-style: none  ;}
+        #qq{width:200px;text-align: center;}
+        #qq>li{width:200px;line-height: 30px;
+            background-color: #299cff;margin-bottom:3px;
+        }
+        #qq li ul li{width:200px;height:30px;text-align: center;}
+        #qq>li>ul{display :none;}
+    </style>
+</head>
+<body>
+    <ul id="qq">
+        <li>IG.burning
+            <ul>
+                <li>姓名:徐志雷</li>
+                <li>年龄:30</li>
+                <li>战队:IG</li>
+                <li>擅长英雄:敌法,剑圣,小狗</li>
+            </ul>
+        </li>
+        <li>LGD.ZSMJ
+            <ul>
+                <li>姓名:龚建</li>
+                <li>年龄:29</li>
+                <li>战队:LGD</li>
+                <li>擅长英雄:幽鬼,猴子,美杜莎</li>
+            </ul>
+        </li>
+        <li>OB.zhou
+            <ul>
+                <li>姓名:陈尧</li>
+                <li>年龄:28</li>
+                <li>战队:OB</li>
+                <li>擅长英雄:德鲁伊,幽鬼</li>
+            </ul>
+        </li>
+        <li>NewBee.hao
+            <ul>
+                <li>姓名:陈志豪</li>
+                <li>年龄:28</li>
+                <li>战队:NewBee</li>
+                <li>擅长英雄:蚂蚁,水人</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+<script>
+    $("#qq>li").mouseenter(function(){
+        $(this).css("background","yellow");
+    });
+    $("#qq>li").mouseleave(function(){
+        $(this).css("background","#299cff");
+    });
+    $("#qq>li").click(function(){
+        $(this).find("ul").toggle("normal");
+    });
+    $("#qq>li>ul>li").mouseenter(function(){
+        $(this).css("background","#aaa");
+    });
+    $("#qq>li>ul>li").mouseleave(function(){
+        $(this).css("background","yellow");
+    });
+</script>
+</html>
