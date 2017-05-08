@@ -1,38 +1,39 @@
 <?php
-require_once("lianjie.php");
+require_once("concat.php");
 
 $post = $_POST;
+$game_id = $post['game_id'];
 $name = $post['name'];
-$password = $post['password'];
-$password = md5($password);
-$sex = $post['sex'];
+$password=$post['password'];
 $age = $post['age'];
-$email = $post['email'];
-$cellphone=$post['cellphone'];
+$nationality = $post['nationality'];
+$location = $post['location'];
+$troops=$post['troops'];
 
-$insertsql = "insert into qwert (
+$insertsql = "insert into dota2 (
+            game_id,
             name,
             password,
-            sex,
             age,
-            email,
-            cellphone
+            nationality,
+            location,
+            troops
     ) values (
+            '{$game_id}',
             '{$name}',
             '{$password}',
-            '{$sex}',
             '{$age}',
-            '{$email}',
-            '{$cellphone}'
-
+            '{$nationality}',
+            '{$location}',
+            '{$troops}'
         )";
-// echo $insertsql ;
+ echo $insertsql ;
 $result = $dbh -> exec($insertsql);
 print_r($result) .'<br>';
 echo "注册成功";
 // print_r($post);
 
-$sql = 'SELECT * FROM qwert';// sql 语句 查
+$sql = 'SELECT * FROM dota2';// sql 语句 查
  $select = $dbh->query($sql); //pdo查询语法
    foreach ($dbh->query($sql) as $row) {
        echo "<pre>";
