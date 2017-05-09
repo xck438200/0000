@@ -5,6 +5,7 @@ $post = $_POST;
 $game_id = $post['game_id'];
 $name = $post['name'];
 $password=$post['password'];
+$password = md5($password);
 $age = $post['age'];
 $nationality = $post['nationality'];
 $location = $post['location'];
@@ -27,7 +28,7 @@ $insertsql = "insert into dota2 (
             '{$location}',
             '{$troops}'
         )";
- echo $insertsql ;
+// echo $insertsql ;
 $result = $dbh -> exec($insertsql);
 print_r($result) .'<br>';
 echo "注册成功";
