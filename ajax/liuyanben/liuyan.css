@@ -35,7 +35,8 @@ li { list-style: none;margin-bottom: 10px; }
         font-size: 14px;
         position: relative;
         left: 42px; }
-/*#message_text { display: none; }*/
+.qwe { display: none; }
+.chuxian { display: block; }
 #message_text h2 {
         font-size: 14px;
         padding: 6px 0 4px 10px;

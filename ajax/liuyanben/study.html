@@ -17,7 +17,7 @@
                 <li><input id="btn" type="submit" value="提交" class="btn" /></li>
             <!--</form>-->
         </ul>
-        <div id="message_text">
+        <div id="message_text" class="qwe">
             <h2>显示留言</h2>
             <ul></ul>
         </div>
@@ -25,18 +25,37 @@
 </body>
 <script type="text/javascript">
     $("#btn").click(function () {
-        var  title = $("#title").val();
+        $(".qwe").addClass("chuxian");
+        var title = $("#title").val();
         var content = $("#content").val();
         $("#message_text").append("<li>" +
-                "<h3>" + title +"</h3>"+
-                "<p>" + content +"</p>"
-            +"</li>");
+            "<h3>" + title + "</h3>" +
+            "<p>" + content + "</p>"
+            + "</li>");
+        //将数据存入数据库
         $.ajax({
             type: "POST",
             url: "onload.php",
-            data: "title=" + title + "&content="+content
+            data: "title=" + title + "&content=" + content
         });
-    })
+    });
+    var getmessage=function(){
+        $.post("onout.php",{},function(data){
+//            var obj = json.parse(data.data);
+            console.log(data);
+//            var tianjia=
+//                '<li> \
+//                   <h3> + data.title + "</h3>\
+//                   <p> + data.content + </p>\
+//                </li>';
+//            $("#message_text").append("<li>" +
+//                "<h3>" + data.title + "</h3>" +
+//                "<p>" + data.content + "</p>"
+//                + "</li>");
+
+        });
+    };
+    getmessage();
  /*   $.ajax(
         type: "POST",
         url: "onout.php",//____>
