@@ -8,4 +8,6 @@
         $arr['message'][$key] = $value;
 //        $arr['message'][$key]['created_time'] = $time;
     }
+//    echo "<pre>";
+//    print_r($arr);
     echo json_encode($arr);

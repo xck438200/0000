@@ -5,7 +5,6 @@
     <title>留言本</title>
     <link rel="stylesheet" type="text/css" href="liuyan.css" />
     <script type="text/javascript" src="jquery.js"></script>
-    <!--<script type="text/javascript" src="q1.js"></script>-->
     <!--<script type="text/javascript" src="ajax.js"></script>>-->
 </head>
 <body>
@@ -17,7 +16,7 @@
                 <li><input id="btn" type="submit" value="提交" class="btn" /></li>
             <!--</form>-->
         </ul>
-        <div id="message_text" class="qwe">
+        <div id="message_text" >
             <h2>显示留言</h2>
             <ul></ul>
         </div>
@@ -25,7 +24,7 @@
 </body>
 <script type="text/javascript">
     $("#btn").click(function () {
-        $(".qwe").addClass("chuxian");
+//        $(".qwe").addClass("chuxian");
         var title = $("#title").val();
         var content = $("#content").val();
         $("#message_text").append("<li>" +
@@ -39,15 +38,28 @@
             data: "title=" + title + "&content=" + content
         });
     });
+    //获取数据库中的数据并显示在页面中
     var getmessage=function(){
         $.post("onout.php",{},function(data){
-//            var obj = json.parse(data.data);
-            console.log(data);
-//            var tianjia=
-//                '<li> \
-//                   <h3> + data.title + "</h3>\
-//                   <p> + data.content + </p>\
-//                </li>';
+            var obj = JSON.parse(data);
+            var msg = obj.message;
+//            console.log(data);
+//            console.log(msg);
+            var tianjia=
+                '<li> \
+                   <h3> </h3>\
+                   <p>  </p>\
+                </li>';
+            $.each(msg,function(index, value){
+//                 console.log(value['content']);
+//                 console.log(value['title']);
+                tianjia +=
+                    '<li> \
+                         <h3>' + value.title + '</h3>\
+                         <p>' + value.content + '</p>\
+                     </li>';
+            });
+            $("#message_text>ul").append(tianjia);
 //            $("#message_text").append("<li>" +
 //                "<h3>" + data.title + "</h3>" +
 //                "<p>" + data.content + "</p>"
@@ -56,20 +68,5 @@
         });
     };
     getmessage();
- /*   $.ajax(
-        type: "POST",
-        url: "onout.php",//____>
-        success: function (data) {
-            //obj=data=>
-        // 数据库里面的所有
-            //obj : for..in{
-                    //var li += <li>
-                //                  <span> +title +</span>
-                //                  <p class="neirong">+content+</p>
-        //                      </li>
-        // }
-      //  li=>ul.
-    }
-    )*/
 </script>
 </html>

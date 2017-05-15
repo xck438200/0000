@@ -35,8 +35,8 @@ li { list-style: none;margin-bottom: 10px; }
         font-size: 14px;
         position: relative;
         left: 42px; }
-.qwe { display: none; }
-.chuxian { display: block; }
+/*.qwe { display: none; }*/
+/*.chuxian { display: block; }*/
 #message_text h2 {
         font-size: 14px;
         padding: 6px 0 4px 10px;
@@ -51,6 +51,7 @@ li { list-style: none;margin-bottom: 10px; }
         padding: 10px;
         font-size: 14px;
         line-height: 24px;
+        /*text-align: center;*/
 }
 #message_text p {
         padding: 0 10px 10px;
