@@ -1,0 +1,121 @@
+
+.item {
+    width: 316px;
+    height: 366px;
+    margin: 0 0 30px 26px;
+    float: left;
+}
+section {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.imgCon {
+    width: 100%;
+    height: 316px;
+    position: relative;
+}
+.bar {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+.imgCon img {
+    width: 100%;
+    height: 100%;
+}
+.who {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 216px;
+    overflow: hidden;
+    display: block;
+    float: left;
+    height: 40px;
+    zoom: 1;
+    /*_display: inline;*/
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.bar a {
+    color: #878787;
+}
+.bar img {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-position: -130px -584px;
+    padding: 0px 6px 6px 0px;
+}
+.bar .like {
+    float: right;
+    padding-right: 30px;
+    background: url(../img/heart_gray20_18.png) no-repeat right center;
+    display: block;
+    height: 40px;
+    zoom: 1;
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.info {
+    display: block;
+    width: 286px;
+    height: 286px;
+    padding:15px;
+    background: url(../img/shadow_blk1.png);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.imgCon:hover .info {
+    display: block;
+}
+.money {
+    text-align: left;
+    width: 97%;
+    margin-top: 4px;
+    color: #0c6eba;
+    font-size: 20px;
+    font-style: italic;
+    height: 25px;
+    line-height: 20px;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+.tel {
+    padding-top: 80px;
+    font-size: 14px;
+    margin: 0px auto;
+    text-align: center;
+    color: #fff;
+    width: 85%;
+    height: 25px;
+    line-height: 20px;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+.desc {
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 5px;
+    white-space: normal;
+    height: auto;
+    margin: 0px auto;
+    text-align: center;
+    color: #fff;
+    width: 85%;
+    line-height: 20px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

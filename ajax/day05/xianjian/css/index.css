@@ -1,0 +1,98 @@
+*{
+    		margin: 0;
+    		padding: 0;
+    	}
+    	html {
+    		background-color: #E8E7E3;
+                      overflow-y: scroll;
+    	}
+    	body {
+    		background: url(../image/bg2.jpg) repeat center;
+                      background-image: url(../image/bg2.jpg);
+                      background-position-x: center;
+                      background-position-y: center;
+    	}
+
+    	#content{
+    		width: 714px;
+    		height: 2000px;
+                      padding-top: 1px;
+                      position: relative;
+                      margin: 0 auto;
+    	}
+    	.pin {
+    		position: absolute;
+    		width: 230px;
+    		background-color: #DBDBDB;
+    		overflow: hidden;
+    		margin-bottom: 20px;
+    		margin-right: 12px;
+	}
+	.pin .image {
+    		position: relative;
+   		display: block;
+    		width: 230px;
+    		overflow: hidden;
+	}
+	.pin .image img{
+		display: block;
+		height: 270px;
+	}
+	.pin .share{
+		background: none repeat scroll 0 0 #DBDBDB;
+    		height: 43px;
+    		padding-left: 14px;
+    		padding-right: 10px;
+    		padding-top: 3px;
+    		width: 206px;
+	}
+	.pin p{
+		display: block;
+		margin: 0 0 4px;
+		font-size: 14px;
+		color: #212121;
+		font-family: "Microsoft Yahei";
+	}
+	.shareNr .xin {
+    		width: 12px;
+    		height: 10px;
+    		overflow: hidden;
+    		background: url(../image/icon.gif) no-repeat 0 0;
+   		 float: left;
+    		margin-top: 5px;
+	}
+	.shareNr .font {
+		float: left;
+    		color: #9A9A9A;
+    		padding-left: 9px;
+    		padding-top: 2px;
+    		font-size: 12px;
+	}
+	.shareNr .ping {
+    		width: 15px;
+    		height: 12px;
+    		overflow: hidden;
+    		background: url(../image/icon.gif) no-repeat 0 -11px;
+    		float: left;
+   		margin-top: 6px;
+		}
+	.shareNr .line {
+    		margin: 0 8px;
+    		float: left;
+   		color: #9A9A9A;
+	}
+	.shareNr .qq {
+    		width: 12px;
+    		height: 16px;
+    		float: right;
+    		margin-top: 2px;
+    		background: url(../image/icon.gif) no-repeat 0 -55px;
+	}
+	.shareNr .sina {
+    		width: 19px;
+    		height: 15px;
+    		margin-right: 6px;
+    		margin-top: 3px;
+    		float: right;
+    		background: url(../image/icon.gif) no-repeat 0 -23px;
+	}

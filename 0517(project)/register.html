@@ -2,9 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>注册</title>
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/jquery.js"></script>
 </head>
 <body>
-$END$
+    <div id="main">
+        <!--http://lc.shudong.wang/api_user.php-->
+        <form method="post" action="" id="form" autocomplete="off">
+            <table class="table">
+                <tr valign="center" align="middle">
+                    <td colspan="2" height="150">
+                        <a href="index.html"><img src="img/logo_icon.png" ></a>
+                    </td>
+                </tr>
+                <tr valign="center" align="middle" class="tr">
+                    <th align="center" class="th">用户昵称</th>
+                    <td colspan="2" height="36">
+                        <div>
+                            <input id="mobile" name="username" type="text" value="请输入用户昵称"
+                                   onfocus="this.value=''" onblur="if(this.value=='')
+                                   {this.value='请输入用户昵称'}" />
+                            <!--<input id="mobile" name="username" placeholder="输入用户昵称" url="">-->
+                        </div>
+                    </td>
+                </tr>
+                <tr valign="center" align="middle" class="tr" >
+                    <th align="center" class="th">创建密码</th>
+                    <td colspan="2" height="36">
+                        <div>
+                            <!--<input id="pwd" name="password" type="password" value="请输入密码"
+                                   onfocus="this.value=''" onblur="if(this.value=='')
+                                   {this.value='请输入密码'}" />-->
+                            <input id="pwd" name="password" placeholder="输入密码"  type="password"url="">
+                        </div>
+                    </td>
+                        <!--<div class="psd_length">-->
+                            <!--<div class="psd_top"></div>-->
+                            <!--<div class="psd_bottom"></div>-->
+                        <!--</div>-->
+                </tr>
+                <tr valign="center" align="middle" class="tr">
+                    <th align="center" class="th">密码确认</th>
+                    <td colspan="2" height="36">
+                        <div>
+                           <!-- <input id="pwd2" name="repassword" type="password" value="确认密码"
+                                   onfocus="this.value=''" onblur="if(this.value=='')
+                                   {this.value='确认密码'}" />-->
+                            <input id="pwd2" name="repassword" type="password" placeholder="密码确认" url="">
+                        </div>
+                    </td>
+                </tr>
+                <tr valign="center" align="middle">
+                    <td colspan="2" height="36">
+                        <div>
+                            <input id="login" type="button" value="立即注册" url="">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
+<script type="text/javascript" src="js/register.js"></script>
 </html>

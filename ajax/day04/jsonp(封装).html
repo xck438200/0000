@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>封装jsonp</title>
+    <script src="../day02/jquery.js"></script>
 </head>
 <body>
-$END$
 </body>
+<script type="text/javascript">
+    function jsonp(url,callbackname,callback){
+        var Oscript = document.createElement("script");
+        Oscript.src = url;
+        document.body.appendChild(Oscript);
+        window[callbackname] =callback ;
+        window.stark = function (data) {
+
+        };
+        document.body.removeChild(Oscript);
+        console.log(data);
+    }
+
+</script>
 </html>

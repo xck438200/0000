@@ -1,0 +1,14 @@
+*{margin: 0;padding: 0;border: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+input{outline: none;}
+#main{width: 1000px;margin: 0 auto;}
+#form{width: 100%;  display: inline-block;color: #495c81;height: 560px;}
+.table{position: relative;width: 300px;margin: 50px auto;}
+
+#mobile{border:0;border-bottom:solid 1px #000;font-size: 18px;width:265px;height:34px;padding-left:35px;
+    background: url(../img/nlphone.png) no-repeat 0 6px;}
+#pwd{border:0;border-bottom:solid 1px #000;font-size: 18px;width:265px;height:34px;float: left;padding-left:35px;
+    background: url(../img/nlcode.png) no-repeat 2px 8px;}
+#login{border-radius: 4px;cursor: pointer;width: 300px;height: 50px;background: #25292e;font-size: 18px;
+text-align: center;color: #fff;margin: 30px 0;}

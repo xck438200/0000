@@ -4,10 +4,16 @@
     <meta charset="utf-8" />
     <title>留言本</title>
     <link rel="stylesheet" type="text/css" href="liuyan.css" />
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap-grid.css" rel="stylesheet">
     <script type="text/javascript" src="jquery.js"></script>
     <!--<script type="text/javascript" src="ajax.js"></script>>-->
 </head>
 <body>
+    <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default">注册</button>
+        <button type="button" class="btn btn-default">登录</button>
+        <button type="button" class="btn btn-default">退出</button>
+    </div>
     <div id="box">
         <ul id="ul">
             <!--<form action="onload.php" method="post">-->
@@ -60,11 +66,6 @@
                      </li>';
             });
             $("#message_text>ul").append(tianjia);
-//            $("#message_text").append("<li>" +
-//                "<h3>" + data.title + "</h3>" +
-//                "<p>" + data.content + "</p>"
-//                + "</li>");
-
         });
     };
     getmessage();

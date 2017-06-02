@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+</head>
+<body>
+    <!--<div id="box1" class="box">-->
+        <!--hello chuck-->
+    <!--</div>-->
+    <!--<div class="box2">明日复明日</div>-->
+    <!--<div class="box2">明日何其多</div>-->
+    <!--<div class="box2">此生待明日</div>-->
+    <!--<div class="box3">万事成蹉跎</div>-->
+    <!--<div id="box2" class="box22 box33 box4">这是什么鬼</div>-->
+</body>
+<script>
+//    var box = document.querySelector(".box");
+//    box.style.background = "greenyellow";
+//    var QQQ = document.querySelectorAll(".box2, .box3");
+//    QQQ[1].style.background = "red";
+////    console.log(typeof QQQ);
+//    var box2 = document.getElementById("box2");
+//    box2.classList.toggle("box4");
+//    console.log(box2.classList.length)//2
+//    console.log(box2.classList.value)//box22 box33
+//    //eval()  这个函数会把传入的字符串当做js代码进行执行
+//    var str = 'function fun(){alert("不是很好玩")}';
+//    eval(str);
+//    fun();
+//    var str1 = '{"name":"kk"}';
+//    var str2 = eval('(' + str1 +')');
+//    var json = JSON.parse(str1);
+//    console.log( str2);
+//     console.log( json);
+//     console.log(str2 == json);
+//    var obj = '{"name":"kk"}';
+//    JSON.parse(obj)
+    var xck = {
+        name : 'kk' ,
+        age  : 2333
+    };
+    var str3 = JSON.stringify(xck);
+    console.log(str3);//{"name":"kk","age":2333}
+</script>
+</html>

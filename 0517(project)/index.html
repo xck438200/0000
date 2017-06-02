@@ -2,9 +2,252 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="http://apps.bdimg.com/libs/underscore.js/1.7.0/underscore-min.js" charset="utf-8"></script>
+
 </head>
 <body>
-$END$
+    <div id="header">
+        <div class="header">
+            <div class="header-top">
+                <div id="logo"><a href="index.html"></a></div>
+                <ul id="login">
+                    <li class="login-1">
+                        <a href="login.html">登录</a>
+                        <div id="login-div"></div>
+                    </li>
+                    <li class="login-1"><a href="register.html">注册</a></li>
+                    <li class="login-3">|</li>
+                    <li class="login-2 login-2-1">
+                        <a href="#">购物车</a>
+                        <div class="shopcar">
+                            <div class="shopcar-top"><a href="#">你的购物车暂时没有商品...</a></div>
+                            <div class="shopcar-bottom"><a href="#">快去抢购良仓商品吧!</a></div>
+                        </div>
+                    </li>
+                    <li class="login-3">|</li>
+                    <li class="login-2 login-2-2">
+                        <a href="#">消息</a>
+                        <div class="msg">
+                            <a href="#"><span>动态<small>0</small></span></a>
+                            <a href="#"><span>评论<small>0</small></span></a>
+                            <a href="#"><span>私信<small>0</small></span></a>
+                            <a href="#"><span>粉丝<small>0</small></span></a>
+                            <a href="#"><span>喜欢<small>0</small></span></a>
+                            <a href="#"><span style="border-bottom: 0;">通知<small>0</small></span></a>
+                        </div>
+                    </li>
+                    <li class="login-3">|</li>
+                    <li class="login-2 login-2-3"><a href="#">添加良品</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="nav-ul">
+                <li class="nav-li1"><a href="#" style="text-align:left;">首页</a></li>
+                <li class="nav-li2"><a href="#">商店</a></li>
+                <li class="nav-li3">
+                    <a href="#">杂志</a>
+                    <ul>
+                        <li><a href="http://www.iliangcang.com/i/topic/?cat_id=21">趣物</a></li>
+                        <li><a href="http://www.iliangcang.com/i/topic/?cat_id=20">数码</a></li>
+                        <li><a href="http://www.iliangcang.com/i/topic/?cat_id=18">汽车</a></li>
+                        <li><a href="http://www.iliangcang.com/i/topic/?cat_id=11">文化</a></li>
+                        <li><a href="http://www.iliangcang.com/i/topic/?cat_id=15">时尚</a></li>
+                        <li><a href="http://www.iliangcang.com/i/topic/?cat_id=9">美食</a></li>
+                        <li><a href="http://www.iliangcang.com/i/topic/?cat_id=19">建筑</a></li>
+                        <li><a href="http://www.iliangcang.com/i/topic/?cat_id=16">空间</a></li>
+                        <li><a href="http://www.iliangcang.com/i/topic/?cat_id=7">圈子</a></li>
+                        <li><a href="http://www.iliangcang.com/i/topic/?cat_id=12">清单</a></li>
+                        <li><a href="http://www.iliangcang.com/i/topic/?cat_id=24">活动</a></li>
+                        <li><a href="http://www.iliangcang.com/i/topic/?cat_id=23">视频</a></li>
+                    </ul>
+                </li>
+                <li class="nav-li4">
+                    <a href="#">分享</a>
+                    <ul>
+                        <li><a href="">男士</a></li>
+                        <li><a href="">家居</a></li>
+                        <li><a href="">数码</a></li>
+                        <li><a href="">工具</a></li>
+                        <li><a href="">玩具</a></li>
+                        <li><a href="">美容</a></li>
+                        <li><a href="">孩子</a></li>
+                        <li><a href="">宠物</a></li>
+                        <li><a href="">饮食</a></li>
+                        <li><a href="">文化</a></li>
+                        <li><a href="">运动</a></li>
+                        <li><a href="">女士</a></li>
+                    </ul>
+                </li>
+                <li class="nav-li5"><a href="#">达人</a></li>
+            </ul>
+            <div id="search">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="search...">
+                </div>
+                <i ><a href="#" id="search-a"></a></i>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="carousel">
+            <div class="leftbtn"></div>
+            <div class="rightbtn"></div>
+            <ul class="lunbotu">
+                <li><a href="#"><img src="./img/lunbotu/1001.jpg"></a></li>
+                <li><a href="#"><img src="./img/lunbotu/1002.jpg"></a></li>
+                <li><a href="#"><img src="./img/lunbotu/1003.jpg"></a></li>
+                <li><a href="#"><img src="./img/lunbotu/1004.jpg"></a></li>
+                <li><a href="#"><img src="./img/lunbotu/1005.jpg"></a></li>
+                <li><a href="#"><img src="./img/lunbotu/1006.jpg"></a></li>
+                <li><a href="#"><img src="./img/lunbotu/1007.jpg"></a></li>
+                <li><a href="#"><img src="./img/lunbotu/1008.jpg"></a></li>
+                <li><a href="#"><img src="./img/lunbotu/1001.jpg"></a></li>
+            </ul>
+        </div>
+        <div class="xm">
+            <a href="javascript:;" class="xm-a" >1</a>
+            <a href="javascript:;" class="xm-a">2</a>
+            <a href="javascript:;" class="xm-a">3</a>
+            <a href="javascript:;" class="xm-a">4</a>
+            <a href="javascript:;" class="xm-a">5</a>
+            <a href="javascript:;" class="xm-a">6</a>
+            <a href="javascript:;" class="xm-a">7</a>
+            <a href="javascript:;" class="xm-a">8</a>
+        </div>
+        <div id="middle">
+            <div class="md1" style="top:0;left: 0;"><a href="#"><img src="img/27176.jpg" alt=""></a></div>
+            <div class="md1" style="bottom:0;left: 0;"><a href="#"><img src="img/27175.jpg" alt=""></a></div>
+            <div class="md2"><a href="#"><img src="img/27178.jpg" alt=""></a></div>
+            <div class="md1" style="top:0;right: 0;"><a href="#"><img src="img/27177.jpg" alt=""></a></div>
+            <div class="md1" style="bottom:0;right: 0;"><a href="#"><img src="img/27174.jpg" alt=""></a></div>
+        </div>
+        <div id="title">人气良品</div>
+        <div id="shop"></div>
+        <div id="more"><a href="#" class="more"></a></div>
+    </div>
+    <div id="service">
+        <a href="#">
+            <p class="hand"></p>
+        </a>
+        <ul class="slogen">
+            <li class="slogen-li1">
+                <i></i>
+                <div>
+                    <p>全球精品</p>
+                    <span>Global Selections</span>
+                </div>
+            </li>
+            <li class="slogen-li2">
+                <i></i>
+                <div>
+                    <p>正品保证</p>
+                    <span>Authenticity Guaranteed</span>
+                </div>
+            </li>
+            <li class="slogen-li3">
+                <i></i>
+                <div>
+                    <p>全场包邮</p>
+                    <span>Free Delivery</span>
+                </div>
+            </li>
+            <li class="slogen-li4">
+                <i></i>
+                <div>
+                    <p>400-897-6336</p>
+                    <span>工作日 09:00-18:00</span>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <div id="footer">
+        <div class="footer">
+            <div class="footleft">
+                <a href="#">
+                    <div class="download">
+                        <p class="iphone">iPhone Android</p>
+                        <p class="down">客户端下载</p>
+                        <ul class="download-hide">
+                            <li class="iph">
+                                <i></i>
+                                <p>下载iPhone版</p>
+                            </li>
+                            <li class="and">
+                                <i></i>
+                                <p style="margin-left: 20px;">下载Android版</p>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div div="friendly">
+                    <div class="friendly">
+                        <p class="toplink">
+                            <a href="#" class="first">关于良仓</a>
+                            <a href="#">服务协议</a>
+                            <a href="#" style="width:90px">隐私保护政策</a>
+                            <a href="#">使用指南</a>
+                            <a href="#">联系我们</a>
+                            <a href="http://www.lagou.com/gongsi/2236.html">加入我们</a>
+                            <a href="#" target="_blank">友情链接</a>
+                            <a href="#" class="contactUs">私信良仓</a>
+                        </p>
+                        <p>
+                            <span class="numLeFont">©</span>&nbsp;2013-2015 北京良仓文化传播有限公司版权所有&nbsp;京
+                            <span class="numLeFont">ICP</span>备
+                            <span class="numLeFont">13010677</span>号
+                            <span class="numLeFont">-1</span>&nbsp;京公网安备
+                            <span class="numLeFont">11010502025627</span>
+                        </p>
+                        <p>&nbsp;&nbsp;公司名称：北京良仓文化传播有限公司&nbsp;&nbsp;电话：010-58263516</p>
+                        <p>&nbsp;&nbsp;公司地址：北京朝阳区百子湾路32号6号楼1层60号.</p>
+                        <p>&nbsp;&nbsp;社会信用统一代码：91110105059231575L&nbsp;&nbsp;食品许可证：JY11105160159557&nbsp;&nbsp;</p>
+                        <p>&nbsp;&nbsp;图书证名称：中华人民共和国出版物经营许可证&nbsp;&nbsp;图书证编号：新出发京零 字第 朝 150051 号&nbsp;&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footright">
+                <ul>
+                    <li><a href="http://site.douban.com/208766/" class="douban"></a></li>
+                    <li><a href="http://weibo.com/iliangcang" class="weibo"></a></li>
+                    <li>
+                        <a href="#" class="weixin">
+                            <div></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="backtop">
+        <i class="top"></i>
+    </div>
+
 </body>
+<script type="text/templete" id="templete">
+    <div class="item">
+        <div class= "imgCon">
+            <a href="#">
+                <img src="<%= goods_thumb %>" title="<%= goods_name %>" alt="<%= goods_name %>">
+            </a>
+            <a herf="#" class="info">
+                <p class="money">¥<%= price %></p>
+                <p class="tel"><%= goods_name %></p>
+                <p class="desc"> "<%= goods_desc %>"</p>
+            </a>
+        </div>
+        <div class="bar">
+            <a class="who" href="#">
+                <img src="http://imgs-qn.iliangcang.com/ware/brand/609.jpg?t=1480475697">
+                <%= goods_name %>
+            </a>
+            <a href="#" class="like"><%= star_number %></a>
+        </div>
+    </div>
+</script>
+<script src="js/index.js"></script>
 </html>
