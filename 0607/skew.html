@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>skew+scale+rotate</title>
+    <style>
+        img{
+            width: 800px;
+            height: 450px;
+            border: 1px solid #000;
+            /* 1.skew  指定对象（斜切扭曲）。
+            第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0
+               2.scale  指定对象的2D scale（2D缩放）。
+            第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认取第一个参数的值
+               3.rotate
+            指定对象的2D rotation（2D旋转顺时针），需先有transform-origin属性的定义
+            */
+            transform: skew(60deg, 60deg) scale(1.6, 0.4) rotate(122deg);
+            transition: all 1s ease 0s;
+        }
+        img:hover{transform: none;}
+    </style>
+</head>
+<body>
+    <img src="1.jpg" alt="">
+</body>
+</html>
