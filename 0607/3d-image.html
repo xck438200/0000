@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>熟悉rotate</title>
+    <style>
+        div{
+            width: 400px;
+            height: 225px;
+            margin: 100px auto;
+            border: 1px solid #000;
+            perspective: 800px;
+        }
+        img{
+            width: 400px;
+            height: 225px;
+            border: 1px solid #000;
+            transform: translateX(90px) translatey(90px) rotateX(45deg) rotateY(45deg);
+            transition: all 1s ease 0s;
+            -webkit-transition: all 1s ease 0s;
+            -moz-transition: all 1s ease 0s;
+            backface-visibility: hidden; /*隐藏被旋转的 img 元素的背面：*/
+        }
+        div:hover img{
+            transform: none;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <img src="07.jpg" alt="">
+</div>
+</body>
+</html>
