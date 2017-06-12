@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #EAEAEA;
+        }
+
+        #big {
+            perspective: 900px;
+        }
+
+        #box {
+            width: 400px;
+            height: 400px;
+            margin: 60px auto;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        #box-1 {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: -400px;
+            transform: rotateY(-45deg);
+            animation: box1 10s linear 0s 1;
+            opacity: 0;
+        }
+
+        @-webkit-keyframes box1 {
+            0% {
+                left: -400px;
+                transform: rotateY(-45deg) scale(2);
+                opacity: 0.5;
+            }
+            20% {
+                left: 0px;
+                transform: rotateY(0deg) scale(1);
+                opacity: 0.8;
+            }
+            60% {
+                left: 0px;
+                transform: rotateY(0deg);
+                opacity: 1;
+            }
+            100% {
+                left: 0px;
+                transform: rotateY(0deg);
+                opacity: 0;
+            }
+        }
+
+        .piaoye {
+            width: 90px;
+            height: 65px;
+            background: url(img/page.png) no-repeat 0px -150px;
+            position: absolute;
+            animation: piaoye 4s linear 2s 2;
+        }
+
+        @-webkit-keyframes piaoye {
+            0% {
+                left: 10px;
+                top: 10px;
+                opacity: 0.2;
+            }
+            20% {
+                left: 100px;
+                top: 80px;
+                opacity: 0.8;
+            }
+            50% {
+                left: 10px;
+                top: 120px;
+                opacity: 1;
+            }
+            100% {
+                left: 200px;
+                top: 250px;
+            }
+        }
+
+        .shuye {
+            width: 240px;
+            height: 150px;
+            background: url(img/page.png) no-repeat 0px 0px;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            -webkit-box-reflect: below 3px -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5));
+        }
+
+        #box-2 {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -400px;
+            transform: rotateX(90deg);
+            animation: box2 10s linear 9s 1;
+            opacity: 0;
+        }
+
+        @-webkit-keyframes box2 {
+            0% {
+                top: -400px;
+                transform: rotateX(90deg) scale(2);
+                opacity: 0.5;
+            }
+            20% {
+                top: 0px;
+                transform: rotateX(0deg) scale(1);
+                opacity: 0.8;
+            }
+            60% {
+                top: 0px;
+                transform: rotateX(0deg) scale(1);
+                opacity: 1;
+            }
+            100% {
+                top: 0px;
+                transform: rotateX(0deg) scale(1);
+                opacity: 0;
+            }
+        }
+
+        .zheng {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background: url(img/page.png) no-repeat 2px -215px;
+            left: 200px;
+            top: 200px;
+            z-index: 3;
+            animation: box2zhuan 4s linear 11s 1;
+        }
+
+        .sanjiao {
+            width: 170px;
+            height: 168px;
+            background: url(img/page.png) no-repeat 2px -315px;
+            position: absolute;
+            top: 130px;
+            left: 70px;
+            z-index: 2;
+            animation: box2zhuan 4s linear 13s 1;
+        }
+
+        .yuan {
+            width: 137px;
+            height: 137px;
+            background: url(img/page.png) no-repeat 0px -482px;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            animation: box2zhuan 4s linear 15s 1;
+        }
+
+        @-webkit-keyframes box2zhuan {
+            0% {
+                transform: rotate(0deg);
+            }
+            20% {
+                transform: rotate(360deg)
+            }
+            30% {
+                transform: rotate(0deg)
+            }
+            40% {
+                transform: rotate(0deg)
+            }
+            80% {
+                transform: rotate(360deg)
+            }
+            90% {
+                transform: rotate(0deg)
+            }
+            100% {
+                transform: rotate(0deg)
+            }
+        }
+
+        #box-3 {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            right: -400px;
+            transform: rotateY(-45deg);
+            animation: box3 10s linear 18s 1;
+            opacity: 0;
+        }
+
+        @-webkit-keyframes box3 {
+            0% {
+                right: -400px;
+                transform: rotateY(-45deg) scale(2);
+                opacity: 0.5;
+            }
+            20% {
+                right: 0px;
+                transform: rotateY(0deg) scale(1);
+                opacity: 0.8;
+            }
+            60% {
+                right: 0px;
+                transform: rotateY(0deg);
+                opacity: 1;
+            }
+            100% {
+                right: 0px;
+                transform: rotateY(0deg);
+                opacity: 0;
+            }
+        }
+
+        .deng {
+            width: 200px;
+            height: 268px;
+            background: url(img/page.png) no-repeat 2px -620px;
+            position: absolute;
+            left: 105px;
+            top: 65px;
+            -webkit-box-reflect: below 3px -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5));
+        }
+
+        .guang {
+            width: 350px;
+            height: 270px;
+            background: url(img/page.png) no-repeat 2px -888px;
+            position: absolute;
+            top: 10px;
+            left: 25px;
+            animation: guang 1s linear 20s infinite alternate forwards;
+        }
+
+        @-webkit-keyframes guang {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #box-4 {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 400px;
+            transform: rotateX(90deg);
+            animation: box4 10s linear 27s 1;
+            opacity: 0;
+        }
+
+        @-webkit-keyframes box4 {
+            0% {
+                top: 400px;
+                transform: rotateX(90deg) scale(2);
+                opacity: 0.5;
+            }
+            20% {
+                top: 0px;
+                transform: rotateX(0deg) scale(1);
+                opacity: 0.8;
+            }
+            60% {
+                top: 0px;
+                transform: rotateX(0deg) scale(1);
+                opacity: 1;
+            }
+            100% {
+                top: 0px;
+                transform: rotateX(0deg) scale(1);
+                opacity: 0;
+            }
+        }
+
+        .huojina {
+            width: 230px;
+            height: 220px;
+            background: url(img/page.png) no-repeat -239px 0px;
+            position: absolute;
+            z-index: 2;
+            top: 80px;
+            left: 90px;
+            animation: huojian 0.5s linear 29s infinite alternate forwards;
+            -webkit-box-reflect: below 3px -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5));
+        }
+
+        @-webkit-keyframes huojian {
+            from {
+                top: 70px;
+                left: 80px;
+            }
+            to {
+                top: 90px;
+                left: 100px;
+            }
+        }
+
+        .sudu {
+            width: 255px;
+            height: 300px;
+            background: url(img/page.png) no-repeat -239px -220px;
+            position: absolute;
+            left: 165px;
+            top: 0px;
+            animation: sudu 0.2s linear 29s infinite;
+        }
+
+        @-webkit-keyframes sudu {
+            0% {
+                left: 165px;
+                top: 0px;
+            }
+            100% {
+                left: 0px;
+                top: 145px;
+            }
+        }
+
+        #box-5 {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            animation: box5 10s linear 35s 1;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            -webkit-box-reflect: below 3px -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5));
+        }
+
+        @-webkit-keyframes box5 {
+            0% {
+                transform: scale(0.1);
+                opacity: 0.5;
+            }
+            10% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            20% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .baio {
+            width: 240px;
+            height: 266px;
+            background: url(img/page.png) no-repeat -239px -526px;
+            position: absolute;
+            left: 90px;
+            top: 70px;
+            animation: biao linear 0.8s 37s infinite alternate forwards;
+            -webkit-box-reflect: below 3px -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5));
+        }
+
+        @-webkit-keyframes biao {
+            from {
+                top: 60px;
+            }
+            to {
+                top: 80px;
+            }
+        }
+
+        #box-6 {
+            width: 1200px;
+            height: 1200px;
+            border-radius: 50%;
+            position: absolute;
+            top: 317px;
+            left: 650px;
+            margin-left: -600px;
+            margin-top: -600px;
+            transform: rotateX(85deg);
+            z-index: 10;
+            background: -webkit-radial-gradient(center center, 600px 600px, rgba(158, 158, 222, 0.5), rgba(0, 0, 0, 0));
+        }
+    </style>
+</head>
+
+<body>
+<div id="big">
+    <div id="box">
+        <div class="box" id="box-1">
+            <div class="piaoye"></div>
+            <div class="shuye"></div>
+        </div>
+        <div id="box-2">
+            <div class="sanjiao"></div>
+            <div class="yuan"></div>
+            <div class="zheng"></div>
+        </div>
+        <div id="box-3">
+            <div class="deng"></div>
+            <div class="guang"></div>
+        </div>
+        <div id="box-4">
+            <div class="huojina"></div>
+            <div class="sudu"></div>
+        </div>
+        <div id="box-5">
+            <div class="baio"></div>
+        </div>
+    </div>
+    <div id="box-6"></div>
+</div>
+</body>
+
+</html>
