@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>中奖刮刮乐</title>
 </head>
+<style>
+    *{margin: 0;padding: 0;}
+    .main{position: relative}
+    img{width: 800px;height: 450px;}
+    canvas{position: absolute;left: 0;}
+</style>
 <body>
-$END$
+    <div class="main">
+        <img src="2.jpg" alt="">
+        <canvas id="canvas" width="800" height="450"></canvas>
+    </div>
 </body>
+<script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = "#CCC";
+    ctx.fillRect(0,0,800,450);
+//    ctx.globalCompositeOperation = "destination-over";
+
+    canvas.onmousedown = function (e) {
+        canvas.onmousemove = function (e) {
+            var x = e.pageX - canvas.offsetLeft;//x = e.offsetX
+            var y = e.pageY - canvas.offsetTop;//y = e.offsetY
+            ctx.globalCompositeOperation = "destination-out";
+            ctx.beginPath();
+            ctx.arc(x,y,20,0,2*Math.PI,false);
+            ctx.fill();
+            ctx.closePath();
+        }
+    };
+    canvas.onmouseup = function () {
+        canvas.onmousemove = function () {
+        }
+    }
+
+</script>
 </html>

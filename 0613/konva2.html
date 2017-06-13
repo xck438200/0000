@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拖拽星星</title>
+    <script src="https://cdn.bootcss.com/konva/1.6.3/konva.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+<div id="star">
+
+</div>
+</body>
+<script>
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    function star() {
+        var scale = Math.random();//比例
+        var star = new Konva.Star({
+            x: Math.random() * stage.getWidth(),
+            y: Math.random() * stage.getHeight(),
+            numPoints: 5,//表示5角形,6表示6角形
+            innerRadius: 40,//内部半径
+            outerRadius: 80,//外部半径
+            fill: 'greenyellow',//填充颜色
+            opactiy: .8,//透明度
+            draggable: true,//是否可移动
+            scale: {//显示比例,规模
+                x: scale,
+                y: scale
+            },
+            rotation: Math.random() * 180,//旋转度数
+            shadowColor: 'red',//阴影颜色
+            shadowBlur: 100,//阴影距离
+            shadowOffset: {//阴影偏移距离
+                x: 5,
+                y: 5
+            },
+            shadowOpacity: 0.6,//阴影透明度
+//            startScale: scale//?
+        });
+        layer.add(star);
+    }
+
+    var stage = new Konva.Stage({
+        container: 'star',
+        width: width,
+        height: height
+    })
+    var layer = new Konva.Layer();
+
+    for (var i = 0; i < 10; i++) {
+        star();
+    }
+    stage.add(layer);
+</script>
+
+</html>
