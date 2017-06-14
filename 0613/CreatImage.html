@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生成图片</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        img{position: relative;}
+        canvas{
+            background: #000;
+            color: #fff;
+            text-align: center;
+            position: absolute;
+            line-height: 65px;
+            overflow: hidden;
+            top: 267px;
+            left: 268px;
+        }
+        input{
+            width: 205px;
+            height: 65px;
+            position: absolute;
+            top: 0;
+        }
+        button{
+            width: 65px;
+            height: 69px;
+            position: absolute;
+            left:809px;
+        }
+    </style>
+</head>
+<body>
+    <img src="3.jpg" id="img">
+    <canvas id="canvas" width="205" height="65"></canvas>
+    <input type="text" id="input" placeholder="请输入你的名字">
+    <button  type="button" value="提交" id="button">提交</button>
+</body>
+<script>
+    var c = document.getElementById('canvas');
+        var ctx=c.getContext('2d');
+    var Oinput = document.getElementById('input');
+    var Obtn = document.getElementById('button');
+    var img = document.getElementById('img');
+    Obtn.onclick = function () {
+        var val = Oinput.value;
+//        console.log(val);
+        ctx.globalCompositeOperation = 'source-out';
+        ctx.beginPath();
+        ctx.font = "65px Arial";
+        ctx.fillStyle = "white";
+        ctx.fillText(val,0,58);
+        ctx.closePath();
+    }
+</script>
+</html>
