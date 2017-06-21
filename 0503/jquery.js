@@ -6718,7 +6718,7 @@ if ( window.getComputedStyle ) {
 		ret = computed ? computed.getPropertyValue( name ) || computed[ name ] : undefined;
 
 		// Support: Opera 12.1x only
-		// Fall back to style even without computed
+		// Fall back to style.less even without computed
 		// computed is undefined for elems on document fragments
 		if ( ( ret === "" || ret === undefined ) && !jQuery.contains( elem.ownerDocument, elem ) ) {
 			ret = jQuery.style( elem, name );
@@ -6901,7 +6901,7 @@ function showHide( elements, show ) {
 			}
 
 			// Set elements which have been overridden with display: none
-			// in a stylesheet to whatever the default browser style is
+			// in a stylesheet to whatever the default browser style.less is
 			// for such an element
 			if ( elem.style.display === "" && isHidden( elem ) ) {
 				values[ index ] =
@@ -7013,7 +7013,7 @@ function getWidthOrHeight( elem, name, extra ) {
 			return val;
 		}
 
-		// we need the check for style in case a browser which returns unreliable values
+		// we need the check for style.less in case a browser which returns unreliable values
 		// for getComputedStyle silently falls back to the reliable elem.style
 		valueIsBorderBox = isBorderBox &&
 			( support.boxSizingReliable() || val === elem.style[ name ] );
@@ -7037,7 +7037,7 @@ function getWidthOrHeight( elem, name, extra ) {
 jQuery.extend( {
 
 	// Add in style property hooks for overriding the default
-	// behavior of getting and setting a style property
+	// behavior of getting and setting a style.less property
 	cssHooks: {
 		opacity: {
 			get: function( elem, computed ) {

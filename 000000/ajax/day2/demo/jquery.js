@@ -6532,7 +6532,7 @@ var documentElement = document.documentElement;
 	// Make sure that element opacity exists (as opposed to filter)
 	support.opacity = div.style.opacity === "0.5";
 
-	// Verify style float existence
+	// Verify style.less float existence
 	// (IE uses styleFloat instead of cssFloat)
 	support.cssFloat = !!div.style.cssFloat;
 
@@ -7013,7 +7013,7 @@ function getWidthOrHeight( elem, name, extra ) {
 			return val;
 		}
 
-		// we need the check for style in case a browser which returns unreliable values
+		// we need the check for style.less in case a browser which returns unreliable values
 		// for getComputedStyle silently falls back to the reliable elem.style
 		valueIsBorderBox = isBorderBox &&
 			( support.boxSizingReliable() || val === elem.style[ name ] );

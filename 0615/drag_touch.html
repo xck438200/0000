@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手指拖拽事件</title>
+    <style>
+        /*.box{
+            margin: 0 auto;
+            border: 1px solid #000;
+            width: 400px;
+            height: 400px;
+        }*/
+        .img{
+            width: 200px;height: 200px;
+            background: url(1.jpg) ;
+            background-size: 200px 200px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="box" >-->
+        <div class="img" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+    <!--</div>-->
+</body>
+<script>
+    var x,y;
+    var nowX = 0;
+    var nowY = 0;
+    var img = document.querySelector('.img');
+    img.addEventListener("touchstart", function(ev){
+        ev.prevevtDefsult();
+        x = ev.touches[0].clientX - nowX;
+        y = ev.touches[0].clientY - nowY;
+    });
+    img.addEventListener("touchmove", function(ev){
+        nowX = ev.touches[0].clientX - x;
+        nowY = ev.touches[0].clientY - y;
+        img.style.left = nowX + "px";
+        img.style.top = nowY + "px";
+    })
+</script>
+</html>

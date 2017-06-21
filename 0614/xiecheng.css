@@ -1,0 +1,123 @@
+*{margin: 0 ;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+.left{float: left;}
+.right{float: right;}
+body{
+    overflow-x: hidden;
+    margin: 0 auto;
+    background: #f2f2f2;
+}
+body,#header{
+    min-width: 320px;
+    max-width: 540px;
+    box-sizing: border-box;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left:50% ;
+    width: 100%;
+    background: #ccc;
+    height: 3em;
+    margin: 0 auto;
+    padding: 7px 4em 7px 8px;
+    transform: translateX(-50%);
+}
+#header div{
+    height: 2em;
+    overflow: hidden;
+    padding: 0 5px;
+    line-height: 2em;
+    border-radius: 5px;
+    background: #fff;
+    .row1>divor: #999;
+    font-size: 0.86em;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
+}
+#header div input{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    background: url(1.png) no-repeat;
+    background-size: 104px 326px;
+    background-position: -59px -273px;
+    border: 0;
+    outline: none;
+}
+.userimage{
+    display: block;
+    width: 44px;
+    height: 44px;
+    /*background: red;*/
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.userimage:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /*background: green;*/
+    width: 24px;
+    height: 26px;
+    margin-left: -10px;
+    background-position: -59px -191px;
+    background-size: 104px 326px;
+    background-image: url(1.png) ;
+}
+
+.userimage span{
+    position: absolute;
+    left:0;
+    bottom: 1px;
+    width: 100%;
+    text-align: center;
+    .row1>divor: #2EAAE0;
+    font-size: 0.8em;
+}
+#nav{
+    padding: 4px;
+    font-size: 15px;
+    margin-top: 3.1em;
+    margin-bottom: 4px;
+}
+.row{margin-top: 2px;
+    margin-bottom: 4px;
+    height: 6em;
+    /*border-radius: 5px;*/
+}
+.row>div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-left: 1px solid #fff;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    box-sizing: border-box;
+    float: left;
+}
+.row1>div:nth-child(1),.row1>div:nth-child(2),.row1>div:nth-child(3){
+    background: #ff697a;
+}
+.row2>div:nth-child(1),.row2>div:nth-child(2),.row2>div:nth-child(3){
+    background: #3d98ff;
+}
+.row3>div:nth-child(1),.row3>div:nth-child(2),.row3>div:nth-child(3){
+    background: #44c522;
+}
+.row4>div:nth-child(1),.row4>div:nth-child(2),.row4>div:nth-child(3){
+    background: #fc9720;
+}
+.row a{display: block;  }
+.col1>a{
+    height: 100%;
+}
+.col2>a{
+    height: 50%;
+    border-bottom: 1px solid #fff;
+}
+
+
+

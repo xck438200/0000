@@ -41,7 +41,7 @@
         var ctx=c.getContext('2d');
     var Oinput = document.getElementById('input');
     var Obtn = document.getElementById('button');
-    var img = document.getElementById('img');
+//    var img = document.getElementById('img');
     Obtn.onclick = function () {
         var val = Oinput.value;
 //        console.log(val);
@@ -51,6 +51,10 @@
         ctx.fillStyle = "white";
         ctx.fillText(val,0,58);
         ctx.closePath();
+        var dataUrl = c.toDataURL();
+        var img = document.createElement('img');
+        img.src = dataUrl;
+        document.body.appendChild('img');
     }
 </script>
 </html>
