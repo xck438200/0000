@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>豆瓣电影</title>
+</head>
+<body>
+<div class="container">
+    <nav id="nav">
+        <div class="nav-warp">
+            <div class="nav-logo"></div>
+            <div class="nav-search">
+                <form action="https://movie.douban.com/subject_search" method="get">
+                    <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="电影、影人、影院、电视剧" value="" autocomplete="off"></div>
+                    <div class="inp-btn"><input type="submit" value="搜索"></div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carousel" class="carousel">
+        <div class="imageList">
+            <ul>
+                <li>
+                    <a href="#"><img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2459944375.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2460139111.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2459198108.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2460006593.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2459723975.jpg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/carousel.js"></script>
+</html>
