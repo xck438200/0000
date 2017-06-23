@@ -24,9 +24,59 @@
             </div>
         </div>
     </nav>
+    <div class="page">
+        <div class="card">
+            <section id="movie-showing">
+                <header>
+                    <h2>影院热映</h2>
+                    <a href="#">更多</a>
+                </header>
+                <div class="section-content">
+                    <ul class = "items">
+                        <li class="item item__movie">
+                            <a href="www.douban.com/movie/subject/11803087?refer=home">
+                                <div class="item-poster" style="background-image: url(https://qnmob2.doubanio.com/view/movie_poster_cover/lpst/public/p2459944375.jpg?imageView2/0/q/80/w/9999/h/200/format/jpg)"></div>
+                                <span class="item-title">异形：契约</span>
+                                <div class="item-rating">
+                                    <div class="rank">
+                                        <span class="rating-stars" data-rating="3.7"><span class="rating-star rating-star-small-full"></span><span class="rating-star rating-star-small-full"></span><span class="rating-star rating-star-small-full"></span><span class="rating-star rating-star-small-full"></span><span class="rating-star rating-star-small-gray"></span></span> <span>7.4</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="movie_free_stream"></section>
+            <section id="movie_latest"></section>
+        </div>
+    </div>
 </div>
 </body>
-<script src="js/bootstrap.min.js"></script>
+<!--<script src=="http://apps.bdimg.com/libs/underscore.js/1.7.0/underscore-min.js" charset="utf-8"></script>-->
 <script src="js/jquery.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
+<script type="text/templete" id = "templete">
+        <li class="item item__movie">
+            <a href="www.douban.com/movie/subject/11803087?refer=home">
+                <div class="item-poster" style="background-image: url(<%= images.large %>)"></div>
+                <span class="item-title"><%= title %></span>
+                <div class="item-rating">
+                    <div class="rank">
+                        <span class="rating-stars" data-rating="<%= ((rating.average)/2).toFixed(1) %>">
+                            <span class="rating-star rating-star-small-full"></span>
+                            <span class="rating-star rating-star-small-full"></span>
+                            <span class="rating-star rating-star-small-full"></span>
+                            <span class="rating-star rating-star-small-full"></span>
+                            <span class="rating-star rating-star-small-gray"></span>
+                        </span>
+                        <span><%= rating.average %></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+</script>
+<script type="text/javascript" src="js/load.js"></script>
 </html>

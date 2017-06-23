@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="sm.css">
+    <title>Document</title>
+    <style type="text/css">
+        .infinite-scroll-preloader {
+            margin-top: -20px;
+        }
+        
+        body {
+            min-width: 320px;
+            max-width: 540px;
+            margin: 0 auto;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .waterfall {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .box {
+            width: 100%;
+            padding: 2%;
+        }
+        
+        .box img {
+            width: 100%;
+        }
+    </style>
+    <script type='text/javascript' src='zepto.js' charset='utf-8'></script>
+    <script type='text/javascript' src='sm.js' charset='utf-8'></script>
+</head>
+
+<body>
+    <div class="page-group">
+        <div class="page page-current">
+            <header class="bar bar-nav">
+                <h1 class="title">王者瀑布流</h1>
+            </header>
+            <!-- 添加 class infinite-scroll 和 data-distance  向下无限滚动可不加infinite-scroll-bottom类，这里加上是为了和下面的向上无限滚动区分-->
+            <div class="content infinite-scroll infinite-scroll-bottom" data-distance="50">
+                <div class="list-block">
+                    <ul class="list-container" id="listt">
+                    </ul>
+                </div>
+                <!-- 加载提示符 -->
+                <div class="infinite-scroll-preloader">
+                    <div class="preloader"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="http://apps.bdimg.com/libs/underscore.js/1.7.0/underscore-min.js" charset="utf-8"></script>
+<script type="text/templete" id="templete">
+    <div class="box">
+        <img src="<%= img %>" alt="">
+        <div>
+            <p>
+                <%= hero_name %>
+            </p>
+            <div>
+                <p>英雄：
+                    <%= hero_title %>
+                </p>
+            </div>
+            <div>
+                <p>技能属性：
+                    <%= atk_range %>
+                </p>
+            </div>
+            <div>
+                <p>英雄描述：
+                    <%= hero_desc %>
+                </p>
+            </div>
+        </div>
+    </div>
+</script>
+<script>
+    // 加载flag
+    var loading = false;
+    // 最多可加载的条目
+    var maxItems = 84;
+
+    // 每次加载添加多少条目
+    var itemsPerLoad = 5;
+    var listt = $("#listt");
+    var page = 1;
+    var templeteStr = $("#templete").html();
+    var tempStr = _.template(templeteStr);
+
+    function addItems(page, itemsPerLoad) {
+        // 生成新条目的HTML
+        $.ajax({
+            type: "get",
+            url: "wangzhe.php",
+            data: {
+                page: page,
+                pre_page: itemsPerLoad
+            },
+            dataType: "json",
+            success: function(data) {
+                console.log(data)
+                var obj = data.hero;
+                console.log(obj)
+                $.each(obj, function(index, value) {
+                    var heroStr = tempStr(value);
+                    var $domObj = $(heroStr);
+//                    console.log(heroStr)
+                    $("#listt").append($domObj)
+                })
+            }
+        })
+
+    }
+    //预先加载20条
+    addItems(page, itemsPerLoad);
+
+    // 上次加载的序号
+
+    var lastIndex = 10;
+
+    // 注册'infinite'事件处理函数
+    $(document).on('infinite', '.infinite-scroll-bottom', function() {
+
+        // 如果正在加载，则退出
+        if (loading) return;
+
+        // 设置flag
+        loading = true;
+
+        // 模拟1s的加载过程
+        setTimeout(function() {
+            // 重置加载flag
+            loading = false;
+
+            page++;
+            if (lastIndex >= maxItems) {
+                // 加载完毕，则注销无限加载事件，以防不必要的加载
+                // 删除加载提示符
+                $('.infinite-scroll-preloader').remove();
+                return;
+            }
+            addItems(page, itemsPerLoad);
+
+            // 添加新条目
+            //容器发生改变,如果是js滚动，需要刷新滚动
+            $.refreshScroller();
+        }, 1000);
+    });
+    $.init();
+</script>
+
+</html>
