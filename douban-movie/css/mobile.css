@@ -85,13 +85,13 @@ section header a{
 .items{
     font-size: 0;
     white-space: nowrap;
-    overflow-x: auto;
+    /*overflow-x: auto;*/
     border-bottom: 1px solid #F2F2F2;
 }
 .item{
-    display: inline-block;
+    /*display: inline-block;*/
     vertical-align: top;
-    width: 100px;
+    width: 100%;
     margin-right: 10px;
 }
 .item-poster:before {
@@ -130,12 +130,14 @@ section header a{
     text-overflow: ellipsis;
     margin-top: 0.5rem;
     line-height: 2rem;
+    text-align: center;
 }
 .item-rating {
     color: #aaa;
     line-height: .94rem;
     margin-top: .3rem;
     font-size: .72rem;
+    margin-left: 40%;
 }
 .rating-stars {
     display: inline-block;

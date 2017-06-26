@@ -7,9 +7,8 @@ var tempStr = _.template(templeteStr);
         url : "mobile.php",
         dataType: "json",
         success: function (data) {
-            // console.log(data);
             var obj = data.subjects;
-            // console.log(obj);
+            console.log(obj);
             // $.each(obj,function (index) {
             //     var img = obj[index].images.large;
             //     $(".item-poster").append(img);
@@ -19,12 +18,10 @@ var tempStr = _.template(templeteStr);
             $.each(obj, function (index, value) {
                 var kao = tempStr(value);
                 var $domObj = $(kao);
-                console.log($domObj);
+                // console.log($domObj);
                 $(".items").append($domObj);
             });
+
         }
     });
-    console.log(obj);
-// addItems(itemsPerLoad);
 
-// var num = obj
