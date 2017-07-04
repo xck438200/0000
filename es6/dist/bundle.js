@@ -68,7 +68,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-(function webpackMissingModule() { throw new Error("Cannot find module \"./src/main.js\""); }());
+module.exports = __webpack_require__(2);
 
 
 /***/ }),
@@ -76,6 +76,20 @@ __webpack_require__(1);
 /***/ (function(module, exports) {
 
 
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index__);
+
+
+console.log(__WEBPACK_IMPORTED_MODULE_0__index__["firstName"]);
+console.log(__WEBPACK_IMPORTED_MODULE_0__index__["lastName"]);
+console.log(__WEBPACK_IMPORTED_MODULE_0__index__["year"]);
 
 /***/ })
 /******/ ]);
