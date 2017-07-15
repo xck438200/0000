@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>练习4</title>
+	<link rel="stylesheet" type="text/css" href="../css/css4.css">
+  </head>
+<body>
+  <div id="box">
+    <p>
+      <span>感觉身体被掏空</span>
+	</p>
+	  <span>皮皮虾，赶紧走</span>
+	  <br/>
+  </div>
+  <a href="http://zol.com.cn">中关村</a>
+  <ul>
+    <li>
+	  <a href="#">京东</a>
+	</li>
+	<li>
+	  <a href="#">淘宝</a>
+	</li>
+	<li>
+	  <a href="#">阿里</a>
+	</li>
+	<li>
+	  <a href="#">亚马逊</a>
+	</li>
+	<li>
+	  <a href="#">天猫</a>
+	</li>
+  </ul>
+  <input>
+</body>
+</html>

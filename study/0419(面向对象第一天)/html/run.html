@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>奔跑吧</title>
+		<style type="text/css">
+			*{margin:0;padding: 0;}
+			#run{width:64px;height:128px;
+			background: url(../img/1.png) no-repeat ;
+			background-position: 0 -256px;
+			position: absolute;
+			top:100px;
+			left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="run"></div>
+	</body>
+	<script type="text/javascript">
+		//利用的是图片定位,改变背景图片中的位置,并将其在body中定位显示出来
+		var run=document.getElementById("run");
+		var a=0;//可以理解为图片中每个小图的边界点
+		var b=2;//可以理解为横向的速度
+		setInterval(function(){
+			a++;
+			b++;
+			/*if (a>7) {//图片8个小图,每8个便循环显示一次
+				a=0
+			}*/
+			run.style.left=b+"px";
+			run.style.backgroundPosition=-64*a+"px -256px";
+		},100)
+	</script>
+</html>

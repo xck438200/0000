@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>考试</title>
+</head>
+<body>
+
+</body>
+<script>
+    //第4题
+//    function fun() {
+//        if(arguments.length==1){
+//         /*   arguments[0]%2==0?return "这个数是偶数":return "这个数不是偶数";*/
+//            if (arguments[0]%2==0){ return "这个数是偶数";}
+//            else {return "这个数是奇数";}
+//        }
+//        else if (arguments.length==2){
+//            if(arguments[0]%2==arguments[1]%2){
+//                return true;
+//            } else{return false;}
+//        }
+//    }
+//    function fun() {
+//        switch(arguments.length){
+//            case 1:
+//                arguments[0]%2==0?console.log("这个数是偶数"):console.log("这个数不是偶数");
+//                break;
+//            case 2:
+//                if(arguments[0]%2==arguments[1]%2)
+//                {   return true;}
+//                else{return false;}
+//                break;
+//        }
+//    }
+//    console.log(fun(87));
+//    console.log(fun(2,58214))
+//    fun(52);
+//    console.log(fun(2,58214))
+    function init() {
+        var name = "Mozilla"; // name是被init创建的局部变量
+        function displayName() { // displayName()是一个内部函数,
+            alert(name); // 它是一个使用在父函数中声明的变量的闭包
+        }
+        displayName();
+    }
+    init();
+</script>
+</html>

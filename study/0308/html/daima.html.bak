@@ -1,0 +1,172 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Day 02</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<!--id class title style
+		&nbsp;&lt;&gt;&copy;&reg;
+		<b>加粗</b>
+		<strong>加粗</strong>
+		<i>斜体</i>
+		<em>斜体</em>
+		<u>下划线</u>
+		<br/>
+		<hr/>
+		<s>删除线</s>
+		<sup>上标</sup>
+		<sub>下标</sub>
+		<h1>标题标签</h1>
+		<p>段落标签</p>
+		<div>快标签</div>
+		<span>行内标签</span>
+		<img src="2.jpg" alt="帽子" width="200px" height="200px"/>
+		<a href="../../a.zip" >跳</a>
+		<table width="600px" height="600px" align="center" 
+		border="1" cellpadding="10px" cellspacing="0px" bgcolor="yellowgreen">
+			<caption>表格标题</caption>
+			<thead>
+				<tr align="left" valign="top">
+					<td>11</td>
+					<td>11</td>
+					<td>13</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr align="center" valign="middle">
+					<td>
+						<table  width="100%" height="100%" border="1" >
+							<tr  align="center">
+								<td>
+									<table  width="100%" height="100%" border="1" >
+										<tr  align="center">
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+										</tr>
+										<tr  align="center">
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+										</tr>
+										<tr  align="center">
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+										</tr>
+									</table>
+								</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+							<tr  align="center">
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+							<tr  align="center">
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+						</table>
+					</td>
+					<td>22</td>
+					<td>11</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr align="right" valign="bottom">
+					<td>11</td>
+					<td>32</td>
+					<td>11</td>
+				</tr>
+			</tfoot>
+		</table>
+		结构标记
+		<header>头部标签</header>
+		<div id="header">头部标签</div>
+		<nav>导航</nav>
+		<section>section用来描述网页的一个区域</section>
+		<article>用来定义独立的一篇文章等</article>
+		<footer>页尾</footer>
+		<aside>侧边栏</aside>-->
+		<form action="" method="post" enctype="multipart/form-data"> 
+			<input style="width:300px;height:30px;"placeholder="请输入文字"  maxlength="5"/>
+			密码框<input type="password" required/>
+			性别：
+			<input type="radio" name="xingbie" checked value="男"/>男
+			<input type="radio" name="xingbie" value="女"/>女
+			爱好：
+			<input type="checkbox" id="eat">
+			<label for="eat">吃</label>
+			<input type="checkbox">喝
+			<input type="checkbox">玩
+			王老师怎么样：
+			<input type="radio" name="wang" checked/>好
+			<input type="radio" name="wang" disabled/>不好
+			<input type="submit" value="请提交"/>
+			<input type="reset"  value="清空">
+			<input type="button" value="button">
+			<input type="hidden">
+			<input type="file" value="提交" name="点击选择文件，进行提交">
+			<select >
+				<option>北京</option>
+				<option>长沙</option>
+				<option selected>武汉</option>
+				<option>杭州</option>
+				<option>广州</option>
+				<option>哈尔滨</option>
+				<option>成都</option>
+			</select>
+			<textarea cols="20" rows="5">
+				今天天气不错
+			</textarea>
+			<fieldset>
+				<legend>地址信息</legend>
+				<input/>省<input/>市<input/>县
+			</fieldset>
+		</form>
+		<ol type="A">
+			<li>中国</li>
+			<li>俄罗斯</li>
+			<li>美国</li>
+			<li>韩国</li>
+			<li>日本</li>
+		</ol>
+		<ul type="square">
+			<li>
+				<a href="#">优才创智</a>
+				<ul type="disc">
+					<li>北京</li>
+					<li>上海</li>
+					<li>杭州</li>
+					<li>武汉</li>
+					<li>哈尔滨</li>
+					<li>长沙</li>
+					<li>成都</li>
+				</ul>
+			</li>
+			<li>俄罗斯</li>
+			<li>美国</li>
+			<li>韩国</li>
+			<li>日本</li>
+		</ul>
+		<dl>
+			<dt>蓝朋友</dt>
+			<dd>挣钱 养家  吃剩饭</dd>
+		</dl>
+
+导航
+尾部
+头部
+尾部		<ul>
+			<li>蓝朋友</li>
+			<li>挣钱 养家  吃剩饭</li>
+		</ul>
+		<iframe src="index2.html" frameborder="0">
+			改换浏览器了
+		</iframe>
+	</body>
+</html>

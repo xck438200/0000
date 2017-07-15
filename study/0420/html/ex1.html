@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+		/*function qwe(name,sex,age) {
+			this.姓名=name;
+			this.性别=sex;
+			this.年龄=age;
+			this.aa=function(){
+				console.log(this.年龄);
+			}
+		}
+		var k=new qwe("张三","男","33");
+		var o=new qwe("李四","男","66");
+		console.log(k);
+		console.log(o);
+		console.log(k.aa()==o.aa());
+		console.log(k.aa);
+		console.log(o.aa);
+		console.log(k.aa==o.aa);*/
+		////////////////////////////
+		/*function qwe(name,sex,age){
+			this.姓名=name;
+			this.性别=sex;
+			this.年龄=age;
+			this.aa=aa;
+		}
+		function aa(){
+				console.log(this.年龄);
+			}
+		
+		var k=new qwe("张三","男","33");
+		var o=new qwe("李四","男","66");
+		console.log(k);
+		console.log(o);
+		console.log(k.aa()==o.aa());
+		console.log(k.aa);
+		console.log(o.aa);
+		console.log(k.aa==o.aa);*/
+		var arr1=new Array(1,2,3,4,5);
+		var arr2 = new Array(12,34,56,78,90);
+        var arr3 = new Array(123,456,789);
+		Array.prototype.sum = function(){
+          var result = 0;
+          for (var i = 0; i < this.length; i++) {
+              result += this[i];
+          }
+          return result;
+      }
+		console.log(arr1.sum())
+		console.log(arr2.sum())
+		console.log(arr3.sum())
+		
+		 var obj = new Object();
+	     obj.name = "stark";
+	     obj.age = 18;
+	     obj.sex = "man";
+	     
+	     
+	    function Wtf(name, url) {
+		 	this.name = name;
+		 	this.sex = sex;
+		 	this.qwe=qwe;
+		}
+	    function qwe() {
+		 		alert(this.sex);
+		 	}
+ 		var a1 =new Wtf('张三', '男');
+ 		var a2 =new Wtf('李四', '女');
+ 		console.log(a1.qwe==a2.qwe);//true
+
+	</script>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="../css/tb.css">
+  <title>淘宝小功能</title>
+   </head>
+  <!-- <style>
+   *{margin:0;padding:0;}
+   a{text-decoration:none;}
+   section{width:200px;height:200px;
+           background-color:blue;
+  		   display:none;
+  		   position:absolute;
+  		   left:130px;top:0;
+          }
+   ul{position:relative;}
+   li{list-style:none;width:130px;height:20px;}
+   li:hover section{display:block;}
+   </style>   -->
+   <body>
+    <ul>
+  	  <li>
+  		  <div>
+  		  <a href="#">女装/</a>
+  		  <a href="#">男装/</a>
+  		  <a href="#">内衣</a>
+  		  </div>
+  		  <section>这里面是啥</section>
+  	  </li>
+  	  <li>
+  		  <div>
+  		  <a href="#">女鞋/</a>
+  		  <a href="#">男鞋/</a>
+  		  <a href="#">拖鞋</a>
+  		  </div>
+  		  <section>你知道是啥</section>
+  	  </li>
+  	  <li>
+  		  <div>
+  		  <a href="#">智能/</a>
+  		  <a href="#">家居/</a>
+  		  <a href="#">人工</a>
+  		  </div>
+  		  <section>你到底知不知道是啥</section>
+  	  </li>
+  	  <li>
+  		  <div>
+  		  <a href="#">天地/</a>
+  		  <a href="#">传奇/</a>
+  		  <a href="#">剑灵</a>
+  		  </div>
+  		  <section>你真不知道是啥</section>
+  	  </li>
+  	</ul>
+   </body>
+  </html> 

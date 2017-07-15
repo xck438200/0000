@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		function createPerson(name,age,sex){
+      var person = new Object(); // 这是一个空对象，里面没有任何属性
+          person.name = name;
+          person.age = age;
+          person.sex = sex;
+          return person;
+    }
+	  var person2 = createPerson();
+      //var person2 = createPerson("stark",18,"man");
+      var person1 = createPerson("maxwell",19,"man");
+      console.log(person1);
+      console.log(person2);
+		/*var obj={
+			Ab:"kk",
+			ab:"123",
+			bc:"99",
+			aa:"男",
+		}
+		console.log(obj);
+		console.log(obj.aa);
+		console.log(typeof(obj));
+		console.log(typeof(obj.ab));*/
+		//
+		/*var wtf={
+			"@!#":"qqq",
+			"123":"123",
+			"1244":"sdgh",
+			abc:"男",
+		}
+		console.log(wtf);
+		console.log(wtf["@!#"]);
+		console.log(wtf["1"+"2"+"3"]);
+		console.log(wtf["123"]);
+		console.log(wtf["1244"]);
+		
+		var obj=new Object;
+		obj.ppx=[1,2,3];
+		console.log(obj);
+		console.log(obj.ppx);
+		
+		var whname={
+			name:"叶良辰",
+			sex:"纯爷们",
+			age:"20",
+			kh:"在下叶良辰,有100种方法让你活不下去",
+			go:function() {
+				alert("我叫"+whname.name);
+				alert("是个"+whname.sex);
+				alert("虚岁"+whname.age);
+				alert("!!!:"+whname.kh+"!!!");
+			},
+			cz:function(){
+				this.age++;
+			},
+			br:function(){
+				if(this.name=="叶良辰"){
+					this.name="papi酱";
+					this.sex="女汉子";
+					this.kh="我就是那个集美貌与智慧于一身的奇女子";
+				}
+				else if(this.name=="papi酱"){
+					this.name="大哥";
+					this.sex="洗发水代言人";
+					this.kh="Duang,Duang,Duang";
+				}
+				else if(this.name=="大哥"){
+					this.name="叶良辰";
+					this.sex="纯爷们";
+					this.kh="在下叶良辰,有100种方法让你活不下去";
+				}
+			}
+			 
+			 
+			
+		}
+		whname.go();
+		whname.cz();
+		whname.cz();
+		whname.br();
+		whname.go();
+		whname.br();
+		whname.go();*/
+		/*var qw={
+			 	name:"stark",
+			 	sex:"男",
+			 	haha:"fun",
+			 }
+			 function stark(){
+			 	alert(this.sex)
+			 	alert(this.name)
+			 }
+			 stark.apply(qw);
+			 stark.call(qw);*/
+		/*var obj={
+			name:"Chuck",
+			sex:"男",
+			what:"no",
+			asd:"",
+		}
+	/*	function qqq(a) {
+			alert(this.name);
+			console.log(a);
+		}
+		console.log(obj);
+//		qqq.apply(obj,[2,1,4])
+//		qqq.apply(obj,[2],[1],[4])
+//		qqq.call(obj,1,2,3)
+//		qqq.call(obj,[1],[2],[3])
+		////
+/*		function Cc(q,w,e){
+			this.name=q;
+			this.sex=w;
+			this.what=e;
+		}
+		var a1=new Cc("Chuck","男","no");
+		var a1=new Cc("uck","女","yes");
+		var a2=new Cc("Chuck","男","no");
+		console.log(a1);d
+		console.log(a2);
+	
+		function Xxs(a,b,c,d) {
+			this.name=a;
+			this.sex=b;
+			this.what=c;
+			if (this.what>=18) {
+				this.asd="成年";
+			} else{
+				this.asd="未成年";
+			}
+		}
+		var zzzz=new Xxs("金三胖","男","33");
+		console.log(this.name);
+		console.log(this.sex);
+		console.log(this.asd);
+		function qqq(n){
+  			for(var i=1; i<=n; i++){
+   			 console.log(this.name);
+  			}
+		}
+		qqq.apply(obj,[2]);
+		qqq.call(obj,2);*/
+	</script>
+</html>

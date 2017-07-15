@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/ppx2.css"/>
+  <title>练习2</title>
+ </head>
+ <style>
+ *{margin:0;padding:0;}
+  li{list-style-type:none;}
+  .q1 li{line-height:30px;width:100px;}
+  .q1 li:hover{background:#999;}
+  .q2:hover .q1{display:block;}
+  .q1{
+      display:none;
+	  border:1px solid #000;
+	  width:100px;
+     }
+  .q2{line-height:30px;
+	  border-left:1px solid #567
+	  border-right:1px solid #567
+	 }	
+     
+  </style>
+ <body>
+    <ul>
+	  <li class="q2">
+	    <a href="#">卖家中心</a>
+	    <ul class="q1">
+		  <li>免费开店</li>
+		  <li>已卖出的宝贝</li>
+	      <li>卖家服的宝贝</li>
+	      <li>出售中务市场</li>
+	      <li>卖家培训中心</li>
+		  <li>体检中心</li>
+		</ul>
+	  </li>
+	</ul>
+ </body>
+</html>

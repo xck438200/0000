@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轮播图</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;list-style: none;}
+		li{float: left;}
+		#box{width:512px;height:384px;overflow: hidden;
+		position: relative;margin:50px auto;}
+		#banner{width:2560px;height:384px;}
+		#btn{position: absolute;right:0px;bottom:10px;}
+		#btn li{width: 25px;height: 25px;line-height:25px;
+		background: rgba(0,0,0,0.5);
+		text-align: center;
+		border-radius: 50%;
+		margin:5px;color: #FFFF00;
+		}
+		p{position: absolute;width: 30px;height: 100px;text-align:center;
+		line-height: 100px;background: rgba(0,0,0,0.5);font-size: 30px;color: #FF5500;}
+		#left{margin-top: -50px;left:20px;top:50%;}
+		#right{margin-top: -50px;right:20px;top:50%;}
+	</style>	
+		<script type="text/javascript">
+		var box=document.getElementById("box");
+		var ban=document.getElementById("banner");
+		var oul=document.getElementById("btn");
+		// var oli=document.getElementById("btn").getElementsByTagName("li");
+		//console.log(oli);
+		// console.log(oul);
+		// console.log(box);
+		// console.log(ban);
+		var pp=document.getElementsByTagName('p');
+		console.log(pp);
+		function go(box,ban,oli,pp,timeinterval,imgwidth) {
+			//box窗口,box图片,页面按钮,左右按钮,图片变化时间间隔,图片宽度
+			var time=setInterval(move,timeinterval);
+			var page=0;//当前图片下标
+			var maxpage=oli.length;
+			function move(){
+				page++;
+				if (page>maxpage) {
+					page=0;
+					ban.style.transition="";
+					ban.style.marginLeft="0px";
+				}
+				ban.style.marginLeft = page * (-imgwidth) + "px";
+			}
+		}
+		// go();
+	</script>
+	</head>
+	<body>
+		<div id="box">
+			<ul id="banner" style="transition:all 1s;">
+				<li><image src="../img/001.jpg"></image></li>
+				<li><image src="../img/002.jpg"></image></li>
+				<li><image src="../img/003.jpg"></image></li>
+				<li><image src="../img/004.jpg"></image></li>
+				<li><image src="../img/001.jpg"></image></li>
+			</ul>
+			<ul id="btn">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+			<p id="left"><</p>
+			<p id="right">></p>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,318 @@
+*{margin: 0;padding: 0;}
+html{font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;}
+li{list-style: none;}
+a{text-decoration: none;}
+.left{float: left;}
+.right{float: right;}
+header{
+	background: #f1f1f1;
+	border-bottom: 1px solid #eee;
+	}
+#header,#search-section,#section{width: 1190px;margin: 0 auto;}
+#header{height: 35px;}
+#header a{color: #6c6c6c;}
+#header a:hover{color: #FF4204;}
+#header .left a{line-height: 35px;}
+#header .login a{color:#ff4204; }
+#header .register{margin: 0 20px 0 9px;}
+.header-right{width: 590px;}
+.header-right .left>a{
+	display: block;padding: 0 7px;
+	border-left: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+	position: relative;
+	z-index: 10;
+	}
+.header-right>.left:hover>a{
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #e4dde4;
+	border-right: 1px solid #e4dde4;
+	background: #fff;
+	}
+.head-select{
+	width: 7px;
+	height: 35px;
+	background:url(../img/xiala2.png) no-repeat center;
+	background-size:100%;
+	margin-left: 10px;
+}
+.header-right>li{position: relative;}
+.header-right>li:hover .select-section{
+	display: block;
+}
+.select-section{
+	padding: 7px 0;
+	display: none;
+	position: absolute;top: 35px;left: 0;background: #fff;
+	border: 1px solid #E4DDE4;}
+.select-section li{
+	padding: 7px;
+	white-space: nowrap;
+	height: 20px;
+}
+#header .select-section li a{
+	line-height: 20px;
+}
+.select-section li:hover{
+	background: #E4DDE4;
+}
+#search-section{
+	height: 165px;
+}
+.search-section-top{
+	height: 130px;
+	width: 100%;
+}
+.logo{height: 130px;overflow: hidden;}
+.logo img{border: 0;}
+.search-box{margin-left: 75px;padding-top: 30px;}
+.search-box h3 a{
+	width: 50px;height: 25px;
+	line-height: 25px;font-weight: 100;
+	color: #FF4204;text-align: center;
+	}
+.search-box .taobao{
+	color: #FFFFFF;font-weight: 900;background:  #FF4204;
+}
+.search{width: 620px;height: 34px;border: 2px solid #FF4204;}
+
+.sch-box{width: 668px;height: 34px;}
+.sch-box a{height: 34px;width: 34px;color: #6C6C6C;}
+.search div{width: 500px;height: 34px;background: #fff;}
+.search div a{
+	background: url(../img/xiangji.png) no-repeat center;
+	background-size: 70%;
+	}
+.search div a:hover{
+	background-image: url(../img/xiangji-on.png);
+}
+.search div input{
+	width: 300px;
+	border: 0;outline: none;height: 34px;line-height: 34px;
+	background: url(../img/fangdajing.png) no-repeat  left center;
+	background-size: 7%;
+	}
+.search div input:hover{
+	padding-left: 0;
+	background: #fff;
+}
+.search button{
+	border: 0;outline: none;height: 34px;line-height: 34px;
+	width: 120px;background: #FF4204;color: #fff;font-weight: 900;
+	text-align: center;font-size: 18px;
+}
+.sch-nav{
+	width: 620px;
+	height: 20px;
+	line-height: 30px;
+}
+.sch-nav a{padding: 0 5px;color: #6C6C6C;}
+.park{
+	width: 180px;height: 35px;
+	background: #FF4204 url(../img/fenlei.png) no-repeat center right;
+	color: #fff;background-size:12% ;
+	line-height: 35px;font-weight: 900;padding-left: 10px;
+}
+.search-section-nav li{padding: 0 4px;margin: 0 3px;color: #e7dde7;line-height: 28px;}
+.search-section-nav li a{
+	display: block;line-height: 28px;
+	font-size:16px;font-weight: 900;
+	color: #3c3c3c;
+	padding: 0 4px;
+	border-radius: 14px;
+}
+.search-section-nav li:hover a{color: #fff;background: #FF4204;}
+.search-section-nav li .taobao-color{color: #FF4204;}
+#section-box{background: #f1f1f1;}
+#section{overflow: hidden;}
+.section-left{width: 890px;}
+.banner-section-top{overflow: hidden;}
+.nav-list{width: 190px;background: #FF4204;height: 480px;position: relative;}
+.nav-list>li,.nav-list-title{height:30px;width: 190px;line-height: 30px;}
+.nav-list>li:hover .nav-list-title{background: #ff5400;}
+.nav-list-title i{
+	background:url(../img/yifu.png) no-repeat center;
+	width: 30px;height: 30px;
+	background-size:70% ;
+	}
+.nav-list-title b{
+	background:url(../img/next.png) no-repeat center;
+	width: 30px;height: 30px;
+	background-size:70% ;
+	}
+.nav-list-title a{
+	padding: 0 4px;
+	color: #fff;
+	font-size: 13px;
+}
+.nav-list-title div{color: #fff;}
+.nav-list-section{
+	position: absolute;
+	width: 500px;height: 480px;
+	border:2px solid #FF4204;
+	top:0;left: 190px;
+	display: none;
+	}
+.nav-list>li:hover .nav-list-section{
+		display: block;
+	}
+.banner-box{
+	width: 690px;
+	height: 510px;
+	margin: 10px 0 10px 10px;
+	background: red;
+}
+.banner-left{
+	width: 520px;
+	height: 100%;
+	background: yellow;
+}
+.banner-left h2{
+	margin-top: 14px;
+	font-size: 12px;
+	font-weight: 100;
+	padding-left:50px ;
+	background: url(../img/download.gif) no-repeat left center;
+}
+.banner-section-bottom{
+	background: #fff;
+	width: 890px;
+	height: 76px;
+}
+.banner-section-bottom li{
+	width: 178px
+}
+.banner-section-bottom li>a{
+	width: 60px;
+	height: 60px;
+	margin: 8px;
+	border: 1px solid #E4DDE4;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.banner-section-bottom li:hover>a{
+	border-color: saddlebrown;
+}
+.banner-section-bottom li:hover>a img{
+	opacity: 0.7;
+}
+.banner-car{
+	width: 90px;padding-top: 8px;color:saddlebrown ;
+}
+.banner-car section{
+	color: #E4DDE4;
+}
+.myOftenShopping{
+	background: green;
+	height: 853px;
+}
+.myOftenShopping-title{
+	height: 30px;
+	background: url(../img/sp.png) no-repeat center -600px;
+}
+.myOftenShopping-title a{
+	width: 60px;
+	height: 20px;
+	line-height: 20px;
+	background: #fff;
+	border-radius: 10px;
+	text-align: center;
+	color: black;
+	margin-top: 5px;
+	font-size: 12px;
+}
+.myOftenShopping-box{overflow: hidden;}
+.myOftenShopping-list{
+	width: 440px;
+	height: 362px;
+	margin-bottom: 10px;
+	background: yellow;
+}
+.myOftenShopping-list-left{
+	height: 100%;
+	width: 100px;
+	background: #E4DDE4;
+}
+.myOftenShopping-list-right{
+	width:338px;
+	height: 358px;
+	border: 2px solid #ffb3cc;
+	border-left: 0;
+}
+.myOftenShopping-list:hover .myOftenShopping-list-right{
+	border-color:#ff0454 ;
+}
+.taobao-edu{
+	width: 222px;
+	height: 259px;
+	background: #fff;
+	border: 1px solid #F1F1F1;
+}
+.taobao-edu:hover{
+	border: 1px solid red;
+}
+.taobao-edu h2{
+	background: url(../img/TB1ImjgLVXXXXcxXFXXXXXXXXXX-300-64.jpg_220x220.jpg) no-repeat center;
+	background-size:35% ;
+	height: 38px;
+	border-bottom: 1px solid #F1F1F1;
+}
+.taobao-edu h2>div{
+	width: 21px;
+	height: 21px;
+	margin: 8px 50px 0 0;
+	background: url(../img/erweima.png) no-repeat center;
+	background-size:100% ;
+	position: relative;
+}
+.taobao-edu h2>div:hover{
+	background-image: url(../img/erweima-on.png);
+}
+.taobao-edu h2>div>div{
+	position: absolute;
+	top: 21px;
+	left: -50px;
+	padding: 10px;
+	width: 120px;
+	border: 1px solid #6C6C6C;
+	background: #fff;
+	display: none;
+}
+.taobao-edu h2>div>div img{
+	width: 120px;
+}
+.taobao-edu h2>div:hover>div{
+	display: block;
+}
+.taobao-edu>div{
+	overflow: hidden;
+	border-bottom: 1px solid #F1F1F1;
+}
+.taobao-edu>div>div{
+	height: 160px;
+	width: 111px;
+	text-align: center;
+}
+.taobao-edu>div>div img{
+	margin: 12px auto;
+	width: 90px;
+	height: 90px;
+}
+.taobao-edu>div>div:hover img{
+	opacity: 0.7;
+}
+.taobao-edu>div>div:hover{
+	color: #FF0454;
+}
+.taobao-edu>p>a{
+	width: 74px;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	color: #000000;
+	font-size: 12px;
+}
+.taobao-edu>p>a:hover{
+	color: #FF0454;
+}

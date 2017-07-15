@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>ex1</title>
+	<link rel="stylesheet" type="text/css" href="css1.css">
+  </head>
+  <body>
+    <div id="box">
+	  <p>
+	    <span>变什么颜色</span>
+	  </p>
+	    <span>红还是黄</span>
+	</div>
+    <a href="http://vip.com">唯品会</a>
+	<ul type="square">
+	<a href="http://dadekai.com">
+		<li>打得开这个网站吗</li>
+		 </a>
+		</ul>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>26字母轮播</title>
+	</head>
+	<style type="text/css">
+		*{margin: 0;padding: 0;list-style: none;}
+		#all{width: 512px;height: 384px;margin:100px auto;overflow:hidden;}
+		#all>ul{height: 384px;width:13824px;}
+		#all>ul>li{width: 512px;height: 384px;float: left;}
+		#banner{width:512px;height: 20px;position: relative;}
+		#banner>ul{position: absolute;right:0px;bottom: 20px;}
+		#banner>ul>li{float: left;width:15px;height: 15px;background: rgba(0,0,0,0.5);
+		text-align: center;border-radius: 50%;margin:0 3px 5px 0;font-size: 12px;}
+		#oul .qn{color:black;background:#FFF;}
+	</style>
+	<body>
+		<div id="all">
+			<ul>
+				<li style="background: url(../images/abc/001.jpg);"></li>
+				<li style="background: url(../images/abc/002.jpg);"></li>
+				<li style="background: url(../images/abc/003.jpg);"></li>
+				<li style="background: url(../images/abc/004.jpg);"></li>
+				<li style="background: url(../images/abc/005.jpg);"></li>
+				<li style="background: url(../images/abc/006.jpg);"></li>
+				<li style="background: url(../images/abc/007.jpg);"></li>
+				<li style="background: url(../images/abc/008.jpg);"></li>
+				<li style="background: url(../images/abc/009.jpg);"></li>
+				<li style="background: url(../images/abc/010.jpg);"></li>
+				<li style="background: url(../images/abc/011.jpg);"></li>
+				<li style="background: url(../images/abc/012.jpg);"></li>
+				<li style="background: url(../images/abc/013.jpg);"></li>
+				<li style="background: url(../images/abc/014.jpg);"></li>
+				<li style="background: url(../images/abc/015.jpg);"></li>
+				<li style="background: url(../images/abc/016.jpg);"></li>
+				<li style="background: url(../images/abc/017.jpg);"></li>
+				<li style="background: url(../images/abc/018.jpg);"></li>
+				<li style="background: url(../images/abc/019.jpg);"></li>
+				<li style="background: url(../images/abc/020.jpg);"></li>
+				<li style="background: url(../images/abc/021.jpg);"></li>
+				<li style="background: url(../images/abc/022.jpg);"></li>
+				<li style="background: url(../images/abc/023.jpg);"></li>
+				<li style="background: url(../images/abc/024.jpg);"></li>
+				<li style="background: url(../images/abc/025.jpg);"></li>
+				<li style="background: url(../images/abc/026.jpg);"></li>
+				<li style="background: url(../images/abc/001.jpg);"></li>
+			</ul>
+			<div id="banner">
+				<ul id="oul">
+					<li class="qn">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+					<li>15</li>
+					<li>16</li>
+					<li>17</li>
+					<li>18</li>
+					<li>19</li>
+					<li>20</li>
+					<li>21</li>
+					<li>22</li>
+					<li>23</li>
+					<li>24</li>
+					<li>25</li>
+					<li>26</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="../js/base.js"></script>
+	<script >
+		var wtf=document.getElementsByTagName("ul")[0];
+		var nmd=document.getElementById("oul").children;
+		var ppx=0;
+		var what=setInterval(move,1000);
+		function move() {
+			if (ppx==26) {
+				ppx=0;
+				wtf.style.marginLeft=0;
+			}
+			ppx++;
+			startMove(wtf,{"marginLeft":ppx*(-512)});
+			for (i=0;i<nmd.length;i++) {
+				nmd[i].className=""
+			}
+				console.log(ppx);
+				nmd[ppx>=26?0:ppx].className="qn";
+		}
+		for (j=0;j<nmd.length;j++) {
+			nmd[j].index=j;
+			nmd[j].onclick=function(){
+				clearInterval(what);
+				startMove(wtf,{"marginLeft":this.index*(-512)});
+				for (k=0;k<nmd.length;k++) {
+					nmd[k].className="";
+				}
+				this.className="qn";
+				ppx=this.index;
+				what=setInterval(move,1000);
+			}
+		}
+		
+	</script>
+</html>

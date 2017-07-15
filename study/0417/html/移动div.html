@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>移动div</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			#qwer{width: 100px;height: 100px;border:3px solid #1FC0EF;
+			background: yellow;position: absolute;}
+		</style>
+	</head>
+	<body style="height: 3000px;background: #BABABA;">
+		<div id="qwer">
+		</div>
+	</body>
+	<script type="text/javascript">
+		var odiv=document.getElementById("qwer");
+		odiv.onmousedown=function() {
+			var scrolltop=document.documentElement.scrollTop||document.body.scrollTop;
+			//var scrollleft=document.documentElement.scrollLeft||document.body.scrollTop;
+			var reX=event.offsetX;//获取相对于div左上角的坐标
+			var reY=event.offsetY;
+			document.onmousemove=function() {
+				//left表示当前的X位置,不减去这个reX则会一直在左上角显示
+				odiv.style.left=event.clientX-reX+"px";
+				odiv.style.top=event.clientY-reY+scrolltop+"px";
+			}
+		}
+		odiv.onmouseup=function() {
+			document.onmousemove=null;
+		}
+	</script>
+</html>

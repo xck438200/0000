@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>ex1</title>
+  </head>
+  <body align="center">
+    <table width="650px" height="350px" border="2" >
+	<tr align="center">
+	  <td rowspan="3" > <b>地区</td>
+	  <td rowspan="2" colspan="3"> <b>2005耕地面积</td>
+	  <td colspan="6"> <b>耕地保有量</td>
+	  <td colspan="3" rowspan="2"> <b>基本农田保护面积</td>
+	  
+	  
+	</tr>
+	<tr>
+	  <td colspan="3" ><b>2010年</td>
+	  <td colspan="3" ><b>2020年</td>
+	  
+	</tr>
+	<tr>
+	  <td colspan="2"><b>万公顷</td>
+	  <td><b>万亩</td>
+	  <td colspan="2"><b>万公顷</td>
+	  <td><b>万亩</td>
+	  <td colspan="2"><b>万公顷</td>
+	  <td><b>万亩</td>
+	  <td colspan="2"><b>万公顷</td>
+	  <td><b>万亩</td>
+	</tr>
+	<tr>
+	  <td>北京</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	</tr>
+	<tr>
+	  <td>北京</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	</tr>
+	<tr>
+	  <td>北京</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	</tr>
+	<tr>
+	  <td>北京</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	  <td colspan="2">123</td>
+	  <td>123</td>
+	</tr>
+  </body>
+</html>

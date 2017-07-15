@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+	<title>上海建桥学院</title>
+	<link rel="stylesheet" type="text/css" href="../css/jqxy.css">
+  </head>
+  <body>
+   <div id="header">
+	  <div class="q1">
+	      <div class="q2">
+	           <ul >
+	               <li style="border-left:0;"><a href="#">在校学生&nbsp&nbsp</a></li>
+		           <li><a href="#">&nbsp&nbsp教职员工&nbsp&nbsp</a></li>
+		           <li><a href="#">&nbsp&nbsp校友&nbsp&nbsp</a></li>
+				   <li><a href="#">&nbsp&nbsp未来学生&nbsp&nbsp</a></li>
+				   <li style="border-right:0;"><a href="#">&nbsp&nbsp未来教职工</a></li>
+	           </ul>
+		  </div>
+	      <div class="q3">
+	          <ul class="w1">
+		           <li><a href="#">&nbsp&nbsp繁体中文&nbsp&nbsp</a></li>
+			       <li><a href="#">&nbsp&nbsp怀念旧版&nbsp&nbsp</a></li>
+			       <li><a href="#">&nbsp&nbspEnglish&nbsp&nbsp</a></li>
+		      </ul>
+			  <div class="w2">
+		           <input placeholder="请输入关键字"/>
+		           <button></button>
+			  </div>
+		  </div>
+      </div>
+   </div>
+   <div id="logo">
+   </div>
+   <div id="nav">
+	    <div class="q4">
+			<ul>
+				<li class="e1">
+					<a href="#">建桥概览</a>
+					<div></div>
+				</li>
+				<li class="e2">
+					<a href="#">机构设置</a>
+					<div></div>
+				</li>
+				<li class="e3">
+					<a href="#">人才培养</a>
+					<div></div>
+				</li>
+				<li class="e4">
+					<a href="#">学术科研</a>
+					<div></div>
+				</li>
+				<li class="e5">
+					<a href="#">校园文化</a>
+					<div></div>
+				</li>
+				<li class="e6">
+					<a href="#">合作交流</a>
+					<div></div>
+				</li>
+				<li class="e7">
+					<a href="#">招生就业</a>
+					<div></div>
+				</li>
+				<li class="e8">
+					<a href="#">校友会</a>
+					<div></div>
+				</li>
+				<li class="e9">
+					<a href="#">荣誉榜</a>
+					<div></div>
+				</li>
+				<li class="e10">
+					<a href="#">公开事项</a>
+					<div></div>
+				</li>
+			</ul>
+       </div>
+   </div>
+   <div id="kd_image"></div>
+   <section id="section">
+		<div class="section-left">
+			<div class="teacher">
+				<ul class="title">
+					<li><a href="#">图片</a></li>
+					<li><a href="#">视频</a></li>
+					<li><a href="#">名师</a></li>
+				</ul>
+				<img src="../images/z_17.jpg" >
+		    </div>
+			<div class="Newsletter">
+				<ul class="title">
+					<li><a href="#">快讯</a></li>
+					<li><a href="#">院部动态</a></li>
+					<li><a href="#">媒体关注</a></li>
+					<li class="more">>>剑桥新闻网</li>
+				</ul>
+				<div class="Newsletter-title">
+						<div class="Newsletter-section">
+							<div class="Newsletter-time">
+								<strong>10</strong>
+								<p>2016-10</p>
+							</div>
+							<div class="Newsletter-thing">
+								<h3>陈德坤教授捐赠我校图书500多册</h3>
+								<p>3月10日，上海市教委德育处召开了2017年度上海市理论课教学改革试点项目...<p>
+							</div>
+						</div>
+						<div class="News-section">
+							<div class="News-time">
+								<strong>09</strong>
+								<p>2016-10</p>
+							</div>
+							<div class="News-thing">
+								<h3>我校举行重阳节老同志返校活动</h3>
+								<p>10月9日，我校重阳节老同志返校活动在校举行。校长潘介绍了学校改革情况...<p>
+							</div>
+						</div>
+				</div>
+		    </div>
+            <div class="school">
+				<ul class="title">
+					<li><a href="#">讲座报告</a></li>
+					<li><a href="#">校园活动</a></li>
+					<li><a href="#">学校日历</a></li>
+				</ul>
+				<div class="school-title">
+						<div class="school-section">
+							<div class="school-time">
+								<strong>2016</strong>
+								<p>10-20</p>
+							</div>
+							<div class="school-thing">
+								<h3>熊伟(美国物流专家)</h3>
+								<p>新政下我国跨境电商发展现状大礼堂...<p>
+							</div>
+					    </div>
+		        </div>
+				<div class="school-title">
+						<div class="school-section">
+							<div class="school-time">
+								<strong>2016</strong>
+								<p>10-12</p>
+							</div>
+							<div class="school-thing">
+								<h3>陈剑(国际问题专家)</h3>
+								<p>中国南海问题解读大礼堂...<p>
+							</div>
+					    </div>
+		        </div>
+		    </div>
+			<div class="Notice">
+				<ul class="title">
+					<li><a href="#">通知公告</a></li>
+					<li><a href="#">学生通知</a></li>
+					<li><a href="#">专栏</a></li>
+					<li><a href="#">互动交流</a></li>
+				</ul>
+				<ul class="Notice-list">
+						<li>
+							<a href="#">进一步做好校园信息公开工作通知</a>
+							<time>10-16</time>
+						</li>
+						<li>
+							<a href="#">关于规范校内停车秩序的通告</a>
+							<time>10-15</time>
+						</li>
+						<li>
+							<a href="#">关于印发《上海建桥学院关于中外交流合作班若干事宜的管理办法》</a>
+							<time>10-14</time>
+						</li>
+						<li>
+							<a href="#">关于公开推荐商学院党总支副书记的通知</a>
+							<time>10-12</time>
+						</li>
+						<li>
+							<a href="#">关于印发《上海建桥学院2016年秋学期党委工作要点补充》的通知</a>
+							<time>10-11</time>
+						</li>
+				</ul>
+				<marquee>真好玩</marquee>
+            </div>
+
+		</div>
+		<div class="section-right">
+			<img src="../images/z_23.png"/>
+			<ul class="title5">
+				<li><a href="#">信息用户</a></li>
+				<li><a href="#">建桥邮箱</a></li>
+			</ul>
+			<input placeholder="用户名"/>
+			<input placeholder="****"/>
+			<button>登录</button>
+			<span>忘记密码？</span>
+		</div>
+   </section>
+	<aside class="aside">
+	</aside>	
+	<nav class="navna">
+			<ul class="navna-ul">
+				<li  class="navna-li">
+					<a href="#">友情链接</a>
+					<ul class="navna-1">
+						<li>上海社会建设</li>
+						<li>上海.浦东</li>
+						<li>上海.临港</li>
+						<li>上海市社会团体管理局</li>
+						<li>上海教育文明在线</li>
+						<li>建桥好好幼儿园</li>
+					</ul>
+				</li>
+				<li  class="navna-li">
+					<a href="#">合作院校</a>
+					<ul class="navna-2">
+						<li>英国切斯特大学 University Of Chester,UK</li>
+						<li>沃恩航空科技大学 Vaughn College of Aeronautics and Technology</li>
+						<li>德国EBS欧洲商学院 EBS Universität</li>
+						<li>韩国忠南大学 Chungnam National University（충남대학교）</li>
+						<li>韩国培材大学  Pai Chai University（배재대학교）</li>
+						<li>南台科技大学  Southern Taiwan University of Technology</li>
+					</ul>
+				</li>
+				<li  class="navna-li">
+					<a href="#">产学合作单位</a>
+					<ul class="navna-3">
+						<li>中兴通讯股份有限公司</li>
+						<li>东方网股份有限公司</li>
+						<li>均瑶集团</li>
+						<li>上海临港经济发展（集团）有限公司</li>
+						<li>康桥企业协会</li>
+						<li>宜特（上海）检测技术有限公司</li>
+					</ul>
+				</li>
+				<li  class="navna-li">
+					<a href="#">相关链接</a>
+					<ul class="navna-4">
+						<li>中国民办教育协会</li>
+						<li>中国民办教育研究院</li>
+						<li>上海市民办教育协会</li>
+						<li>上海教科院民办教育研究所</li>
+						<li>上海市民办教育发展基金会</li>
+					</ul>
+				</li>
+				<li  class="navna-li">
+					<a href="#">实用链接</a>
+					<ul class="navna-5">
+						<li>OA办公自动化系统</li>
+						<li>公务员考试网</li>
+						<li>中国研究生招生信息网</li>
+						<li>课程中心</li>
+						<li>图书文献</li>
+						<li>上海招考热线</li>
+					</ul>
+				</li>
+			</ul> 
+	</nav> 
+   <div id="footer">
+		<div class="footer-ul">
+			<a href="#">教育部</a>
+			<a href="#">上海市教育委员会</a>
+			<a href="#">上海建桥集团有限公司</a>
+			<a href="#">西南片高校联合办学</a>
+			<a href="#">应用技术大学联盟</a>
+			<a href="#">非营利性民办高校联盟</a>
+		</div>
+		<div class="footer-section">
+				<div class="footer-section-left">
+					<div class="footer-section-left1"></div>
+					<p>学习地址：上海市浦东新区护城环路1111号&nbsp邮编：201306</p>
+					<p style="margin-top:0;">电话：021-58137788（校办）；021-58137880（招生办公室）沪ICP备05052066号</p>
+				</div>
+				<div class="footer-section-right">
+					<div class="wx">
+						<a href="#"></a>
+						 <img src="../images/weix.jpg">
+						<a href="#"></a>
+						<img src="../images/weib.png">
+					</div> 
+			    </div>
+		</div>
+   </div>
+  </body>
+</html>

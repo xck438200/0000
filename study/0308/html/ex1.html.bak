@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>ex1</title>
+  </head>
+  <body>
+    <table width="500px" height="500px" align="center" border="1" cellpadding="10px" cellspacing="0" >
+	<caption>九宫格</caption>
+	 <tr align="left" valign="top">
+	   <td bgcolor="red"colspan="2">1</td>
+	   <td bgcolor="orange" rowspan="2">2</td>
+	   
+	 <tr align="center" valign="middle">
+	   <td bgcolor="yellow" rowspan="2">4 </td>
+	   <td bgcolor="green"> 5</td>
+	   
+	 <tr align="right" valign="bottom">
+	   <td bgcolor="blue" colspan="2">7</td>
+	   
+	   
+	</table>
+  
+  
+  </body>
+</html>

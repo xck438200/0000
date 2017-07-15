@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>星行</title>
+</head>
+<body>
+
+</body>
+<script>
+    for(var i=0;i<6;i++){
+        for(var k=0;k<6-i-1;k++){
+            document.writeln("&nbsp");
+        }
+        for(var j=0;j<=(2*i-1)+1;j++){
+            document.writeln("*");
+        }
+        document.writeln("<br/>");
+    }
+    for(var i=0;i<5;i++){
+        for(var k=0;k<i+1;k++){
+            document.writeln("&nbsp");
+        }
+        for(var m=0;m<(9-3*i)+i;m++){
+            document.writeln("*");
+        }
+        document.writeln("<br/>");
+    }
+</script>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ABCD轮播</title>
+	</head>
+	<style type="text/css">
+		*{margin: 0;padding: 0;list-style: none;}
+		#all{width: 512px;height: 384px;margin:100px auto;overflow:hidden;position: relative;}
+		#all>ul{height: 384px;width:2560px;}
+		#all>ul>li{width: 512px;height: 384px;float: left;}
+		#banner{width:512px;height: 20px;position: relative;}
+		#banner>ul{position: absolute;right:0px;bottom: 20px;}
+		#banner>ul>li{float: left;width:20px;height: 20px;background: rgba(0,0,0,0.5);
+		text-align:center;border-radius: 50%;margin:5px;font-size: 12px;}
+		#oul .qn{color:black;background:#FFF;}
+		#leri{margin:0 auto;width:512px;height: 30px;position: absolute;top:162px;left:0;display: none;}
+		.bu1{float: left;width:30px;height: 30px;border: 0;}
+		.bu2{float: right;width:30px;height: 30px;border: 0;}
+	</style>
+	<body>
+		<div id="all">
+			<ul>
+				<li style="background: url(001.jpg);"></li>
+				<li style="background: url(002.jpg);"></li>
+				<li style="background: url(003.jpg);"></li>
+				<li style="background: url(004.jpg);"></li>
+				<li style="background: url(001.jpg);"></li>
+			</ul>
+			<div id="banner">
+				<ul id="oul">
+					<li class="qn">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+			</div>
+			<div id="leri">
+				<button class="bu1"><</button>
+				<button class="bu2">></button>
+			</div>
+		</div>
+	</body>
+	<script src="base.js"></script>
+	<script >
+		var wtf=document.getElementsByTagName("ul")[0];
+		var nmd=document.getElementById("oul").children;
+		var all=document.getElementById("all");
+		var oul=document.getElementById("oul");
+		var leri=document.getElementById("leri");
+		var ppx=0;
+		var what=setInterval(move,1000);
+		function move() {
+			if (ppx==4) {
+				ppx=0;
+				wtf.style.marginLeft=0;
+			}
+			ppx++;
+			startMove(wtf,{"marginLeft":ppx*(-512)});
+			for (i=0;i<nmd.length;i++) {
+				nmd[i].className=""
+			}
+				nmd[ppx>=4?0:ppx].className="qn";
+		}
+		for (j=0;j<nmd.length;j++) {
+			nmd[j].index=j;
+			nmd[j].onmousemove=function(){
+				clearInterval(what);
+				startMove(wtf,{"marginLeft":this.index*(-512)});
+				for (k=0;k<nmd.length;k++) {
+					nmd[k].className="";
+				}
+				this.className="qn";
+				ppx=this.index;
+				what=setInterval(move,1000);
+			}
+			all.onmousemove=function(){
+				leri.style.display="block";
+				clearInterval(what);
+			}
+			all.onmouseout=function(){
+				startMove(wtf,{"marginLeft":this.index*(-512)});
+				what=setInterval(move,1000);
+			}
+		}
+		/*for(l=0;l<nmd.length;l++){
+			nmd[l].bbq=l;
+			all.onmousemove=function(){
+				oul.style.display="block";
+				clearInterval(what);
+			}
+			all.onmouseout=function(){
+				startMove(wtf,{"marginLeft":this.bbq*(-512)});
+				what=setInterval(move,1000);
+			}
+		}*/
+	</script>
+</html>

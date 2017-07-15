@@ -1,0 +1,5 @@
+*{color:red;font-size:50px;}
+a:visited{color:green;}
+a:hover{background-color:orange;}
+#box:hover a{color:yellow}
+li:hover{background-color:orange;color:black;}

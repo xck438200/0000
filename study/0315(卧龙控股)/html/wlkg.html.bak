@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/wlkg.css"/>
+	<title>卧龙控股</title>
+  </head>
+  <body>
+    <div id="header">
+	 <a href="wlkg.html" class="logo"  >
+	   <img src="../images/z_03.png"/>
+	 </a> 
+	 <div class="p1">
+	  <input placeholder="SEARCH..."/>
+	  <button></button>
+	 </div>
+	</div>
+	<div id="nav">
+	  <ul>
+	     <li><a href="#">集团介绍</a></li>
+	     <li><a href="#">产品中心</a></li>
+	     <li><a href="#">卧龙市场</a></li>
+	     <li><a href="#">技术研发</a></li>
+	     <li><a href="#">国际合作</a></li>
+	     <li><a href="#">投资者关系</a></li>
+	     <li><a href="#">新闻资讯</a></li>
+	     <li style="border-right:0;"><a href="#">人力资源</a></li>
+	  </ul>
+	</div>
+	<div id="q1">
+	<img src="../images/z_02.png" /></div>
+	<div id="section">
+	  <div class="news">
+	    <h1 class="news_title">新闻资讯</h1>
+		 <ul>
+		   <li><a href="#">陈建成董事长出席ATB集团召开年度销售大会</a>
+		   <time>2013-7-30</time>
+		   </li>
+		   <li><a href="#">中国电器工业协会分马力电机分会在卧龙召开理事长</a>
+		   <time>2013-7-30</time>
+		   </li>
+		   <li><a href="#">陈建成董事长访问中国驻德大使馆</a>
+		   <time>2013-7-30</time>
+		   </li>
+		   <li><a href="#">企业文化是企业持续经营的关键要素</a>
+		   <time>2013-7-30</time>
+		   </li>
+		   <li><a href="#">陈建成董事长在ATB集团2013年度销售会议发表重要</a>
+		   <time>2013-7-30</time>
+		   </li>
+		   <li><a href="#">喜迎七一 唱响卧龙 年轻力量激发企业持久活力卧龙</a>
+		   <time>2013-7-30</time>
+		   </li>
+		 </ul>
+	  </div>
+	  <div class="introduce"> 
+	        <h1 class="introduce_title">卧龙介绍</h1>
+			<p class="introduce_p1">公司成立于1984年，</p>
+			<p class="introduce_p2">经过近30年的发展</p>
+			<p class="introduce_p3">已成为电器制造，房地产开发和金融投资三页并举的综合性跨国...</p>
+	  </div>
+	  <div class="recruit">
+	      <h1 class="recruit_title">人才招聘会</h1>
+		  <p class="recruit_p">培养一流的人才，铸造一流的工程实现员工与企业的共同发展</p>
+		  <button </button>
+	  </div>
+	</div>
+	<div id="wl_market">
+	     <h1 class="wl_market_title">卧龙市场</h1>
+			<ul>
+				<li>
+					<img src="../images/z_11.png"/>
+					<p>交通轨道：由于主要采用电气牵引，而且轮轨摩擦阻力较小，与公共士大夫会撒谎发stop()交话费</p>
+				</li>
+				<li>
+					<img src="../images/z_13.png"/>
+					<p>节能环保：由于不断上涨的能源消耗和我们的专业知识，维持可持续发展站牛啊社发顺丰</p>
+				</li>
+				<li>
+					<img src="../images/z_15.png"/>
+					<p>航空与船舰：如果你是在公海行驶，你需要确保你的船只的电力系统不出问题赛飞还是</p>
+				</li>
+				<li style="margin-right:19px;">
+					<img src="../images/z_17.png"/>
+					<p>石油，天然气及采矿：在市场中的安全性，可靠性，效率和最短的停机谁拉的讲课费南沙河是</p>
+				</li>
+			</ul>
+	</div>
+	<div id="footernav">
+	   <div class="ppx1">
+	     <h2 class="footernav_title">产品中心</h2>
+		 <div class="ppx2">
+		    <ul>
+               <li>> 汽车电机</li>
+			   <li>> 日用电机</li>
+			   <li>> 特种电机</li>
+			   <li>> 大功率电机</li>
+			   <li>> 电工设备</li>
+		    </ul>
+			<ul style="margin-left:60px;">
+               <li>> 工业驱动和自动化</li>
+			   <li>> 高压变频和系统集成</li>
+			   <li>> 混泥土搅拌机</li>
+			   <li>> 电动车辆</li>
+		    </ul>
+			<ul style="margin-left:60px;">
+               <li>> 电池电源</li>
+			   <li>> 输变电设备</li>
+			   <li>> 楼盘信息</li>
+			   <li>> 金融产品</li>
+		    </ul>
+		 </div>
+	   </div>
+	   <div class="ppx3">
+	     <h2>技术研发</h2>
+		 <ul>
+		     <li>> 科技力量</li>
+			 <li>> 先进设备</li>
+			 <li>> 研发创新</li>
+			 <li>> 工艺流程</li>
+		 </ul>
+	   </div>
+	   <div class="ppx4">
+	     <h2>营销网络</h2>
+	   </div>
+	</div>
+	<div id="footer">
+	  <ul>
+	      <li>网站地图 |</li>
+		  <li>联系我们 |</li>
+		  <li>关注卧龙 |</li>
+		  <li>采购系统入口</li>
+	  </ul>
+	  <div class="ppx5">
+	       <span>&nbsp&nbsp COPYRIGHT &copy 2013 卧龙控股集团 版权所有 浙ICP备06005901号 技术支持：博采互动</span> 
+	  </div>
+	  <div class="ppx6">
+	      <span>分享到：</span>
+          <div div class="ppx7"> 
+	         <a href="#" id="qw1"></a>
+		     <a href="#" id="qw2"></a>
+		     <a href="#" id="qw3"></a>
+		     <a href="#" id="qw4"></a>
+		     <a href="#" id="qw5"></a>
+		  </div>
+	  </div>
+	</div>
+  </body >
+</html>

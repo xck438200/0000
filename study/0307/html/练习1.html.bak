@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <title>好好学习，天天向上</title>
+  <meta charset="utf-8"/>
+  <meta name="description" content="购物">
+</head>
+  <body id="" class="" title="这是body" style="" text="blue" bgcolor="">
+      属性名=“属性值”
+      今天第一天好开心
+    <b > 加粗</b>
+    <i>斜体</i>
+    <u>下划线</u>
+    <s>删除线</s>
+    <sub>下标&reg;</sub>
+    <sup>上标&copy;</sup>
+	<strong>加粗</strong>
+    <h1 id="top-h1">这是h1</h1>
+	<h2>这是h2</h2>
+	<h3>这是h3</h3>
+	<h4>这是h4</h4>
+	<h5>这是h5</h5>
+	<h6>这是h6</h6>
+	<h1 align="center"> 夜天子</h1>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;“有人说，这地方就是阴曹地府。我们这种人就是阎罗殿里的鬼卒，扯淡，明显是扯淡嘛！这是不了解我们的人对我们极不负责的污蔑!这种偏见和误解，令我等任劳任怨、尽忠职守者痛心疾首啊。”说话的人穿着一套淡青色的皂隶服，头上戴着一顶比他的脑袋略显大些的漆布冠，腰间系着一条陈旧的红布织带，脚下则是一双不太合脚的白帮乌面直筒靴，这副打扮，分明就是一个狱卒。<br/>可是，他站在北京城刑部大牢玄字一号监暗无天日的牢房里，对着刚被关进牢房的这些犯官们，语气和神态却谦卑的仿佛“春风得意楼”上招揽生意的小伙计，只是肩上少了一条汗巾</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;多练习才能熟练掌握</p>
+	<hr size="25px" color="black" width="200px">
+	<hr size="25px" color="blue"  width="200px">
+	<span>我是span no.1 </span>
+	  <div> 我是div1
+	    <span>  我是span no.2
+		</span>
+      </div>
+	  <pre>        一
+	  二
+	  三
+	  四
+	  五
+	  </pre>
+	  <a href="#">空链接 </a>
+	  <a href="#to-h1"> 錨点</a>
+	  <a target="blank" href="http://www.ucai.cn/">跳转到优才</a>
+	  <a href="../css/1.rar">下载文件</a>
+	  <a href="tel:15718864407">拨打电话</a>
+	 
+  </body>
+</html>

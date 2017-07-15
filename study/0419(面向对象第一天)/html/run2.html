@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>奔跑2</title>
+		<style type="text/css">
+			*{margin:0;padding: 0;}
+			div{width:64px;height:128px;
+			background: url(../img/1.png) no-repeat ;
+			background-position: -128px -256px;
+			position: absolute;
+			top:100px;
+			left: 100px;
+			}
+		</style>
+	</head>
+	<!--
+		思路:哪些是可以变化的
+	          变化left的值就会动 此时会跑，僵尸跑
+	          如果想让小人腿动 需要改变 backgroundPosition 改变它的x轴
+	          发现小人走了几步就消失了
+	          然后小人的动作一共有8个从第1个stop()，到第七个就消失了
+	          此时当小人走到第7步的时候让他回到第0个图
+	          出现小人跑到有边框没有停下，还继续跑
+	          想让他停下 会想到屏幕的宽度
+	          想到 left 不变了就会停止在原地踏步，position不动了就停止了
+	          直接定时器停止就ok了
+	-->         
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+		function Run(left,top) {
+			this.top=top;//初始化top值,将参数top赋给当前对象的top
+			this.left=left;//初始化left值,将参数left赋给当前对象的left
+			//创建新的div并获取其结点,这个this.dom就相当于一个小人,
+			this.dom = document.createElement("div");
+	        document.body.appendChild(this.dom)//将新的div添加到文档的body里面
+	        this.dom.style.left = this.left + "px";//表示小人相对body左边的位置
+	        this.dom.style.top = this.top + "px";//表示小人相对body顶部的位置
+			this.go = function(){//让小人行走的方法
+				//由于在定时器里面的this指向window,所以要先把this的值用一个变量保存起来
+				//方便后面多次调用
+				var self=this;
+				self.foot=1;//可以理解为小人在图片上的第几个小人
+				this.timer=null;//初始化定时器
+				this.timer=setInterval(function() {
+					self.left++;//改变的是小人在浏览器中的横坐标位置
+					self.foot++;//改变的是小人的动作,让其看起来在行走
+					//由于原始图片里面只有8个动作,让其跑起来就是重复这8个图的动作
+					if (self.foot>7) {
+					self.foot=0;
+				}
+					self.dom.style.left=self.left+"px";//改变小人位置
+					//改变小人动作
+					self.dom.style.backgroundPosition=self.foot*-64+"px -256px";
+					if(self.left>1000){//表示当小人跑到1000px的时候执行函数function(xiaoshi)
+						self.xiaoshi();
+					}
+				},20)	
+				this.xiaoshi=function() {//让小人消失的方法
+					clearInterval(this.timer);//清空定时器,可以让小人停下来
+					document.body.removeChild(this.dom);//清楚这个对象,也就是让小人消失
+				}	
+			}
+			this.go();//运行小人stop()走的程序
+		}
+		var haha=new Run(100,200);
+		setInterval(function() {//产生随机数,让小人随机出现
+			new Run(Math.random()*500,Math.random()*500);
+		},100)
+	</script>
+</html>

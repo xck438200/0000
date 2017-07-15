@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>简历</title>
+	<link rel="stylesheet" type="text/css" href="../css/qw.css">
+  </head>
+ <body align="center">
+   <table width="800px" height="900px" border="1" align="center"  cellspacing="0" cellpadding="0">
+   <caption><b>个人简历</b></caption>
+   <tr>
+     <td><b>姓名</b></td>
+	 <td>徐成凯</td>
+	 <td><b>性别</b></td>
+	 <td>男</td>
+	 <td><b>出生年月</b></td>
+	 <td>1993.3</td>
+	 <td width="130px" height="260px" valign="top" rowspan="5" colspan="2">
+	 <img width="100%" height="100%" src="../images/111.jpg">
+	 </td>
+   </tr>
+   <tr>
+     <td><b>籍贯</b></td>
+	 <td>湖北</td>
+	 <td><b>民族</b></td>
+	 <td>汉</td>
+	 <td><b>政治面貌</b></td>
+	 <td>团员</td>
+   </tr>
+   <tr>
+     <td><b>身体状况</b></td>
+	 <td>良好</td>
+	 <td><b>婚姻状况</b></td>
+	 <td>未婚</td>
+	 <td><b>学历</b></td>
+	 <td>本科</td>
+   </tr>
+   <tr>
+     <td><b>专业</b></td>
+	 <td colspan="2">通信工程</td>
+	 <td>毕业学校</td>
+	 <td colspan="2">湖北商贸学院</td>
+   </tr>
+   <tr>
+     <td><b>专业能力</b></td>
+     <td colspan="7" align="center">电路基础</td>
+   </tr>
+   <tr>
+	 <td><b>实践经历</b></td>
+     <td colspan="7">必胜客兼职，网络设备技术员</td>
+   </tr>
+   <tr>
+	 <td><b>自我评价</b></td>
+     <td colspan="7">我也不知道怎么评价自己</td>
+   </tr>
+   <tr>
+	 <td><b>求职意向</b></td>
+     <td colspan="7">web前端工程师</td>
+   </tr>
+   <tr>
+     <td><b>联系方式</b></td>
+     <td colspan="7">15718864407</td>
+   </tr>
+   
+   </table>
+ </body>
+</html>

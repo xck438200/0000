@@ -1,0 +1,36 @@
+*{margin:0;padding:0;}
+#header,#nav,#q1,#section,#wl_market,#fotternav,#fotter{
+width:999px;
+margin:0 auto;
+
+}
+#header{
+        height:100px;
+       }
+.logo{margin:38px 0 0 19px;
+      float:left; 
+	}
+ .p1{
+      
+     float:right;  
+     margin:38px 19px 0 0;
+	 width:225px;height:26px;
+	 background:#f4f4f4; 
+	 border:1px solid #e5e5e5;
+	      } 
+.p1 input{
+          outline:none;
+		  float:left;
+		  border:0;
+		  height:26px;
+          background:#f4f4f4;
+		  color:#828282;
+		  padding-left:12px;
+
+              }
+.p1 button{
+            width:26px;height:26px;
+			float:right;
+			border:0;
+			background:#f4f4f4 url(../images/z2_06.png) no-repeat center;
+          }

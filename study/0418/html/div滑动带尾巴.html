@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		div{width:10px;height: 10px;background: greenyellow;position: absolute;}
+	</style>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+	<script type="text/javascript">
+		document.onmousemove=function() {
+			var div1=document.getElementsByTagName('div');
+			var e=event||arguments[0];
+			var num=0;//当前div的下标,表示第几个div
+			var timer=setInterval(function() {
+				if (num==div1.length) {
+					clearInterval(timer);
+					return;
+				} else{
+					div1[num].style.top=e.clientY-5+"px";
+					div1[num].style.left=e.clientX-5+"px";
+					num++;
+				}
+			},100)
+		}
+		//临界点 当前屏幕高度减去小球的高度
+	</script>
+</html>

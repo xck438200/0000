@@ -1,0 +1,21 @@
+*{margin:0px;}
+#qw{
+  background-color:red;
+  width:300px;
+  height:300px;
+  padding:10px;
+  border:20px solid black;
+  border-radius:50% 10% 100% 50%;
+   }
+#qwe{
+   background-color:yellow;
+   width:150px;
+   height:150px;
+}
+#qwer{
+   background-color:green;
+   width:100px;
+   height:100px;
+   border-width:20px;
+   border-image:url(border.png) 28 stretch;
+}

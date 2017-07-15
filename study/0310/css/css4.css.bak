@@ -1,0 +1,9 @@
+*{font-size:50px;}
+
+
+p span:hover{background-color:green;}
+#box:hover span{background-color:green;}
+li:hover{background:yellow;}
+li:hover a{color:red;}
+a:active{background-color:purple;}
+input:focus{background-color:red}

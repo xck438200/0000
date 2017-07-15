@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		#img{font-size: 30px;line-height: 30px;}
+	</style>
+	<body>
+		<div id="img">
+			<image src="../images/0.png"></image>
+			<image src="../images/0.png"></image>:时
+			<image src="../images/0.png"></image>
+			<image src="../images/0.png"></image>:分
+			<image src="../images/0.png"></image>
+			<image src="../images/0.png"></image>:秒
+		</div>
+	</body>
+	<script type="text/javascript">
+		time();
+		setInterval(time,1000);
+		function time(){
+			var img=document.getElementById("img").children;
+			var now=new Date();
+			var hour=now.getHours();
+			var min=now.getMinutes();
+			var sec=now.getSeconds();
+			var arr=[parseInt(hour/10),hour%10,parseInt(min/10),min%10,parseInt(sec/10),sec%10];
+			for(i=0;i<img.length;i++){
+				img[i].src="../images/"+arr[i]+".png";
+			}
+		}
+	</script>
+</html>

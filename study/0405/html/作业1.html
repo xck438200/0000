@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0405作业</title>
+</head>
+<body>
+
+</body>
+<script>
+    //ex1
+//    var a=100;
+//    function fun(a){
+//        a++;
+//        console.log(a);
+//    }
+//    fun(a);//101    引用这个函数，a自加1后变成101，再打印出来
+//    console.log(a);//100    a是全局变量，而function里面的a++只在function里面起作用，a还是=100
+    //ex2
+//    var a=4;
+//    function fun() {
+//        a=5;
+//        console.log(a);
+//    }
+//    fun();//5   在function里面a=5,
+//    console.log(a);//5  a是全局变量，注意这个function fun()里面并没有参数变量，所以里面的a还是全局变量，也就是说a一stop()
+    // 声明时赋值为4，在function里面再一次赋值=5,这个5把之前的4给覆盖掉了
+    //ex3
+//     var qqq=function(){
+//        console.log(1);
+//    }
+//    qqq();//1   qqq是这个函数功能的名字，属于全局变量
+//    function qqq(){//此处的qqq是function的任务名，处于局部变量
+//        console.log(2);
+//    }
+//    qqq();//1
+//    function qqq(){
+//        console.log(3);
+//    }
+//    qqq();//1
+    //////////////
+//    function www() {
+//        console.log(1);
+//    }
+//    www();//2   函数声明提前，里面的内容也提前，下面的www把上一个的值给覆盖
+//    function www(){
+//        console.log(2);
+//    }
+//    //ex4
+//    function foo() {
+//        return 1;
+//    }
+//    foo();//2 函数声明提前
+//    function foo() {
+//        console.log(2);
+//    }
+//    foo();//2
+//    var foo=100;
+//    console.log(foo);//100
+//    foo();//报错，由于foo重新被声明了，所以此时已经不存在函数function
+//    ex5
+//    var a=100;
+//    (function(){
+//        console.log(a);//undefined  此处相当于 var a;console.log(a);a=5;也就是说这里的console时a还没有赋值，
+//        var a=5;
+//        console.log(a);//5  此处的a是局部变量，是function里面声明的值
+//    })()
+//    console.log(a);//100    此处的a是全局变量，也就是最初的赋值100
+    //////作业2/////
+//    function jc(n) {
+//        var sum=1;
+//        for(i=1;i<=n;i++) {
+//            sum *= i;
+//        }
+//        return sum;
+//    }
+//    document.write(jc(1)+jc(2)+jc(3)+jc(4)+jc(5)+jc(6)+jc(7)+jc(8)+jc(9)+jc(10)+"</br>")
+//    ////////
+//    var i=1;j=1;
+//    function jc1(i){
+//        j*=i;
+//        i++;
+//        return j;
+//    }
+//
+//    document.write(jc1(1)+jc1(2)+jc1(3)+jc1(4)+jc1(5)+jc1(6)+jc1(7)+jc1(8)+jc1(9)+jc1(10))
+    //////作业3//////
+//    function Reverse(){
+//        var result = prompt("请输入任意字符："),
+//            arr = result.split(""),
+//            newArr = arr.reverse();
+//        alert(newArr.join(""));
+//    }
+//    Reverse();
+//    function dx(a) {
+//        var b=0;
+//        while (a){
+//            b=b*10+a%10;
+//            a=parseInt(a/10);
+//        }
+//        return b;
+//    }
+//    var a=parseInt(prompt("请输入一个数字"));
+//    alert(dx(a));
+    //斐波那契数列
+    function fun(n){
+        if(n==1||n==2){
+            return 1;
+        }else{
+            return fun(n-1)+fun(n-2);
+        }
+    }
+    var n=parseInt(prompt("请输入一个数字"));
+    alert(fun(n));
+</script>
+</html>

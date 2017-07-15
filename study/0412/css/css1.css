@@ -1,0 +1,7 @@
+*{margin:0;padding: 0;float: left;}
+li{list-style: none;}
+.nav{padding: 10px 30px;}
+#box{margin:44px 0 0 -540px;text-align: center;border:1px solid #0000FF;width:540px;height:300px;	}
+#box li{display: none;}
+#qqq {width:300px;height:300px;margin:100px auto;}
+#qqq span{color:darkviolet;text-align: center;}

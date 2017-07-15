@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+	window.onload=function fun(){
+		var q1=document.getElementById("qwe");
+		var q2=q1.childNodes;//q2是q1(即ul结点)所有子节点
+		var zxc=document.getElementById("zxc");
+		zxc.onclick=function(){
+			console.log(zxc.previousSibling)
+		}
+		
+		console.log(q1);//获取ID为"qwe"(即ul)的元素结点
+		console.log(q2);//获取q1,即ul结点的所有子结点
+		console.log(q1.firstChild);//获取q1节点的第一个子节点
+		console.log(q1.lastChild);//获取q1节点的最后一个节点
+		console.log(q2.parentNode);//获取q2节点的第一个节点
+		console.log(q2.lastChild);//获取q2节点的最后一个节点
+		console.log(zxc.parentNode);//获取ID为"zxc"的结点的父节点
+		console.log(zxc.previousSibling.innerText);//获取ID为"zxc"的结点的一个同级结点
+		console.log(zxc.nextSibling);//获取ID为"zxc"的结点的下一个同级结点
+		/*元素树*/
+		console.log(q1.children);
+		console.log(q1.firstElementChild);
+		console.log(q1.lastElementChild);
+		console.log(q2.firstElementChild);
+		console.log(q2.lastElementChild);
+		console.log(zxc.parentElement);
+		console.log(zxc.previousElementSibling);
+		console.log(zxc.nextElementSibling=3);
+		for(i=1;i<q2.length;i++){
+			if(q2[i].nodeType==1){
+				console.log(q2[i].childNodes[0].nodeValue);
+			}
+		}
+		var qqq1=document.createElement("div");
+		var qqq2=document.createElement("span");
+		var qqq3=document.createElement("p");
+		var qqq4=document.createElement("h3");
+		//qqq1.innerHTML="";
+		qqq2.innerHTML="此乃span标签";
+		qqq3.innerHTML="此乃p标签";
+		qqq4.innerHTML="此乃h3标签是也";
+		qqq1.appendChild(qqq3);
+		qqq1.appendChild(qqq2);
+		qqq1.appendChild(qqq4);
+		qqq1.insertBefore(qqq2,qqq3);
+		document.body.appendChild(qqq1)
+		
+	}
+  </script>
+ </head>
+ <body>
+	<ul id="qwe"><li>11</li><li>22</li><li id="zxc">33</li><li>44</li><li>55</li></ul>
+ </body>
+</html>

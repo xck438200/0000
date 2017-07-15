@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <title></title>
+        </head>
+        <style>
+                *{margin: 0;padding: 0;}
+                #box{
+                        width: 600px;
+                        height: 400px;
+                        border: 1px solid black;
+                        position: relative;
+                }
+                .qiu{
+                        border: 10px solid transparent;
+                        border-bottom:10px solid red;
+                        position :absolute;
+                }
+        </style>
+        <body>
+                <div id = "box"></div>
+        </body>
+        <script>
+                var box = document.getElementById("box");
+                function Qwe(top,left){
+                        this.top = top;
+                        this.left = left;
+                        this.init();
+                        this.pao();
+                        this.dom.style.top = this.top + "px";
+                        this.dom.style.left = this.left + "px";
+                }
+                
+                Qwe.prototype.init = function(){
+                        this.dom = document.createElement("div");
+                        this.dom.className = "qiu";
+                        box.appendChild(this.dom);
+                }
+                
+                Qwe.prototype.pao = function(){
+                        var self = this;
+                        self.speedX = 5;
+                        self.speedY = 5;                        
+                        this.timer = setInterval(function(){
+                                self.left = self.left + self.speedX;
+                                self.top = self.top + self.speedY;
+                                if(self.left >= box.clientWidth - self.dom.offsetWidth){
+                                        self.speedX *= -1;
+                                }else if(self.left <= 0){
+                                        self.speedX *= -1;
+                                }                        
+                                
+                                if(self.top >= box.clientHeight - self.dom.offsetHeight){
+                                        self.speedY *= -1;
+                                }else if(self.top <= 0){
+                                        self.speedY *= -1;
+                                }
+                                self.dom.style.top = self.top + "px";
+                                self.dom.style.left = self.left + "px";
+                        },15)
+                }
+                setInterval(function(){
+                        new Qwe(Math.random(),Math.random())
+                },1000)
+                
+        </script>
+</html>

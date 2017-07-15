@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>0414</title>
+	</head>
+	<style type="text/css">
+		*{margin:0;padding: 0;list-style: none;}
+		#div{width:200px;height:200px;overflow: hidden;margin: 0 auto;}
+		#div>ul{width: 1400px;height: 200px;}
+		#div>ul>li{width:200px;height: 200px;float: left;}
+		#banner{width:140px;height: 20px;position: relative;}
+		#banner>ul{position: absolute;left:0px;bottom: 20px;}
+		#banner>ul>li{float: left;width:20px;height: 20px;background: rgba(0,0,0,0.5);
+		text-align: center;border-radius: 50%;}
+	</style>
+	<body>
+		<div id="div">
+			<ul>
+				<li style="background:url(../images/qwer/0.jpg) no-repeat;">0</li>
+				<li style="background:url(../images/qwer/1.jpg) no-repeat;">1</li>
+				<li style="background:url(../images/qwer/2.jpg) no-repeat;">2</li>
+				<li style="background:url(../images/qwer/3.jpg) no-repeat;">3</li>
+				<li style="background:url(../images/qwer/4.jpg) no-repeat;">4</li>
+				<li style="background:url(../images/qwer/5.jpg) no-repeat;">5</li>
+				<li style="background:url(../images/qwer/6.jpg) no-repeat;">6</li>
+			</ul>
+			<div id="banner">
+				<ul id="oul">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var ppx=1;
+		var wtf=document.getElementsByTagName("ul")[0];
+		setInterval(function(){
+			wtf.style.marginLeft=ppx*-200+"px";
+			ppx++;
+			if (ppx==7) {
+				ppx=0;
+			}
+		},1000)
+		
+	</script>
+</html>

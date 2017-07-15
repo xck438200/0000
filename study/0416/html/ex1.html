@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+			<ul id="qwe" class="a1">
+				<li class="aa">1</li>
+				<li class="aa">2</li>
+				<li class="aa">3</li>
+			</ul>
+	</body>
+	<script type="text/javascript">
+		var oul=document.getElementById("qwe");
+		var li1=document.getElementsByTagName('li');
+		var li2=oul.getElementsByTagName('li')[0];
+		var li3=document.getElementsByClassName('aa');
+		var ul1=document.getElementsByClassName('a1')[0];
+		var ul2=document.getElementsByClassName('a1');
+		console.log(oul);
+		console.log(li1);
+		console.log(li2);
+		console.log(li3[1]);
+		console.log(ul1);
+		console.log(ul2);
+	</script>
+</html>

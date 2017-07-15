@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*function People(eat,say) {
+			this.eat=eat;
+			this.say=say;
+		}
+		People.prototype.go="我学会了行走";
+		
+		function Xxs(qqq,say) {
+			this.qqq=qqq;
+			//this.say=say;
+		}
+		Xxs.prototype.name="走一步看一步吧";
+		Xxs.prototype=new People("没心情吃东西","多试几次");
+		Xxs.prototype.name="走一步看一步吧";
+		xiaoming=new Xxs("什么鬼","再试一次");
+		
+		console.log(xiaoming.go);
+		console.log(xiaoming.eat);
+		console.log(xiaoming.qqq);
+		console.log(xiaoming.say);
+		console.log(xiaoming.name);*/  
+		
+		
+		
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 600px;
+			height: 400px;
+			border: 1px solid #000;
+			position: relative;
+			margin: 100px;
+		}
+		p{
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			background-color: red;
+			border-radius: 50%;
+			top: 100px;
+			left: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+
+	</div>
+
+	<script type="text/javascript">
+		var box = document.getElementById("box");
+
+		//小球的构造函数
+		function Ball(left,top){
+			//直径
+			this.d = 30;
+			this.left = left || Math.random() * (box.clientWidth - this.d);
+			this.top = top|| Math.random() * (box.clientHeight - this.d);
+			//自己的直径
+			//每步移动的x分量、y分量。-5~5随机数
+			this.deltaX = parseInt(Math.random() * 11) - 5;
+			this.deltaY = parseInt(Math.random() * 11) - 5;
+			//初始化
+			this.init();
+			//渲染
+			this.move();
+		}
+		Ball.prototype.init = function(){
+			this.dom = document.createElement("p");
+			box.appendChild(this.dom);
+		}
+		//小球的渲染
+		Ball.prototype.render = function(){
+			//render的本质就是把自己的left属性、top属性作用到自己的dom的style身上。
+			this.dom.style.left = this.left + "px";
+			this.dom.style.top = this.top + "px";
+		}
+		//小球的移动
+		Ball.prototype.move = function(){
+			//备份
+			var self = this;
+			//定时器
+			this.timer = setInterval(function(){
+				self.left += self.deltaX;
+				self.top += self.deltaY;
+				//碰边检测
+				if(self.top >= box.clientHeight - self.d || self.top <= 0){
+					//碰到底边
+					self.deltaY = -self.deltaY;
+				}
+				if(self.left >= box.clientWidth - self.d || self.left <= 0){
+					self.deltaX = -self.deltaX;
+				}
+				 
+				self.render();
+			},10);
+		}
+
+
+	 	new Ball();
+	 	new Ball();
+	 	new Ball();
+	 	new Ball();
+	</script>
+</body>
+</html>
+         
+        var objFuncA = function(){  
+            alert("A");  
+        }  
+        objFuncA.name   = "wangli";  
+        var objFuncB = new Function();   //定义一个函数对象  
+        objFuncB.prototype = new objFuncA();  //alert(A);说明继承了objFuncA对象  
+        console.log(objFuncA.prototype);
+        
+        
+		
+	</script>
+</html>

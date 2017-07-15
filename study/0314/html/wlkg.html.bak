@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/wlkg.css"/>
+	<title>卧龙控股</title>
+  </head>
+  <body>
+    <div id="header">
+	 <a href="wlkg.html" class="logo"  >
+	   <img src="../images/z1_03.png"/>
+	 </a> 
+	 <div class="pp">
+	  <input placeholder="SEARCH..."/>
+	  <button></button>
+	 </div>
+	</div>
+	<div id="nav"></div>
+	<div id="q1"></div>
+	<div id="wl_market"></div>
+	<div id="section"></div>
+	<div id="footernav"></div>
+	<div id="footer"></div>
+  </body >
+</html>

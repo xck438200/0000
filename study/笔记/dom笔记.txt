@@ -1,0 +1,4 @@
+setInterval(csl,1000)
+clearInterval(time)
+调用函数对象是需要括号,
+需要函数执行结果的时候需要括号

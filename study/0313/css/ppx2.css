@@ -1,0 +1,24 @@
+*{margin:0;padding:0;}
+.z1{
+    width:400px;
+	height:400px;
+	background-image:repeating-linear-gradient(to top,purple,indigo,blue,green,yellow,orange,red);
+	}
+.z2{font-family:30px;
+    font-style:normal;
+	font-variant:small-caps;
+}
+@font-face{
+           font-family:xiaohong;
+		   src:url(shiguangti.ttf);
+          }
+a{text-decoration:none;color:#666;}
+li{
+   line-height:25px;
+   width:300px;
+   white-space:nowrap;
+   text-overflow:ellipsis;
+   overflow:hidden;
+  }	
+
+   }

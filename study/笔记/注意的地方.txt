@@ -1,0 +1,19 @@
+position realitive 相对元素本身进行定位，会占据一定空间
+position absolute 绝对定位，找的相对应的位置即absolute所在位置的父元素
+position fixed   
+
+
+font-size:18px;
+	margin:38px 0 26px 26px;
+    border-bottom:1px solid #c3c3c3
+}
+
+<p>里面嵌套<a>
+<a>里面不要嵌套<p>
+
+
+<marquee>跑马灯</marquee>
+属性：behavior(默认)：滚动  alternate晃动 
+      derection="up"  上下 
+      取值范围：up down left right
+      scrollamount="30"  设置速度 

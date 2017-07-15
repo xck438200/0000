@@ -1,0 +1,11 @@
+*{margin:0;padding:0;}
+   a{text-decoration:none;}
+   section{width:200px;height:200px;
+           background-color:blue;
+		   display:none;
+		   position:absolute;
+		   left:130px;top:0;
+          }
+   ul{position:relative;}
+   li{list-style:none;width:130px;height:20px;}
+   li:hover section{display:block;}

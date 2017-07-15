@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+        .ballon{
+          width: 81px;
+          height: 119px;
+          background: url(../img/ballon.png) no-repeat;
+          position: absolute;
+          top: 60px;
+          left: 100px;
+        }
+    </style>
+  </head>
+
+  <body>
+      <div class="ballon">
+
+      </div>
+      <script>
+          var oDiv = document.getElementsByTagName("div")[0];
+          var a = 500;
+          setInterval(function(){
+              a--;
+              oDiv.style.top = a + "px";
+          },20)
+          console.log(parseInt(7/ 4));
+      </script>
+  </body>
+</html>

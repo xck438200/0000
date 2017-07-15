@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/css1.css"/>
+  <title>点击换背景</title>
+ </head>
+ <!--<style>
+	/*#body{background:url(../images/3.jpg);}*/
+	.left{float:left;}
+	.qqq{width:500px;height:300px;margin:50px auto;background:rgb(233,233,233)}
+    .q1{border-bottom: 1px solid #9fd15a;}
+	.q1 b{margin:10px 0 10px 10px;color:blue;font-size:16px;}
+	.q1 button{margin:10px;width:63px;height:21px;color:red;background:yellow;border:0;}
+ </style>-->
+ <body id="body"> 
+ <div class="qqq">
+	<div class="q1">
+		<b class="left">换肤请点击:</b>
+		<button class="" id="k1" onclick="change(1)">皮肤1</button>
+		<button class="" id="k2" onclick="change(2)">皮肤2</button>
+    </div>
+ </div>
+ </body>
+ <script>
+     var ppx=document.getElementsByTagName("link")[0];
+     function change(num){
+         ppx.href="../css/css"+num+".css";
+     }
+     /*
+	var a1=document.getElementById("k1");
+	var a2=document.getElementById("k2");
+	var a3=document.getElementById("body");
+	var a4=document.getElementsByClassName("qqq");
+	a1.onclick=function(){
+		a3.style.background="url(../images/3.jpg)";
+		a4[0].style.background="url(../images/5.jpg)";
+		a4[0].style.backgroundSize="100%";
+        a4[0].style.width="500px";
+	}
+	a2.onclick=function(){
+		a3.style.background="url(../images/4.jpg)";
+		a4[0].style.background="url(../images/6.jpg)";
+		a4[0].style.backgroundSize="100%";
+		a4[0].style.width="700px";
+	}*/
+ </script>
+</html>

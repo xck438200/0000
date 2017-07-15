@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>气球bug</title>
+    <style media="screen">
+        .ballon{
+          width: 81px;
+          height: 119px;
+          background: url(../img/ballon.png) no-repeat;
+          position: absolute;
+          /*top:0;*/
+          /*left: 0;*/
+        }
+        p{font-size:30px;line-height: 30px; position:absolute;}
+    </style>
+  </head>
+
+  <body>
+  		<p>分数:</p>
+  </body>
+  <script>
+          function  Ballon(){
+              this.top = 500;
+              this.left = Math.random() * 1000+100;
+              this.score = parseInt(Math.random() * 7) + 1;
+              this.init();
+              this.fly();
+              this.bomb();
+          }
+					p=document.getElementsByTagName("p")[0];
+					//console.log(this.p.innerHTML);
+          Ballon.prototype.init = function(){
+              this.dom = document.createElement("div");
+              this.dom.className = "ballon";
+              document.body.appendChild(this.dom);
+              this.dom.style.top=this.top+"px";
+              this.dom.style.left = this.left + "px";
+              this.x = -(this.score-1) % 4 * 96;
+              this.y = -parseInt(this.score / 4) * 120;
+              this.dom.style.backgroundPosition = this.x + "px " + this.y + "px";
+          }
+          var fenshu=0;
+					Ballon.prototype.bomb=function() {
+							var self=this;
+							self.dom.onclick=function(){
+								document.body.removeChild(self.dom);
+								fenshu+=self.score;
+//								if(self.score==4){
+//									fenshu=fenshu+4;
+//								}
+								p.innerHTML="分数:"+fenshu;
+							}
+					}
+          Ballon.prototype.fly = function(){
+              var self = this;
+              this.timer = setInterval(function(){
+                  self.top-=self.score*2;
+                  self.dom.style.top = self.top + "px";
+                  console.log(self.top);
+              },20)
+          }
+          setInterval(function() {
+          	new Ballon(Math.random())
+          },100)
+//      	var a=new Ballon();
+//        var a=new Ballon();
+//        var a=new Ballon();
+//        var a=new Ballon();
+//        var a=new Ballon();
+//        var a=new Ballon();
+//        var a=new Ballon();
+//        var a=new Ballon();
+      </script>
+</html>

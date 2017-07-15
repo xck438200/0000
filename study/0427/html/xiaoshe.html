@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小蛇</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			table,td,tr{border: 1px solid black;}
+			table{margin: 0 auto;}
+			td{width: 18px;height: 18px;}
+			span{position: absolute; font-size:20px;top: 0;left: 50px;color: #ff4400;float: left;}
+			p{
+				display: inline-block;
+			}
+			.red{background-color: chartreuse;}
+			.blue{background-color: #FFFF00;}
+		</style>
+	</head>
+	<body>
+		<table></table>
+		<span>分数:<p></p></span>
+	</body>
+	<script type="text/javascript">
+		//绘制地图
+		var Otable=document.getElementsByTagName("table")[0];
+		var Op=document.getElementsByTagName("p")[0];
+		var num=20;//表格的长度
+		var arr=[];
+		for (var i = 0; i < num; i++) {
+			var Otr=document.createElement("tr");
+			var arrtr=[];
+			for (var j = 0; j < num; j++) {
+				var Otd=document.createElement("td");
+				Otr.appendChild(Otd);
+				arrtr.push(Otd);
+			}
+			arr.push(arrtr);
+			Otable.appendChild(Otr);
+		}
+		//小蛇构造函数
+		function Snake(){
+			this.own=[
+			{x:6,y:8},
+			{x:6,y:7},
+			{x:6,y:6},
+			{x:6,y:5}
+			];
+			this.food=[
+				{
+					x:parseInt(Math.random()*19),
+	        		y:parseInt(Math.random()*19)
+				}
+			];
+            this.score=0;
+            Op.innerText=this.score;
+			this.direction="right";//小蛇初始方向
+			this.control();//控制小蛇方向
+//			this.eat();
+		}
+		//初始化
+		Snake.prototype.init=function(){
+			for (var i = 0; i < num; i++) {
+				for (var j = 0; j < num; j++) {
+					if (arr[i][j].className === "blue") {
+						arr[i][j].className = "blue";
+					} else{
+						arr[i][j].className = "";
+					}
+				}
+			}
+			//给小蛇加上背景颜色
+			for (var i = 0; i < this.own.length; i++) {
+				arr[this.own[i].x][this.own[i].y].className = "red";
+			//食物不能出现在小蛇身上				
+				if (this.food[0].x === this.own[i].x&&this.food[0].y === this.own[i].y) {
+					this.food=[
+						{
+							x:parseInt(Math.random()*19),
+		        			y:parseInt(Math.random()*19)
+						}
+					];
+				}
+			}
+			//食物加上背景色
+			arr[this.food[0].x][this.food[0].y].className = "blue";
+		};
+		//让小蛇动起来
+		Snake.prototype.move=function(){
+			this.own.pop();
+			switch (this.direction){
+				case "left":
+					this.own.unshift(
+						{
+							x : this.own[0].x,
+							y : this.own[0].y-1
+						}
+					);
+					break;
+				case "right":
+					this.own.unshift(
+						{
+							x : this.own[0].x,
+							y : this.own[0].y+1
+						}
+					);
+					break;
+				case "up":
+					this.own.unshift(
+						{
+							x : this.own[0].x-1,
+							y : this.own[0].y
+						}
+					);
+					break;
+				case "down":
+					this.own.unshift(
+						{
+							x : this.own[0].x+1,
+							y : this.own[0].y
+						}
+					);
+					break;
+				default:
+					break;
+			}
+			//小蛇碰到边界结束游戏
+			if(this.own[0].x===20||this.own[0].x<0||this.own[0].y===20||this.own[0].y<0){
+				clearInterval(timer);
+				alert("game over");
+			}
+			//小蛇碰到自己游戏结束
+			for (var i = 1; i < this.own.length; i++) {
+				if (this.own[0].x === this.own[i].x && this.own[0].y === this.own[i].y) {
+                    alert("弄啥嘞,自己咬自己???");
+                    clearInterval(timer);
+                }
+            }
+		}
+		//控制小蛇的方向,小蛇不能碰到自己
+		Snake.prototype.control = function(){
+			var self = this;
+			document.onkeydown = function(e){
+				e = event || window.event;
+				switch (e.keyCode){
+					case 37:
+						if (self.direction === "right") {
+							return;
+						}
+						self.direction = "left";
+						break;
+					case 38:
+						if (self.direction === "down") {
+							return;
+						}
+						self.direction = "up";
+						break;
+					case 39:
+						if (self.direction === "left") {
+							return;
+						}
+						self.direction = "right";
+						break;
+					case 40:
+						if (self.direction === "up") {
+							return;
+						}
+						self.direction = "down";
+						break;
+					default:
+						break;
+				}
+				
+			}
+		};
+		//小蛇吃食物,身体长长
+		Snake.prototype.eat = function(){
+			if (this.food[0].x === this.own[0].x&&this.food[0].y === this.own[0].y) {
+			    Op.innerText = parseInt(Op.innerText) + 10 ;
+				switch (this.direction){
+					case "left":
+						this.own.unshift(
+							{
+								x : this.own[0].x,
+								y : this.own[0].y-1
+							}
+						);
+						break;
+					case "right":
+						this.own.unshift(
+							{
+								x : this.own[0].x,
+								y : this.own[0].y+1
+							}
+						);
+						break;
+					case "up":
+						this.own.unshift(
+							{
+								x : this.own[0].x-1,
+								y : this.own[0].y
+							}
+						);
+						break;
+					case "down":
+						this.own.unshift(
+							{
+								x : this.own[0].x+1,
+								y : this.own[0].y
+							}
+						);
+						break;
+					default:
+						break;
+				}
+			}
+		};
+		var snake=new Snake();
+		var timer=setInterval(function(){
+			snake.move();
+			snake.eat();
+			snake.init();
+		},200)
+	</script>
+</html>

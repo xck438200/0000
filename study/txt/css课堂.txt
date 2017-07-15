@@ -1,0 +1,47 @@
+CSS  Cascading Style Sheet  层叠样式表，级联样式表，样式表
+style : 属性 ：属性名；
+
+
+标签自带属性与CSS样式要注意分开
+CSS具有继承性
+
+内部样式
+<style>
+ div {background-color:;}
+</style>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="样式表url"/>  
+1.除了引入CSS文件还可以引入其他文件
+2.页面会将html和引入的css文件一起加载
+3.可以兼容IE5版本以下的浏览器
+4.用JS去改变demo只能是link引入的css样式
+</head>
+
+<style>
+ @import url(路径 eg:ex1.css)   
+1.只能引入css文件，
+2.只有在html文件加载完后才加载引入的css文件
+3.只兼容IE5以上   
+</style> 
+
+!important  可以改变优先级
+通用选择器*=""
+
+标签选择器
+
+ID选择器  ID=""
+
+类选择器  class=""
+
+分类选择器
+
+群组选择器
+   什么选择器都可以，
+后代选择器  
+
+子代选择器
+   两个选择器只能是父子关系
+
+active的意思就是鼠标点下去表示激活
+focus

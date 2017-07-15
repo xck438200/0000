@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/css1.css" />
+    <title>0412练习</title>
+</head>
+<body>
+	<ul id="nav">
+		<li class="nav" style="border-bottom:2px solid red">首页</li>
+		<li class="nav">在职提升</li>
+		<li class="nav">就业培训</li>
+		<li class="nav">云课堂</li>
+		<li class="nav">社区</li>
+	</ul>
+	<ul id="box">
+		<li class="box">首页</li>
+		<li class="box">在职提升</li>
+		<li class="box">就业培训</li>
+		<li class="box">云课堂</li>
+		<li class="box">社区</li>
+	</ul>
+	<div id="qqq">
+		我是个广告!<span>5</span>秒之后消失
+	</div>
+</body>
+<script>
+/*
+	var aaa=document.getElementsByTagName("li");
+	for (var i=0;i<aaa.length;i++) {
+		aaa[i].onmousemove=function(){
+			for(var j=0;j<aaa.length;j++){
+				aaa[j].style.borderBottom="";
+			}
+			this.style.borderBottom="2px solid red";
+		}
+	}*/
+	var navlist=document.getElementsByClassName("nav");
+	var boxlist=document.getElementsByClassName("box");
+	for (var i=0;i<boxlist.length;i++) {
+			 boxlist[i].ppx=i;
+	}
+	for (var i=0;i<navlist.length;i++) {
+			 navlist[i].ppx=i;
+		navlist[i].onclick=function(){
+			for (var j=0;j<navlist.length;j++) {
+				if (boxlist[j].ppx==this.ppx) {
+					this.style.borderBottom="2px solid red";
+					boxlist[j].style.display="block";
+				} else{
+					navlist[j].style.borderBottom="";
+					boxlist[j].style.display="none";
+				}
+			
+			}
+		}
+	}
+	/*for (var i=0;i<aaa.length;i++) {
+		aaa[i].onclick=function(){
+			for(var j=0;j<aaa.length;j++){
+				aaa[j].style.background="";
+			}
+			this.style.background="#50f066";
+		}
+	}*/
+	var time=setInterval(function(){
+		var qqq=document.getElementById("qqq");
+		var span=qqq.getElementsByTagName("span")[0];
+		span.innerHTML-=1;
+		if (span.innerHTML==0) {
+			//qqq.style.display="none";
+			clearInterval(time);
+		} 
+	},1000)
+	/*var x=100;
+	var a=function(x){
+		this.x=x;
+		console.log(this);
+		qwer=this;
+		console.log(this);
+		//console.log(qwer);
+		this.b=function(){
+			alert(qwer.x);
+			console.log(this);
+			//console.log(qwer);
+		}
+		console.log(this);
+		this.c=function() {
+			setTimeout(this.b,333)
+			console.log(this);
+			//console.log(qwer);
+		}
+		console.log(this);
+	}
+	//console.log(this.str);
+	//console.log(qwer);
+	//console.log(this);
+	var aa=new a("你瞅啥?瞅你咋的!")
+	aa.c();*/
+</script>
+</html>

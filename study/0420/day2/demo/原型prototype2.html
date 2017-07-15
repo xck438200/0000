@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+      /*function fun(){
+
+      }
+      console.log(fun.prototype);
+      console.log(typeof fun.prototype);
+      // 任何函数都有原型 如果是普通函数，那么它的原型没有用处
+*/
+      function Dota2(){
+      
+      }
+      Dota2.prototype.name = "徐志雷";
+      Dota2.prototype.property = "1号位";
+      Dota2.prototype.say = "我只想要个TI冠军";
+      var burning = new Dota2();
+			console.log(burning);
+      console.log(burning.name);
+      console.log(burning.property);
+      console.log(burning.say);
+
+      // 构造函数里面没有任何语句，也就是说，这个构造函数在执行的时候，
+      // 不会给创造出来的对象添加任何属性！
+      // 原型链查找机制
+    // 当我试图访问这个构造函数的对象时，如果自己身上有这个属性，
+    // 则返回，如果没有就去原型上面查找。
+
+    // __proto__
+    // 实例 .__proto__ 会指向构造函数的 prototype
+    //console.log(anqila.__proto__ == Wangzhe.prototype);
+    // Chrome Firefox Safari 在每个对象上都支持__proto__;
+    
+
+
+
+
+  </script>
+</html>

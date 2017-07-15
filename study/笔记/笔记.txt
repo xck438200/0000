@@ -1,0 +1,67 @@
+html 超文本标记语言
+<meta charset="	UTF-8"/>
+content 网页描述
+heml里对回车键和空格键都是一个空格
+转义字符:
+&lt 小于号<  &gt 大于号>   &nbsp 空格 &reg  &copy
+任何一个标签具备的4个属性:
+1.ID属性
+2.class属性
+3.title属性
+4.style属性
+属性名=“属性值”
+<body id="" class="" tytle=""  style="">
+标签
+<b> <strong>  加粗
+<i> 斜杠
+<u> 下划线
+<s> 删除线
+<em> 斜体
+<sup> 下标
+<sub> 上标
+<br>  换行
+    <hr> 分割线
+    <span>行内标签
+    <div> 块标签
+行内标签没有居中，块标签里可以嵌套行内标签，反之则不行
+行标签不能设置宽高，块标签可以
+图像元素 <img> 行内&块标签
+src:绝对路径，相对路径，
+
+target=blank  在当前页面打开一个新的页面
+13008009080
+----------------------------------------------------------
+<table>  表格
+ 子标签  <tr>  行   <td> 列
+head 
+header 块标签
+nav 导航标签
+
+form action="提交地址"  method "提交方式"
+placeholder H5新属性
+type
+value
+name
+disabled  禁止使用  readonly  只能读取，无法写入
+disabled  与 readonly 用法一样
+maxlength 设置在搜索框内可显示的字数	
+required “必须填写”
+
+submit
+reset
+button 一个普通的按钮，可以通过JS绑定各种事件
+hidden 表示隐藏，一般配合后台可以把前一个页面的信息保存放到下一页
+<labelfor="xdd"> 点击文本相当于点击input框</label>
+
+多行文本输入框《可用于自我介绍》
+<textarea>默认显示文本
+属性 name:名称
+     cols:
+
+
+<ol>里面只能出现唯一的子元素<li>  <dl>里面只能出现<dd><dt>
+<ol>有序列表
+<li>列表项   cricle 空心圆 aquare 矩形	
+
+----------------------------------------------------------------
+body 的2个属性<text和bgcolor>   form的属性

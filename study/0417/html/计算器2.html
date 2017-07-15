@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>0</li>
+			<li>+</li>
+			<li>-</li>
+			<li>*</li>
+			<li>/</li>
+			<li>C</li>
+			<li>=</li>
+		</ul>
+		<div id="div" onclick="abc()">
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button>4</button>
+			<button>5</button>
+			<button>6</button>
+			<button>7</button>
+			<button>8</button>
+			<button>9</button>
+			<button>0</button>
+			<button>+</button>
+			<button>-</button>
+			<button>*</button>
+			<button>/</button>
+			<button>C</button>
+			<button>=</button>
+		</div>
+		<textarea id="txt"></textarea>
+	</body>
+	<script type="text/javascript">
+		function abc() {
+			var e=arguments[0]||event;//获取event对象
+			var src=e.srcElement||e.target;//获取当前操作对象
+			var txt=document.getElementById("txt");//获取txt
+			if (src.nodeName=="BUTTON") {
+				switch (src.innerHTML){
+					case "C"://清空txt内容
+						txt.innerHTML="";
+						break;
+					case "="://eval() 将txt的内容放入eval()函数 再将执行后的结果返回给txt
+						txt.innerHTML=eval(txt.innerHTML);
+						break;
+					default://将src(当前操作对象内容)追加到txt中
+						txt.innerHTML+=src.innerHTML;
+						break;
+				}
+			}
+		}
+	</script>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <title>2017.4.26-js</title>
+        </head>
+        <style>
+                table,tr,td{
+                        border: 1px solid #000;
+                }
+                td{
+                        width: 18px;
+                        height: 18px;
+                }
+                .red{
+                        background: red;
+                }
+                .food{
+                        background: #000000;
+                }
+        </style>
+        <body>
+                <table id = "table">
+                        
+                </table>
+                <p></p>
+        </body>
+        <script>
+                //绘制地图
+                var table = document.getElementById("table");
+                var maxTable = 20;
+                //存放分数的容器
+                var scoreBox = document.getElementsByTagName("p")[0];
+                //把表格放到这个数组中
+                var tds = [];
+                function Map(){                        
+                        for(var i = 0;i < maxTable;i++){
+                                this.tr = document.createElement("tr");
+                                this.thisrowid = [];
+                                for(var j = 0;j < maxTable;j++){
+                                        this.td = document.createElement("td");
+                                        this.tr.appendChild(this.td);
+                                        //把列放到行数组中
+                                        this.thisrowid.push(this.td);
+                                }
+                                //把行数组放到整个数组中
+                                tds.push(this.thisrowid);
+                                table.appendChild(this.tr);
+                        }
+                }                
+                new Map();
+                //绘制小蛇
+                function Snake(){
+                        //分数
+                        this.score = 0;
+                        scoreBox.innerText = this.score;
+                        //绘制蛇身
+                        this.bodyArr = [
+                                {x:4,y:8},
+                                {x:4,y:7},
+                                {x:4,y:6},
+                                {x:4,y:5}
+                        ];
+                        // 随机绘制一个食物
+                        this.food = [
+                                {
+                                        x:parseInt(Math.random()*19),
+                                        y:parseInt(Math.random()*19)
+                                }
+                        ];
+                        this.timer = setInterval(function(){
+                                snake.move();
+                                snake.render();
+                        },300)
+                        this.bingEvent();
+                        this.direction = "right";        
+                }
+                
+                //渲染小蛇
+                Snake.prototype.render = function(){
+                        //每次stop()渲染都要清空className
+                        for(var i = 0; i < maxTable; i++){
+                                for(var j = 0; j < maxTable; j++){
+                                        if(tds[i][j].className == "food"){
+                                                tds[i][j].className = "food"
+                                        }else{
+                                                tds[i][j].className = "";
+                                        }                                        
+                                }
+                        }
+                        
+                        //蛇身加背景
+                        for(var i = 0; i < this.bodyArr.length; i++){                                
+                                tds[this.bodyArr[i].x][this.bodyArr[i].y].className = "red";
+                                // 食物出现的位置不能在蛇身上
+                                if(this.food[0].x == this.bodyArr[i].x && this.food[0].y == this.bodyArr[i].y){
+                                        this.food = [
+                                                {
+                                                        x:parseInt(Math.random()*19),
+                                                        y:parseInt(Math.random()*19)
+                                                }
+                                        ];
+                                }
+                        }
+                        //食物加背景
+                        tds[this.food[0].x][this.food[0].y].className = "food";
+                }
+                //小蛇动起来
+                Snake.prototype.move = function(){
+                        //不能碰到边界
+                        if(this.bodyArr[0].x == 19 || this.bodyArr[0].x == 0 || this.bodyArr[0].y == 19 || this.bodyArr[0].y == 0){
+                                this.stop();
+                                alert("你输了");
+                                return;
+                        }
+                        //删除尾部
+                        this.bodyArr.pop();
+                        //让蛇改变方向
+                        switch(this.direction){
+                                case "right" :
+                                        this.bodyArr.unshift({
+                                                x : this.bodyArr[0].x,
+                                                y : this.bodyArr[0].y + 1
+                                        })                                        
+                                        break;
+                                case "left" :
+                                        this.bodyArr.unshift({
+                                                x : this.bodyArr[0].x,
+                                                y : this.bodyArr[0].y - 1
+                                        })                                        
+                                        break;
+                                case "up" :
+                                        this.bodyArr.unshift({
+                                                x : this.bodyArr[0].x - 1,
+                                                y : this.bodyArr[0].y
+                                        })                                        
+                                        break;
+                                case "down" :
+                                        this.bodyArr.unshift({
+                                                x : this.bodyArr[0].x + 1,
+                                                y : this.bodyArr[0].y
+                                        })                                        
+                                        break;
+                        }
+                        //吃食物
+                        if(this.bodyArr[0].x == this.food[0].x && this.bodyArr[0].y == this.food[0].y){
+                                this.eat();
+                                scoreBox.innerText = parseInt(scoreBox.innerText) + 10;
+                                //吃到食物食物消失
+                                tds[this.food[0].x][this.food[0].y].className = "";
+                                //又重新随机出现一个食物
+                                this.food = [
+                                        {
+                                                x:parseInt(Math.random()*19),
+                                                y:parseInt(Math.random()*19)
+                                        }
+                                ];
+                        }
+                        //不能吃掉自己
+                        for(var i = 1; i < this.bodyArr.length; i++){
+                                if(this.bodyArr[0].x == this.bodyArr[i].x && this.bodyArr[0].y == this.bodyArr[i].y){
+                                        alert("自取灭亡了");
+                                        this.stop();
+                                }
+                        }
+                }
+                
+                //蛇不能掉头
+                Snake.prototype.bingEvent = function(){
+                        var self = this;
+                        document.onkeydown = function(event){
+                                event = arguments[0] || window.event;
+                                switch(event.keyCode){
+                                        case 37 :
+                                                if(self.direction == "right"){
+                                                        return;
+                                                }
+                                                self.direction = "left";
+                                                break;
+                                        case 38 :
+                                                if(self.direction == "down"){
+                                                        return;
+                                                }
+                                                self.direction = "up";
+                                                break;
+                                        case 39 :
+                                                if(self.direction == "left"){
+                                                        return;
+                                                }
+                                                self.direction = "right";
+                                                break;
+                                        case 40 :
+                                                if(self.direction == "up"){
+                                                        return;
+                                                }
+                                                self.direction = "down";
+                                                break;
+                                }
+                        }
+                }
+                
+                // 让小蛇停止
+                Snake.prototype.stop = function(){                        
+                        clearInterval(this.timer);                        
+                }
+                                
+                // 蛇吃到食物会加长
+                Snake.prototype.eat = function(){
+                                switch(this.direction){
+                                        case "right" :
+                                                this.bodyArr.unshift({
+                                                        x : this.bodyArr[0].x,
+                                                        y : this.bodyArr[0].y + 1
+                                                })                                        
+                                                break;
+                                        case "left" :
+                                                this.bodyArr.unshift({
+                                                        x : this.bodyArr[0].x,
+                                                        y : this.bodyArr[0].y - 1
+                                                })                                        
+                                                break;
+                                        case "up" :
+                                                this.bodyArr.unshift({
+                                                        x : this.bodyArr[0].x - 1,
+                                                        y : this.bodyArr[0].y
+                                                })                                        
+                                                break;
+                                        case "down" :
+                                                this.bodyArr.unshift({
+                                                        x : this.bodyArr[0].x + 1,
+                                                        y : this.bodyArr[0].y
+                                                })                                        
+                                                break;
+                                }
+                }
+                
+        var snake = new Snake();
+        </script>
+</html>

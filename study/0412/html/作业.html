@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>作业</title>
+	</head>
+	<style type="text/css">
+		*{margin:0;padding: 0;list-style: none;}
+		#all{width:240px;height:400px;background: rgb(235,233,233);margin: 0 auto;}
+		#nav{float: left;margin:15px 15px 5px 15px;text-align: center;}
+		li {float:left;width:58px;height:54px;margin:5px;background: rgb(66,66,66);border: 1px solid #fff;}
+		h3{color:#fff;}
+		li span{float: left;margin-left:14px;color: #fff;}
+		#box{float: left;width: 200px;height: 87px;margin-left:20px;background: #f1f1f1;}
+		.wtf{background:yellow;border:1px solid black;}
+		.wtf h3{color:red;}
+		.wtf span{color:blue;}
+	</style>
+	<body>
+		<div id="all">
+			<ul id="nav">
+				<li class="wtf">
+					<h3>1</h3>
+					<span >JAN</span>
+				</li>
+				<li>
+					<h3>2</h3>
+					<span >FER</span>
+				</li>
+				<li>
+					<h3>3</h3>
+					<span >MAR</span>
+				</li>
+				<li>
+					<h3>4</h3>
+					<span >APR</span>
+				</li>
+				<li>
+					<h3>5</h3>
+					<span >MAY</span>
+				</li>
+				<li>
+					<h3>6</h3>
+					<span >JUN</span>
+				</li>
+				<li>
+					<h3>7</h3>
+					<span >JUL</span>
+				</li>
+				<li>
+					<h3>8</h3>
+					<span >AUG</span>
+				</li>
+				<li>
+					<h3>9</h3>
+					<span >SEP</span>
+				</li>
+				<li>
+					<h3>10</h3>
+					<span >OCT</span>
+				</li>
+				<li>
+					<h3>11</h3>
+					<span >NOV</span>
+				</li>
+				<li>
+					<h3>12</h3>
+					<span >DEC</span>
+				</li>
+			</ul>
+			<div id=box>
+				<p>1月</p>
+				<span>快过年了</span>
+			</div>
+		</div>
+	</body>
+	<script>
+		var qwer=document.getElementById("nav").getElementsByTagName("li");
+		var box=document.getElementById("box");
+		var arr=['快过年了','冬天要过去了','要stop()认真学习','继续高强度学习','抓紧一切时间学习','618京东店庆','暑假来了准备找工作了',
+		'stop()上班','这个9月有点忙','国庆休息休息','双11来了','双12又到了',]
+		/*for (i=0;i<nav.length;i++){
+			nav[i].index=i;
+			nav[i].onclick=function () {
+				for (var i = 0; i < nav.length; i++) {
+					nav[i].style.background="";
+					box[i].style.display="none";
+				}
+				this.style.background="red";
+				box[this.index].style.display="block";
+			}*/
+		for(i=0;i<qwer.length;i++){
+			qwer[i].index=i;
+			qwer[i].onclick=function(){
+				for (j=0;j<qwer.length;j++) {
+					qwer[j].className="";
+				}
+					this.className="wtf";	
+					box.getElementsByTagName("p")[0].innerHTML=this.index+1+"月";
+					box.getElementsByTagName("span")[0].innerHTML=arr[this.index];
+			}
+		}
+	</script>
+</html>

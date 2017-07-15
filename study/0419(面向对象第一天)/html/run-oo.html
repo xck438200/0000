@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>2017.4.19-js</title>
+	</head>
+	<style>
+		*{margin:0;padding:0;}
+		div{
+			width:64px;
+			height:127px;
+			background:url(../img/1.png) no-repeat;
+			position:absolute;
+			top:100px;
+			left:100px;
+		}
+	</style>
+	<body>
+	</body>
+	<script>
+		function Run(top,left){
+			this.top = top;
+			this.left = left;
+			this.dom = document.createElement("div");
+			document.body.appendChild(this.dom);
+			console.log(this.dom);
+			this.dom.style.top = this.top + "px";
+			this.dom.style.left = this.left + "px";
+			this.xingzou = function(){
+				var self = this;
+				var nowLeft = 0;
+				/*var nowTop = 0;*/
+				var foot = 1;
+				var timer = setInterval(run,60);
+				function run(){
+					nowLeft += 2;
+					foot++;
+					if(foot > 7){
+						foot = 0;
+					}
+					if(nowLeft == document.body.offsetWidth){
+						nowLeft = 0;
+						clearInterval(timer);
+					}
+					self.dom.style.left = nowLeft + "px";
+					self.dom.style.backgroundPosition = -foot * 64 + "px -256px";
+				}
+			}
+			this.xingzou();
+		}
+		Run(100,100);
+		Run(200,200);
+		Run(300,300);
+	</script>
+</html>

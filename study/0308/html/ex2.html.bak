@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>ex2</title>
+  </head>
+  <body>
+    <table width="500px" height="500px" align="center" border="1px" cellpadding="1px" cellspacing="0px" >
+	<caption>九宫格</caption>
+	 <thead> 
+	  <tr>
+	   <td>1</td>
+	   <td>2</td>
+	   <td>3</td>
+	 </thead>
+     <tbody>
+	  <tr>	
+	    <td>4</td>
+	    <td>5</td>
+		<td>6</td>
+	 </tbody>
+     <tfoot>
+	  <tr align="right" valign="bottom">
+	    <td>7</td>
+		<td>8</td>
+		<td>9</td>
+	 </tfoot>
+	   
+	</table>
+	<br/>
+  <form action="" method="get">
+  <input style="width:300px;height:20px;"placeholder="请输入" maxlength="10">
+  密码框<input type="password" required/> <br/>
+  你知道乐天吗：
+  <input type="radio" name="1">知道
+  <input type="radio" name="1">不知道
+  <br/>
+  你对乐天有什么看法？<br/>
+  <input type="checkbox">很爱他们自己的国家 <br/>
+  <input type="checkbox">坚决抵制他们 <br/>
+  <input type="checkbox">他们的做法损害了我们的利益 <br/>
+  <input type="checkbox">无所谓
+  <input type="submit" value="请提交">
+  <input type="reset" value="清空">
+  <input type="button" value="button">
+  <input type="hidden">
+  <input type="file" value="提交">
+  <select>
+    <option>皮皮虾</option>
+	<option>叶良辰</option>
+	<option>叶美景</option>
+	<option>屌丝</option>
+	<option>被掏空</option>
+	<option>侧供给</option>
+  </select>
+  </body>
+</html>

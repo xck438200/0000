@@ -1,0 +1,2081 @@
+<!doctype html>
+<html>
+	<head>
+		 <meta charset="UTF-8">
+		 <link rel="stylesheet" type="text/css" href="../css/tb.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<div id="header">
+				<ul class="header_left left">
+					<li class="left login"><a href="#">亲，请登录</a></li>
+					<li class="left register"><a href="#">免费注册</a></li>
+					<li class="left"><a href="#">手机逛淘宝</a></li>
+				</ul>
+				<ul class="header_right right">
+					<li class="left">
+						<a href="#" class="header_right_box">
+							<span >我的淘宝</span>
+							<i class="header_select right"></i>
+						</a>
+						<ul class="select_section">
+							<li><a href="#">已买到的宝贝</a></li>
+							<li><a href="#">我的足迹</a></li>
+						</ul>
+					</li>
+					<li class="left">
+						<a href="#" class="header_right_box">
+							<b class="header_select_1"></b>
+							<span >购物车</span>
+							<i class="header_select right"></i>
+						</a>
+					</li>
+					<li class="left">
+						<a href="#" class="header_right_box">
+							<b class="header_select_2"></b>
+							<span >收藏夹</span>
+							<i class="header_select right"></i>
+						</a>
+						<ul class="select_section">
+							<li><a href="#">收藏的宝贝</a></li>
+							<li><a href="#">收藏的店铺</a></li>
+						</ul>
+					</li>
+					<li class="left">
+						<a href="#" class="header_right_box">
+							<span >商品分类</span>
+							<i class="header_select right"></i>
+						</a>
+					</li>
+					<li class="left">
+						<a href="#" class="header_right_box">
+							<span >卖家中心</span>
+							<i class="header_select right"></i>
+						</a>
+						<ul class="select_section">
+							<li><a href="#">免费开店</a></li>
+							<li><a href="#">已卖出的宝贝</a></li>
+							<li><a href="#">出售中的宝贝</a></li>
+							<li><a href="#">卖家服务市场</a></li>
+							<li><a href="#">卖家培训中心</a></li>
+							<li><a href="#">体检中心</a></li>
+						</ul>
+					</li>
+					<li class="left">
+						<a href="#" class="header_right_box">
+							<span >联系客服</span>
+							<i class="header_select right"></i>
+						</a>
+						<ul class="select_section">
+							<li><a href="#">消费者客服</a></li>
+							<li><a href="#">卖家客服</a></li>
+						</ul>
+					</li>
+					<li class="left">
+						<a href="#" class="header_right_box">
+							<span >网站导航</span>
+							<i class="header_select right"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<section>	
+			<div id="search-section">
+				<div class="search-section-top">
+					<a href="#" class="logo left"><img src="../images/logo.gif"></a>
+					<div class="search-box left">
+						<ul>
+							<li><a href="#" class="left box-taobao">淘宝</a></li>
+							<li><a href="#" class="left ">天猫</a></li>
+							<li><a href="#" class="left">店铺</a></li>
+						</ul>
+						<div class="sch-box left">
+							<div class="search left">
+								<div >
+									<img class="left search-img" src="../images/fangdajing.png">
+									<div>
+										<input class="left" placeholder="春日必备连衣裙"/>
+										<a class="left"></a>
+									</div>
+									<button class="right">搜索</button>
+								</div>
+							</div>
+							<a href="#" class="right">高级搜索</a>
+						</div>
+						<div class="search-nav">
+							<a href="#" class="left">指甲刀</a>
+							<a href="#" class="left">剪刀</a>
+							<a href="#" class="left">旗袍</a>
+							<a href="#" class="left">短袖t恤男</a>
+							<a href="#" class="left">运动裤</a>
+							<a href="#" class="left">十字绣</a>
+							<a href="#" class="left">时尚连衣裙</a>
+							<a href="#" class="left">热水器</a>
+							<a href="#" class="left">笔记本电脑</a>
+							<a href="#" class="left">套装女春装</a>
+							<a href="#" class="left">新款男鞋</a>
+							<a href="#" class="right">更多></a>
+						</div>
+					</div>
+				</div>
+				<div class="search-section-bottom">
+					<a href="#" class="left park">主题市场</a>
+					<ul>
+						<li class="left"><a href="#" class="taobao-color">天猫</a></li>
+						<li class="left"><a href="#" class="taobao-color">聚划算</a></li>
+						<li class="left"><a href="#" class="taobao-color">天猫超市</a></li>
+						<li class="left"><a href="#">淘抢购</a></li>
+						<li class="left"><a href="#">电器城</a></li>
+						<li class="left"><a href="#">司法拍卖</a></li>
+						<li class="left"><a href="#">中国制造</a></li>
+						<li class="left"><a href="#">特色中国</a></li>
+						<li class="left"><a href="#">飞猪旅行</a></li>
+						<li class="left"><a href="#">智能生活</a></li>
+						<li class="left"><a href="#">苏宁易购</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="section-box">
+			<div id="section">
+				<div class="section-left left">
+					<div class="banner-section">
+						<div class="baneer-section-top">
+							<ul class="nav-list left">
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i1"></i>
+										<div class="left">
+											<a href="#">女装</a>/<a href="#">男装</a>/<a href="#">内衣</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i2"></i>
+										<div class="left">
+											<a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配件</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i3"></i>
+										<div class="left">
+											<a href="#">童装玩具</a>/<a href="#">孕产</a>/<a href="#">用品</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i4"></i>
+										<div class="left">
+											<a href="#">家电</a>/<a href="#">数码</a>/<a href="#">手机</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i5"></i>
+										<div class="left">
+											<a href="#">美妆</a>/<a href="#">洗护</a>/<a href="#">保健品</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i6"></i>
+										<div class="left">
+											<a href="#">珠宝</a>/<a href="#">眼镜</a>/<a href="#">手表</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i7"></i>
+										<div class="left">
+											<a href="#">运动</a>/<a href="#">户外</a>/<a href="#">乐器</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i8"></i>
+										<div class="left">
+											<a href="#">游戏</a>/<a href="#">动漫</a>/<a href="#">影视</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i9"></i>
+										<div class="left">
+											<a href="#">美食</a>/<a href="#">生鲜</a>/<a href="#">零食</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i10"></i>
+										<div class="left">
+											<a href="#">鲜花</a>/<a href="#">宠物</a>/<a href="#">农资</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i11"></i>
+										<div class="left">
+											<a href="#">房产</a>/<a href="#">装修</a>/<a href="#">建材</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i12"></i>
+										<div class="left">
+											<a href="#">家具</a>/<a href="#">家饰</a>/<a href="#">家纺</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i13"></i>
+										<div class="left">
+											<a href="#">汽车</a>/<a href="#">二手车</a>/<a href="#">用品</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i14"></i>
+										<div class="left">
+											<a href="#">办公</a>/<a href="#">DIY</a>/<a href="#">五金电子</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i15"></i>
+										<div class="left">
+											<a href="#">百货</a>/<a href="#">厨餐</a>/<a href="#">家庭保健</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+								<li>
+									<div class="nav-list-title" style="overflow:hidden;">
+										<i class="left i16"></i>
+										<div class="left">
+											<a href="#">学习</a>/<a href="#">卡券</a>/<a href="#">本地服务</a>
+										</div>
+										<b class="right"></b>
+									</div>
+									<div class="nav-list-section"></div>
+								</li>
+							</ul>
+						</div>
+						<div class="banner-section-bottom"></div>
+					</div>
+					<div class="show-section left">
+						<a href="#" class="show-img1 left">
+							<img class="show-section-img1 left" src="../images/TB10Ly7OpXXXXcOapXXSutbFXXX.jpg_60x60q90.jpg_.webp"></img>
+							<b class="show-section-b1">家有萌娃</b>
+							<p class="show-section-p1">宝贝快快长大</p>
+							<i class="show-section-i1">
+								人气4198432
+								<em class="show-section-em1 left"></em>
+							</i>
+						</a>
+						<a href="#" class="show-img1 left">
+							<img class="show-section-img1 left" src="../images/TB10Ly7OpXXXXcOapXXSutbFXXX.jpg_60x60q90.jpg_.webp"></img>
+							<b class="show-section-b1">家有萌娃</b>
+							<p class="show-section-p1">宝贝快快长大</p>
+							<i class="show-section-i1">
+								人气4198432
+								<em class="show-section-em1 left"></em>
+							</i>
+						</a>
+						<a href="#" class="show-img1 left">
+							<img class="show-section-img1 left" src="../images/TB10Ly7OpXXXXcOapXXSutbFXXX.jpg_60x60q90.jpg_.webp"></img>
+							<b class="show-section-b1">家有萌娃</b>
+							<p class="show-section-p1">宝贝快快长大</p>
+							<i class="show-section-i1">
+								人气4198432
+								<em class="show-section-em1 left"></em>
+							</i>
+						</a>
+						<a href="#" class="show-img1 left">
+							<img class="show-section-img1 left" src="../images/TB10Ly7OpXXXXcOapXXSutbFXXX.jpg_60x60q90.jpg_.webp"></img>
+							<b class="show-section-b1">家有萌娃</b>
+							<p class="show-section-p1">宝贝快快长大</p>
+							<i class="show-section-i1">
+								人气4198432
+								<em class="show-section-em1 left"></em>
+							</i>
+						</a>
+						<a href="#" class="show-img1 left">
+							<img class="show-section-img1 left" src="../images/TB10Ly7OpXXXXcOapXXSutbFXXX.jpg_60x60q90.jpg_.webp"></img>
+							<b class="show-section-b1">家有萌娃</b>
+							<p class="show-section-p1">宝贝快快长大</p>
+							<i class="show-section-i1">
+								人气4198432
+								<em class="show-section-em1 left"></em>
+							</i>
+						</a>
+					</div>
+					<div class="IOftenVisit left">
+						<h2 class="IOftenVisit-h2">
+							<a href="#" class="right">更多></a>
+						</h2>
+						<div class="IOftenVisit-box left">
+							<div class="IOftenVisit-list left" style="margin-right:10px;">
+								<div class="IOftenVisit-list-left left">
+									<a href="#"><img src="../images/200-200.png_100x100q90.jpg_.webp"/></a>
+									<dl>
+										<dt>热门TOP</dt>
+										<dd class="IOftenVisit-list-1"><a href="#">T恤</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">衬衫</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">针织衫</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">连衣裙</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">东大门</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">卫衣</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">风衣</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">单鞋</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">沙发</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">多肉</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">单肩包</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">毛衣</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">韩范</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">半身裙</a></dd>
+									</dl>
+								</div>
+								<div class="IOftenVisit-list-right right">
+									<div class="IOftenVisit-list-right-top">
+										<div class="IOftenVisit-list-right-top-left left">
+											<div>
+												<a href="#" class="top-left-top left">
+													<p>春季新款</p>
+												</a>
+											</div>
+											<div>
+												<a href="#" class="top-left-bottom left">
+													<p>唯美女鞋</p>
+												</a>
+											</div>
+										</div>
+										<div class="IOftenVisit-list-right-top-right left">
+											<a href="#" class="top-left-left left"></a>
+											<a href="#" class="top-left-right left"></a>
+										</div>
+									</div>
+									<div class="IOftenVisit-list-right-bottom">
+										<div class="IOftenVisit-list-right-bottom-left left">
+											<div>
+												<a href="#" class="bottom-left left">
+													<p>温馨家</p>
+												</a>
+											</div>
+										</div>
+										<div class="IOftenVisit-list-right-bottom-right left">
+											<div>
+												<a href="#" class="bottom-right-top left" style="background-color:#fff;">
+													<h3>“包包”</h3>
+													<p>能治百病</p>
+												</a>
+											</div>
+											<div>
+												<a href="#" class="bottom-right-bottom left" style="background-color:#fff;">
+													<h3>创意家居</h3>
+													<p>温馨小家</p>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="IOftenVisit-list left">
+								<div class="IOftenVisit-list-left left">
+									<a href="#"><img src="../images/200-200.png_100x100q90.jpg_.webp"/></a>
+									<dl>
+										<dt>热门TOP</dt>
+										<dd class="IOftenVisit-list-1"><a href="#">T恤</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">衬衫</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">针织衫</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">连衣裙</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">东大门</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">卫衣</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">风衣</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">单鞋</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">沙发</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">多肉</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">单肩包</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">毛衣</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">韩范</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">半身裙</a></dd>
+									</dl>
+								</div>
+								<div class="IOftenVisit-list-right right">
+									<div class="IOftenVisit-list-right-top">
+										<div class="IOftenVisit-list-right-top-left left">
+											<div>
+												<a href="#" class="top-left-top left">
+													<p>春季新款</p>
+												</a>
+											</div>
+											<div>
+												<a href="#" class="top-left-bottom left">
+													<p>唯美女鞋</p>
+												</a>
+											</div>
+										</div>
+										<div class="IOftenVisit-list-right-top-right left">
+											<a href="#" class="top-left-left left"></a>
+											<a href="#" class="top-left-right left"></a>
+										</div>
+									</div>
+									<div class="IOftenVisit-list-right-bottom">
+										<div class="IOftenVisit-list-right-bottom-left left">
+											<div>
+												<a href="#" class="bottom-left left">
+													<p>温馨家</p>
+												</a>
+											</div>
+										</div>
+										<div class="IOftenVisit-list-right-bottom-right left">
+											<div>
+												<a href="#" class="bottom-right-top left" style="background-color:#fff;">
+													<h3>“包包”</h3>
+													<p>能治百病</p>
+												</a>
+											</div>
+											<div>
+												<a href="#" class="bottom-right-bottom left" style="background-color:#fff;">
+													<h3>创意家居</h3>
+													<p>温馨小家</p>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="IOftenVisit-list left" style="margin-right: 10px;">
+								<div class="IOftenVisit-list-left left">
+									<a href="#"><img src="../images/200-200.png_100x100q90.jpg_.webp"/></a>
+									<dl>
+										<dt>热门TOP</dt>
+										<dd class="IOftenVisit-list-1"><a href="#">T恤</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">衬衫</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">针织衫</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">连衣裙</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">东大门</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">卫衣</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">风衣</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">单鞋</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">沙发</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">多肉</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">单肩包</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">毛衣</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">韩范</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">半身裙</a></dd>
+									</dl>
+								</div>
+								<div class="IOftenVisit-list-right right">
+									<div class="IOftenVisit-list-right-top">
+										<div class="IOftenVisit-list-right-top-left left">
+											<div>
+												<a href="#" class="top-left-top left">
+													<p>春季新款</p>
+												</a>
+											</div>
+											<div>
+												<a href="#" class="top-left-bottom left">
+													<p>唯美女鞋</p>
+												</a>
+											</div>
+										</div>
+										<div class="IOftenVisit-list-right-top-right left">
+											<a href="#" class="top-left-left left"></a>
+											<a href="#" class="top-left-right left"></a>
+										</div>
+									</div>
+									<div class="IOftenVisit-list-right-bottom">
+										<div class="IOftenVisit-list-right-bottom-left left">
+											<div>
+												<a href="#" class="bottom-left left">
+													<p>温馨家</p>
+												</a>
+											</div>
+										</div>
+										<div class="IOftenVisit-list-right-bottom-right left">
+											<div>
+												<a href="#" class="bottom-right-top left" style="background-color:#fff;">
+													<h3>“包包”</h3>
+													<p>能治百病</p>
+												</a>
+											</div>
+											<div>
+												<a href="#" class="bottom-right-bottom left" style="background-color:#fff;">
+													<h3>创意家居</h3>
+													<p>温馨小家</p>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="IOftenVisit-list left">
+								<div class="IOftenVisit-list-left left">
+									<a href="#"><img src="../images/200-200.png_100x100q90.jpg_.webp"/></a>
+									<dl>
+										<dt>热门TOP</dt>
+										<dd class="IOftenVisit-list-1"><a href="#">T恤</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">衬衫</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">针织衫</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">连衣裙</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">东大门</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">卫衣</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">风衣</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">单鞋</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">沙发</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">多肉</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">单肩包</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">毛衣</a></dd>
+										<dd class="IOftenVisit-list-1"><a href="#">韩范</a></dd>
+										<dd class="IOftenVisit-list-3"><a href="#">半身裙</a></dd>
+									</dl>
+								</div>
+								<div class="IOftenVisit-list-right right">
+									<div class="IOftenVisit-list-right-top">
+										<div class="IOftenVisit-list-right-top-left left">
+											<div>
+												<a href="#" class="top-left-top left">
+													<p>春季新款</p>
+												</a>
+											</div>
+											<div>
+												<a href="#" class="top-left-bottom left">
+													<p>唯美女鞋</p>
+												</a>
+											</div>
+										</div>
+										<div class="IOftenVisit-list-right-top-right left">
+											<a href="#" class="top-left-left left"></a>
+											<a href="#" class="top-left-right left"></a>
+										</div>
+									</div>
+									<div class="IOftenVisit-list-right-bottom">
+										<div class="IOftenVisit-list-right-bottom-left left">
+											<div>
+												<a href="#" class="bottom-left left">
+													<p>温馨家</p>
+												</a>
+											</div>
+										</div>
+										<div class="IOftenVisit-list-right-bottom-right left">
+											<div>
+												<a href="#" class="bottom-right-top left" style="background-color:#fff;">
+													<h3>“包包”</h3>
+													<p>能治百病</p>
+												</a>
+											</div>
+											<div>
+												<a href="#" class="bottom-right-bottom left" style="background-color:#fff;">
+													<h3>创意家居</h3>
+													<p>温馨小家</p>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<img src="../images/TB1XozZQXXXXXXJXVXXSutbFXXX.jpg"/ style="width:890px;">
+					</div>
+					<div class="fashion left">
+						<h2 class="fashion-h2">
+							<a href="#" class="right">更多></a>
+						</h2>
+						<div class="fashion-box">
+							<div class="fashion-1 left">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/orange.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div>
+									<div class="fashion-1-left left">
+										<p>软萌针织衫</p>
+									</div>
+									<div class="fashion-1-right left">
+										<div class="fashion-1-right-top left">
+											<p>包治百病</p>
+										</div>
+										<div class="fashion-1-right-bottom">
+											<p>女神战靴</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="fashion-1 left">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/orange.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div>
+									<div class="fashion-1-left left">
+										<p>软萌针织衫</p>
+									</div>
+									<div class="fashion-1-right left">
+										<div class="fashion-1-right-top left">
+											<p>包治百病</p>
+										</div>
+										<div class="fashion-1-right-bottom">
+											<p>女神战靴</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="fashion-1 left">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/orange.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div>
+									<div class="fashion-1-left left">
+										<p>软萌针织衫</p>
+									</div>
+									<div class="fashion-1-right left">
+										<div class="fashion-1-right-top left">
+											<p>包治百病</p>
+										</div>
+										<div class="fashion-1-right-bottom">
+											<p>女神战靴</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="fashion-1 left">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/orange.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div>
+									<div class="fashion-1-left left">
+										<p>软萌针织衫</p>
+									</div>
+									<div class="fashion-1-right left">
+										<div class="fashion-1-right-top left">
+											<p>包治百病</p>
+										</div>
+										<div class="fashion-1-right-bottom">
+											<p>女神战靴</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="life left">
+						<h2 class="life-h2">
+							<a href="#" class="right">更多></a>
+						</h2>
+						<div class="life-box">
+							<div class="life-eat left">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/red.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="life-eat-1">
+									<div class="left">
+										<img src="../images/qqq.jpg"/>
+										<h4>正宗牛肉丸</h4>
+										<p>Q弹有嚼劲</p>
+									</div>
+									<div class="left">
+										<img src="../images/www.jpg"/>
+										<h4>鲜甜石榴</h4>
+										<p>皮薄汁水甜</p>
+									</div>
+								</div>
+								<p>
+									<a class="left" href="#">应季鲜果</a>
+									<a class="left" href="#">精致糕点</a>
+									<a class="left" href="#">全球美食</a>
+									<a class="left" href="#">烘培原料</a>
+									<a class="left" href="#">无辣不欢</a>
+									<a class="left" href="#">生猛海鲜</a>
+								</p>
+							</div>
+							<div class="life-eat left">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/red.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="life-eat-1">
+									<div class="left">
+										<img src="../images/qqq.jpg"/>
+										<h4>正宗牛肉丸</h4>
+										<p>Q弹有嚼劲</p>
+									</div>
+									<div class="left">
+										<img src="../images/www.jpg"/>
+										<h4>鲜甜石榴</h4>
+										<p>皮薄汁水甜</p>
+									</div>
+								</div>
+								<p>
+									<a class="left" href="#">应季鲜果</a>
+									<a class="left" href="#">精致糕点</a>
+									<a class="left" href="#">全球美食</a>
+									<a class="left" href="#">烘培原料</a>
+									<a class="left" href="#">无辣不欢</a>
+									<a class="left" href="#">生猛海鲜</a>
+								</p>
+							</div>
+							<div class="life-eat left">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/red.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="life-eat-1">
+									<div class="left">
+										<img src="../images/qqq.jpg"/>
+										<h4>正宗牛肉丸</h4>
+										<p>Q弹有嚼劲</p>
+									</div>
+									<div class="left">
+										<img src="../images/www.jpg"/>
+										<h4>鲜甜石榴</h4>
+										<p>皮薄汁水甜</p>
+									</div>
+								</div>
+								<p>
+									<a class="left" href="#">应季鲜果</a>
+									<a class="left" href="#">精致糕点</a>
+									<a class="left" href="#">全球美食</a>
+									<a class="left" href="#">烘培原料</a>
+									<a class="left" href="#">无辣不欢</a>
+									<a class="left" href="#">生猛海鲜</a>
+								</p>
+							</div>
+							<div class="life-eat left" >
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/red.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="life-eat-1">
+									<div class="left">
+										<img src="../images/qqq.jpg"/>
+										<h4>正宗牛肉丸</h4>
+										<p>Q弹有嚼劲</p>
+									</div>
+									<div class="left">
+										<img src="../images/www.jpg"/>
+										<h4>鲜甜石榴</h4>
+										<p>皮薄汁水甜</p>
+									</div>
+								</div>
+								<p>
+									<a class="left" href="#">应季鲜果</a>
+									<a class="left" href="#">精致糕点</a>
+									<a class="left" href="#">全球美食</a>
+									<a class="left" href="#">烘培原料</a>
+									<a class="left" href="#">无辣不欢</a>
+									<a class="left" href="#">生猛海鲜</a>
+								</p>
+							</div>
+							<div class="life-eat left" style="margin-top:5px;">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/red.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="life-eat-1">
+									<div class="left">
+										<img src="../images/qqq.jpg"/>
+										<h4>正宗牛肉丸</h4>
+										<p>Q弹有嚼劲</p>
+									</div>
+									<div class="left">
+										<img src="../images/www.jpg"/>
+										<h4>鲜甜石榴</h4>
+										<p>皮薄汁水甜</p>
+									</div>
+								</div>
+								<p>
+									<a class="left" href="#">应季鲜果</a>
+									<a class="left" href="#">精致糕点</a>
+									<a class="left" href="#">全球美食</a>
+									<a class="left" href="#">烘培原料</a>
+									<a class="left" href="#">无辣不欢</a>
+									<a class="left" href="#">生猛海鲜</a>
+								</p>
+							</div>
+							<div class="life-eat left" style="margin-top:5px;">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/red.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="life-eat-1">
+									<div class="left">
+										<img src="../images/qqq.jpg"/>
+										<h4>正宗牛肉丸</h4>
+										<p>Q弹有嚼劲</p>
+									</div>
+									<div class="left">
+										<img src="../images/www.jpg"/>
+										<h4>鲜甜石榴</h4>
+										<p>皮薄汁水甜</p>
+									</div>
+								</div>
+								<p>
+									<a class="left" href="#">应季鲜果</a>
+									<a class="left" href="#">精致糕点</a>
+									<a class="left" href="#">全球美食</a>
+									<a class="left" href="#">烘培原料</a>
+									<a class="left" href="#">无辣不欢</a>
+									<a class="left" href="#">生猛海鲜</a>
+								</p>
+							</div>
+							<div class="life-eat left" style="margin-top:5px;">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/red.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="life-eat-1">
+									<div class="left">
+										<img src="../images/qqq.jpg"/>
+										<h4>正宗牛肉丸</h4>
+										<p>Q弹有嚼劲</p>
+									</div>
+									<div class="left">
+										<img src="../images/www.jpg"/>
+										<h4>鲜甜石榴</h4>
+										<p>皮薄汁水甜</p>
+									</div>
+								</div>
+								<p>
+									<a class="left" href="#">应季鲜果</a>
+									<a class="left" href="#">精致糕点</a>
+									<a class="left" href="#">全球美食</a>
+									<a class="left" href="#">烘培原料</a>
+									<a class="left" href="#">无辣不欢</a>
+									<a class="left" href="#">生猛海鲜</a>
+								</p>
+							</div>
+							<div class="life-eat left" style="margin-top:5px;">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/red.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="life-eat-1">
+									<div class="left">
+										<img src="../images/qqq.jpg"/>
+										<h4>正宗牛肉丸</h4>
+										<p>Q弹有嚼劲</p>
+									</div>
+									<div class="left">
+										<img src="../images/www.jpg"/>
+										<h4>鲜甜石榴</h4>
+										<p>皮薄汁水甜</p>
+									</div>
+								</div>
+								<p>
+									<a class="left" href="#">应季鲜果</a>
+									<a class="left" href="#">精致糕点</a>
+									<a class="left" href="#">全球美食</a>
+									<a class="left" href="#">烘培原料</a>
+									<a class="left" href="#">无辣不欢</a>
+									<a class="left" href="#">生猛海鲜</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="play left">
+						<h2 class="play-h2">
+							<a href="#" class="right">更多></a>
+						</h2>
+						<div class="play-box">
+							<div class="play-street left">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/blue.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="play-street-1 left">
+									<a href="#" class="left">
+										<img src="../images/110.jpg"/>
+										<p>智能折叠电动</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/111.jpg"/>
+										<p>钢铁侠手臂</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/112.jpg"/>
+										<p>智能后视镜</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/113.jpg"/>
+										<p>都爱奇葩物</p>
+									</a>
+								</div>
+							</div>
+							<div class="play-street left">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/blue.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="play-street-1 left">
+									<a href="#" class="left">
+										<img src="../images/110.jpg"/>
+										<p>智能折叠电动</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/111.jpg"/>
+										<p>钢铁侠手臂</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/112.jpg"/>
+										<p>智能后视镜</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/113.jpg"/>
+										<p>都爱奇葩物</p>
+									</a>
+								</div>
+							</div>
+							<div class="play-street left">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/blue.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="play-street-1 left">
+									<a href="#" class="left">
+										<img src="../images/110.jpg"/>
+										<p>智能折叠电动</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/111.jpg"/>
+										<p>钢铁侠手臂</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/112.jpg"/>
+										<p>智能后视镜</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/113.jpg"/>
+										<p>都爱奇葩物</p>
+									</a>
+								</div>
+							</div>
+							<div class="play-street left">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/blue.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="play-street-1 left">
+									<a href="#" class="left">
+										<img src="../images/110.jpg"/>
+										<p>智能折叠电动</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/111.jpg"/>
+										<p>钢铁侠手臂</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/112.jpg"/>
+										<p>智能后视镜</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/113.jpg"/>
+										<p>都爱奇葩物</p>
+									</a>
+								</div>
+							</div>
+							<div class="play-street left" style="margin-top:5px;">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/blue.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="play-street-1 left">
+									<a href="#" class="left">
+										<img src="../images/110.jpg"/>
+										<p>智能折叠电动</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/111.jpg"/>
+										<p>钢铁侠手臂</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/112.jpg"/>
+										<p>智能后视镜</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/113.jpg"/>
+										<p>都爱奇葩物</p>
+									</a>
+								</div>
+							</div>
+							<div class="play-street left" style="margin-top:5px;">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/blue.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="play-street-1 left">
+									<a href="#" class="left">
+										<img src="../images/110.jpg"/>
+										<p>智能折叠电动</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/111.jpg"/>
+										<p>钢铁侠手臂</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/112.jpg"/>
+										<p>智能后视镜</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/113.jpg"/>
+										<p>都爱奇葩物</p>
+									</a>
+								</div>
+							</div>
+							<div class="play-street left" style="margin-top:5px;">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/blue.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="play-street-1 left">
+									<a href="#" class="left">
+										<img src="../images/110.jpg"/>
+										<p>智能折叠电动</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/111.jpg"/>
+										<p>钢铁侠手臂</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/112.jpg"/>
+										<p>智能后视镜</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/113.jpg"/>
+										<p>都爱奇葩物</p>
+									</a>
+								</div>
+							</div>
+							<div class="play-street left" style="margin-top:5px;">
+								<h2>
+									<div class="right">
+										<div>
+											<img  src="../images/blue.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h2>
+								<div class="play-street-1 left">
+									<a href="#" class="left">
+										<img src="../images/110.jpg"/>
+										<p>智能折叠电动</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/111.jpg"/>
+										<p>钢铁侠手臂</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/112.jpg"/>
+										<p>智能后视镜</p>
+									</a>
+									<a href="#" class="left">
+										<img src="../images/113.jpg"/>
+										<p>都爱奇葩物</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="affordable left">
+						<h2 class="affordable-h2">
+							<a href="#" class="right">更多></a>
+						</h2>
+						<div class="affordable-box left">
+							<div class="affordable-box-1 left">
+								<h4>
+									<p>抢购进行中</p>
+									<div class="right">
+										<div>
+											<img  src="../images/red.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h4>
+								<div>
+									<h5>真轴真机械键盘有线 游戏专用</h5>
+									<p>¥138</p>
+									<span>已抢购220件</span>
+								</div>
+							</div>
+							<div class="affordable-box-2 left">
+								<h4>
+									<div class="right">
+										<div>
+											<img  src="../images/orange.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h4>
+								<div>
+									<h5>优质好货</h5>
+									<p>特价专区</p>
+									<span>全场包邮</span>
+								</div>
+							</div>
+							<div class="affordable-box-2 left">
+								<h4>
+									<div class="right">
+										<div>
+											<img  src="../images/orange.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h4>
+								<div>
+									<h5>优质好货</h5>
+									<p>特价专区</p>
+									<span>全场包邮</span>
+								</div>
+							</div>
+							<div class="affordable-box-2 left">
+								<h4>
+									<div class="right">
+										<div>
+											<img  src="../images/orange.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h4>
+								<div>
+									<h5>优质好货</h5>
+									<p>特价专区</p>
+									<span>全场包邮</span>
+								</div>
+							</div>
+							<div class="affordable-box-1 left">
+								<h4>
+									<p>抢购进行中</p>
+									<div class="right">
+										<div>
+											<img  src="../images/red.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h4>
+								<div>
+									<h5>真轴真机械键盘有线 游戏专用</h5>
+									<p>¥138</p>
+									<span>已抢购220件</span>
+								</div>
+							</div>
+							<div class="affordable-box-2 left">
+								<h4>
+									<div class="right">
+										<div>
+											<img  src="../images/orange.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h4>
+								<div>
+									<h5>优质好货</h5>
+									<p>特价专区</p>
+									<span>全场包邮</span>
+								</div>
+							</div>
+							<div class="affordable-box-2 left">
+								<h4>
+									<div class="right">
+										<div>
+											<img  src="../images/orange.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h4>
+								<div>
+									<h5>优质好货</h5>
+									<p>特价专区</p>
+									<span>全场包邮</span>
+								</div>
+							</div>
+							<div class="affordable-box-2 left">
+								<h4>
+									<div class="right">
+										<div>
+											<img  src="../images/orange.webp"/>
+											<p>手机淘宝扫码</p>
+										</div>
+									</div>
+								</h4>
+								<div>
+									<h5>优质好货</h5>
+									<p>特价专区</p>
+									<span>全场包邮</span>
+								</div>
+							</div>
+							<img src="../images/TB1_ZgkQXXXXXcxXXXXXXXXXXXX-880-70.png"/>
+						</div>
+					</div>
+				</div>
+				<div class="section-right right">
+					<div class="hello">
+						<img src="../images/user.jpg"/>
+						<p>Hi!你好</p>
+						<div>
+							<a href="#">
+								领淘金币抵钱
+								<i></i>
+							</a>
+							<span>或去</span>
+							<a href="#">会员俱乐部</a>
+						</div>
+						<a href="#">登录</a>
+						<a href="#">注册</a>
+						<a href="#">开店</a>
+					</div>
+					<div class="haha">
+						<ul class="announcement left">
+							<li class="left"><a href="#">公告</a></li>
+							<li class="left"><a href="#">规则</a></li>
+							<li class="left"><a href="#">论坛</a></li>
+							<li class="left"><a href="#">安全</a></li>
+							<li class="left"><a href="#">工艺</a></li>
+						</ul>
+						<span style="color:rgb(255,68,0);">帮年轻人改变世界 马云获选全球50大领袖人物</span>
+						<span>马云分享对DT时代判断&nbsp张勇赞银泰愿全面互通</span>
+					</div>
+					<table>
+						<tr>
+							<td>
+								<i class="table-i1"></i>
+								<p>充话费</p>
+							</td>
+							<td>
+								<i class="table-i2"></i>
+								<p>游戏</p>
+							</td>
+							<td>
+								<i class="table-i3"></i>
+								<p>旅行</p>
+							</td>
+							<td>
+								<i class="table-i4"></i>
+								<p>车险</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<i class="table-i5"></i>
+								<p>彩票</p>
+							</td>
+							<td>
+								<i class="table-i6"></i>
+								<p>电影</p>
+							</td>
+							<td>
+								<i class="table-i7"></i>
+								<p>酒店</p>
+							</td>
+							<td>
+								<i class="table-i8"></i>
+								<p>理财</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<i class="table-i9"></i>
+								<p>找服务</p>
+							</td>
+							<td>
+								<i class="table-i10"></i>
+								<p>音乐</p>
+							</td>
+							<td>
+								<i class="table-i11"></i>
+								<p>水电煤</p>
+							</td>
+							<td>
+								<i class="table-i12"></i>
+								<p>火车票</p>
+							</td>
+						</tr>
+					</table>
+					<div class="ali-app">
+						<h2>
+							阿里APP
+							<a href="#" class="right">更多&nbsp></a>
+						</h2>
+						<ul>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</div>
+					<div class="Headlines left">
+						<h3><a href="#" class="right">更多&nbsp></a></h3>
+						<div>
+							<div class="Headlines-1 left">
+								<img src="../images/Headlines.webp"/>
+							</div>
+							<div class="Headlines-2 left">
+								<p>孩子居然也会有脚臭？妈咪应该这样处理！</p>
+								<span>偶然的听见某妈咪说，晚上给孩子洗脚的时候，居然发现孩子也有脚臭</span>
+							</div>
+						</div>
+					</div>
+					<div class="goods left">
+						<i class="left"></i>
+						<a class="goods-1 left">
+							<img src="../images/qq1.gif"/ class="left">
+							<div>
+								<b>【陈冠希】CLOT </b>
+								<p>由陈冠希领军的 CLOT 今年秋冬动作频频，此番为秋冬到来推出全新系列衬衫，采用休闲的宽松版型，采用复古的布料拼接而成。</p>
+								<span>1020 人说好</span>
+							</div>
+						</a>
+						<a class="goods-1 left">
+							<img src="../images/qq1.gif" class="left"/>
+							<div>
+								<b>【陈冠希】CLOT </b>
+								<p>由陈冠希领军的 CLOT 今年秋冬动作频频，此番为秋冬到来推出全新系列衬衫，采用休闲的宽松版型，采用复古的布料拼接而成。</p>
+								<span>1020 人说好</span>
+							</div>
+						</a>
+						<a class="goods-1 left">
+							<img src="../images/qq1.gif"/ class="left">
+							<div>
+								<b>【陈冠希】CLOT </b>
+								<p>由陈冠希领军的 CLOT 今年秋冬动作频频，此番为秋冬到来推出全新系列衬衫，采用休闲的宽松版型，采用复古的布料拼接而成。</p>
+								<span>1020 人说好</span>
+							</div>
+						</a>
+						<a class="goods-1 left">
+							<img src="../images/qq1.gif"/ class="left">
+							<div>
+								<b>【陈冠希】CLOT </b>
+								<p>由陈冠希领军的 CLOT 今年秋冬动作频频，此番为秋冬到来推出全新系列衬衫，采用休闲的宽松版型，采用复古的布料拼接而成。</p>
+								<span>1020 人说好</span>
+							</div>
+						</a>
+						<a class="goods-1 left">
+							<img src="../images/qq1.gif"/ class="left">
+							<div>
+								<b>【陈冠希】CLOT </b>
+								<p>由陈冠希领军的 CLOT 今年秋冬动作频频，此番为秋冬到来推出全新系列衬衫，采用休闲的宽松版型，采用复古的布料拼接而成。</p>
+								<span>1020 人说好</span>
+							</div>
+						</a>
+						<a class="goods-1 left">
+							<img src="../images/qq1.gif"/ class="left">
+							<div>
+								<b>【陈冠希】CLOT </b>
+								<p>由陈冠希领军的 CLOT 今年秋冬动作频频，此番为秋冬到来推出全新系列衬衫，采用休闲的宽松版型，采用复古的布料拼接而成。</p>
+								<span>1020 人说好</span>
+							</div>
+						</a>
+						<a class="goods-1 left">
+							<img src="../images/qq1.gif"/ class="left">
+							<div>
+								<b>【陈冠希】CLOT </b>
+								<p>由陈冠希领军的 CLOT 今年秋冬动作频频，此番为秋冬到来推出全新系列衬衫，采用休闲的宽松版型，采用复古的布料拼接而成。</p>
+								<span>1020 人说好</span>
+							</div>
+						</a>
+						<a class="goods-1 left">
+							<img src="../images/qq1.gif"/ class="left">
+							<div>
+								<b>【陈冠希】CLOT </b>
+								<p>由陈冠希领军的 CLOT 今年秋冬动作频频，此番为秋冬到来推出全新系列衬衫，采用休闲的宽松版型，采用复古的布料拼接而成。</p>
+								<span>1020 人说好</span>
+							</div>
+						</a>
+						<a class="goods-1 left">
+							<img src="../images/qq1.gif"/ class="left">
+							<div>
+								<b>【陈冠希】CLOT </b>
+								<p>由陈冠希领军的 CLOT 今年秋冬动作频频，此番为秋冬到来推出全新系列衬衫，采用休闲的宽松版型，采用复古的布料拼接而成。</p>
+								<span>1020 人说好</span>
+							</div>
+						</a>
+						<a class="goods-1 left" href="#">
+							<img src="../images/qq1.gif" class="left"/>
+							<div>
+								<b>【陈冠希】CLOT </b>
+								<p>由陈冠希领军的 CLOT 今年秋冬动作频频，此番为秋冬到来推出全新系列衬衫，采用休闲的宽松版型，采用复古的布料拼接而成。</p>
+								<span>1020 人说好</span>
+							</div>
+						</a>
+					</div>
+					<div class="daily left">
+						<i class="left"></i>
+						<div class="daily-1">
+							<b>今日推荐</b>
+							<span>暂无店铺评价</span>
+							<div class="left">
+								<a href="#" class="daily-a1"></a>
+								<a href="#" class="daily-a2"></a>
+							</div>
+							<a href="#" class="daily-a3 left"></a>
+						</div>
+						<div class="daily-1">
+							<b>今日推荐</b>
+							<span>暂无店铺评价</span>
+							<div class="left">
+								<a href="#" class="daily-a1"></a>
+								<a href="#" class="daily-a2"></a>
+							</div>
+							<a href="#" class="daily-a3 left"></a>
+						</div>
+						<div class="daily-1">
+							<b>今日推荐</b>
+							<span>暂无店铺评价</span>
+							<div class="left">
+								<a href="#" class="daily-a1"></a>
+								<a href="#" class="daily-a2"></a>
+							</div>
+							<a href="#" class="daily-a3 left"></a>
+						</div>
+						<div class="daily-1">
+							<b>今日推荐</b>
+							<span>暂无店铺评价</span>
+							<div class="left">
+								<a href="#" class="daily-a1"></a>
+								<a href="#" class="daily-a2"></a>
+							</div>
+							<a href="#" class="daily-a3 left"></a>
+						</div>
+					</div>
+					<div class="sale left">
+						<p>今日热卖</p>
+						<img src="../images/sale.png"/>
+					</div>
+				</div>
+			</div>
+		<section>
+		<article>
+			<div id="article">
+				<h2>
+					<i></i>
+					热卖单品
+				</h2>
+				<ul class="article-ul">
+					<li class="left article-ul-1"><a href="#">衬衫</a></li>
+					<li class="left"><a href="#">剪刀</a></li>
+					<li class="left"><a href="#">热水器</a></li>
+					<li class="left"><a href="#">电脑</a></li>
+					<li class="left"><a href="#">打底衫</a></li>
+					<li class="left"><a href="#">挖耳勺</a></li>
+					<li class="left"><a href="#">男打底</a></li>
+					<li class="left"><a href="#">超极本</a></li>
+					<li class="left"><a href="#">海魂衫</a></li>
+					<li class="left"><a href="#">游戏本</a></li>
+					<li class="left"><a href="#">男板鞋</a></li>
+					<li class="left"><a href="#">长袖男</a></li>
+					<li class="left"><a href="#">T恤男</a></li>
+					<li class="left"><a href="#">男T恤</a></li>
+					<li class="left"><a href="#">布鞋男</a></li>
+					<li class="left"><a href="#">男短袖</a></li>
+					<li class="left"><a href="#">男秋衣</a></li>
+					<li class="left"><a href="#">笔记本</a></li>
+					<li class="left"><a href="#">纽扣</a></li>
+					<li class="left"><a href="#">帆布鞋</a></li>
+					<li class="left"><a href="#">半袖男</a></li>
+				</ul>
+				<div class="article-1 left">
+					<div class="article-1-left left">
+						<div class="hover-1">
+							<a href="#"><p>还剩7小时:韩版男士帆布鞋</p></a>
+							<a href="#"><span>去看看</span></a>
+						</div>
+						<img src="../images/article-1.jpg"/>
+						<b>¥&nbsp 69.00</b>
+						<span>月销1420笔</span>
+						<p>充分展示每处鞋品细节；运动鞋码标准运动鞋穿多大就选多大</p>
+						<i>评价&nbsp 0&nbsp收藏2964</i>
+					</div>
+					<div class="article-1-right left">
+						<div class="article-1-right1">
+							<div class="hover-2">
+								<a href="#"><p>舒缓你的耳朵</p></a>
+								<a href="#"><span>去看看</span></a>
+							</div>
+							<img src="../images/article-2.jpg"/>
+							<b>¥&nbsp 119.00</b>
+							<i>月销1489笔</i>
+						</div>
+						<div class="article-1-right2 left">
+							<div class="hover-3">
+								<a href="#"><p>联想拯救者你值得拥有</p></a>
+								<a href="#"><span>去看看</span></a>
+							</div>
+							<img src="../images/article-3.jpg"/>
+							<b>¥&nbsp 59.00</b>
+							<i>包邮</i>
+							<span>月销1989笔</span>
+						</div>
+					</div>
+					<img src="../images/article-4.jpg"/>
+				</div>
+				<div class="article-1 left">
+					<div class="article-1-left left">
+						<div class="hover-1">
+							<a href="#"><p>春上新必抢:透气低帮帆布鞋</p></a>
+							<a href="#"><span>去看看</span></a>
+						</div>
+						<img src="../images/article-5.jpg"/>
+						<b>¥&nbsp 79.00</b>
+						<span>月销1876笔</span>
+						<p>充分展示每处鞋品细节；运动鞋码标准运动鞋穿多大就选多大</p>
+						<i>评价&nbsp 0&nbsp收藏1258</i>
+					</div>
+					<div class="article-1-right left">
+						<div class="article-1-right1">
+							<div class="hover-2">
+								<a href="#"><p>舒缓你的耳朵</p></a>
+								<a href="#"><span>去看看</span></a>
+							</div>
+							<img src="../images/article-6.jpg"/>
+							<b>¥&nbsp 226.00</b>
+							<i>月销1248笔</i>
+						</div>
+						<div class="article-1-right2 left">
+							<div class="hover-3">
+								<a href="#"><p>联想拯救者你值得拥有</p></a>
+								<a href="#"><span>去看看</span></a>
+							</div>
+							<img src="../images/article-7.jpg"/>
+							<b>¥&nbsp 49.00</b>
+							<i>包邮</i>
+							<span>月销1257笔</span>
+						</div>
+					</div>
+					<img src="../images/article-8.jpg"/>
+				</div>
+				<div class="article-1 left">
+					<div class="article-1-left left">
+						<div class="hover-1">
+							<a href="#"><p>还剩7小时:韩版男士帆布鞋</p></a>
+							<a href="#"><span>去看看</span></a>
+						</div>
+						<img src="../images/article-9.jpg"/>
+						<b>¥&nbsp 112.00</b>
+						<span>月销852笔</span>
+						<p>经典流行的潮鞋 采用EVA塑胶底，轻便舒适，选用优质帆布，时尚透气为一体的鞋子</p>
+						<i>评价&nbsp 0&nbsp收藏2415</i>
+					</div>
+					<div class="article-1-right left">
+						<div class="article-1-right1">
+							<div class="hover-2">
+								<a href="#"><p>赶紧买买买</p></a>
+								<a href="#"><span>去看看</span></a>
+							</div>
+							<img src="../images/article-10.jpg"/>
+							<b>¥&nbsp 159.00</b>
+							<i>月销2415笔</i>
+						</div>
+						<div class="article-1-right2 left">
+							<div class="hover-3">
+								<a href="#"><p>联想拯救者你值得拥有</p></a>
+								<a href="#"><span>去看看</span></a>
+							</div>
+							<img src="../images/article-11.jpg"/>
+							<b>¥&nbsp 86.00</b>
+							<i>包邮</i>
+							<span>月销5871笔</span>
+						</div>
+					</div>
+					<img src="../images/article-12.jpg"/>
+				</div>
+			</div>
+		</article>
+		<article>
+			<div id="article1">
+				<h2>
+					<i></i>
+					猜你喜欢
+					<p>实时推荐最适合你的宝贝</p>
+				</h2>
+				<ul>
+					<li class="youlove left" style="margin-left:25px">
+						<div>
+							<img src="../images/youlove-1.jpg"/>
+							<p>新款特价 经典20寸双碟刹儿童自行车 淑女折叠单车 超轻 女式</p>
+							<b>¥&nbsp299</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-2.jpg"/>
+							<p>儿童宝宝婴儿孕妇老人坐浴盆自动冲洗盆洗屁股免蹲坐沐浴用品加厚</p>
+							<b>¥&nbsp335</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-3.jpg"/>
+							<p>JACK WOLFSKIN狼爪 2016女子透气越野跑鞋4018781-1220-163</p>
+							<b>¥&nbsp295</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-4.jpg"/>
+							<p>Lenovo/联想 ideapad110 -15I超轻薄笔记本</p>
+							<b>¥&nbsp123</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-5.jpg"/>
+							<p>台湾欧亚马oyama儿童车 海豚s200 折叠车 江浙沪皖包邮</p>
+							<b>¥&nbsp224</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left" style="margin-left:25px">
+						<div>
+							<img src="../images/youlove-6.jpg"/>
+							<p>快拆轮子 20寸变速折叠自行车 7速铝合金车圈 双碟刹折叠车 礼包</p>
+							<b>¥&nbsp169</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-7.jpg"/>
+							<p>官方授权SMARTMOTION电动助力折叠自行车 折叠电动自行车E20单车</p>
+							<b>¥&nbsp349</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-8.jpg"/>
+							<p>折叠自行车16寸变速小学生男女成人车城市公路儿童小孩单车</p>
+							<b>¥&nbsp189</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-9.jpg"/>
+							<p>310uq7200游戏超薄笔记本本电脑</p>
+							<b>¥&nbsp229</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-10.jpg"/>
+							<p>梦斯特412折叠车整车 14寸折叠车 mialo 412 自由配色 7.8kg</p>
+							<b>¥&nbsp111</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left" style="margin-left:25px">
+						<div>
+							<img src="../images/youlove-11.jpg"/>
+							<p>出口尾单 21速变速折叠车，减震变速车，折叠变速车，自行车</p>
+							<b>¥&nbsp112</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-12.jpg"/>
+							<p>炫风-凯罗兰/14寸超轻铝合金车架碟刹代驾折叠迷你自行车便携耐用</p>
+							<b>¥&nbsp25</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-13.jpg"/>
+							<p>宝贝一百充气加厚环保婴幼儿童宝宝戏水池游泳池沐浴盆</p>
+							<b>¥&nbsp19</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-14.jpg"/>
+							<p>V领短袖t恤男士特价9.9元批发打底大码半袖</p>
+							<b>¥&nbsp50</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-15.jpg"/>
+							<p>美国第一户外越野跑鞋户外夜光登山徒步鞋情侣低帮男女鞋8C2572</p>
+							<b>¥&nbsp12</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left" style="margin-left:25px">
+						<div>
+							<img src="../images/youlove-16.jpg"/>
+							<p>限量发售/折叠自行车14/16寸超轻便携折叠车男女式成人学生自行车</p>
+							<b>¥&nbsp22</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-17.jpg"/>
+							<p>正品GOGO折叠自行车 12寸城市自行车 便携 成人自行车儿童也好骑</p>
+							<b>¥&nbsp89</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-18.jpg"/>
+							<p>新款特价 经典20寸双碟刹儿童自行车 淑女折叠单车 超轻 女式</p>
+							<b>¥&nbsp79</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-19.jpg"/>
+							<p>最后一天春季布鞋懒人鞋帆布鞋男休闲鞋低帮</p>
+							<b>¥&nbsp555</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+					<li class="youlove left">
+						<div>
+							<img src="../images/youlove-20.jpg"/>
+							<p>ENDA恩达24速山地车自行车26寸铝合金架碟刹山地车学生单车MA8.1D</p>
+							<b>¥&nbsp233</b>
+						</div>
+						<div class="hover-4">
+							<a href="#"><h5>找相似</h5></a>
+							<a href="#"><span>发现更多相似的宝贝</span></a>
+						</div>
+					</li>
+				</ul>
+				<div class="article1-bottom">
+					<i>END</i>
+				</div>
+			<div>
+		</article>
+		<div id="help">
+			<div>
+				<ul class="help-ul left">
+					<li class="left help-li1">
+						<h3>消费者保障</h3>
+						<ul class="ul-ul1">
+							<li class="left"><a href="#">保障范围</a></li>
+							<li class="left"><a href="#">退货退款流程</a></li>
+							<li class="left"><a href="#">服务中心</a></li>
+							<li class="left"><a href="#">更多特色服务</a></li>
+						</ul>
+					</li>
+					<li class="left help-li2">
+						<h3>新手上路</h3>
+						<ul class="ul-ul1">
+							<li class="left"><a href="#">新手专区</a></li>
+							<li class="left"><a href="#">消费警示</a></li>
+							<li class="left"><a href="#">交易安全</a></li>
+							<li class="left"><a href="#">24小时在线帮助</a></li>
+							<li class="left"><a href="#">免费开店</a></li>
+						</ul>
+					</li>
+					<li class="left help-li3">
+						<h3>付款方式</h3>
+						<ul class="ul-ul1">
+							<li class="left"><a href="#">快捷支付</a></li>
+							<li class="left"><a href="#">信用卡</a></li>
+							<li class="left"><a href="#">余额宝</a></li>
+							<li class="left"><a href="#">蚂蚁花呗</a></li>
+							<li class="left"><a href="#">货到付款</a></li>
+						</ul>
+					</li>
+					<li class="left help-li4">
+						<h3>淘宝特色</h3>
+						<ul class="ul-ul1">
+							<li class="left"><a href="#">手机淘宝</a></li>
+							<li class="left"><a href="#">旺信</a></li>
+							<li class="left"><a href="#">大众评审</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="footer">
+				<ul>
+					<li class="left"><a href="#">关于淘宝</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">淘宝网</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">天猫</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">聚划算</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">全球速卖通</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">阿里巴巴国际交易市场</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">1688</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">阿里妈妈</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">飞猪</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">阿里云计算</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">YunOS</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">阿里通信</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">一淘</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">万网</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">高德</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">UC</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">友盟</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">虾米</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">阿里星球</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">钉钉</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">支付宝</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">优酷</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">土豆</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">阿里健康</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">阿里影业</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">阿里体育</a></li>
+					<li class="left footer-li1"></li>
+					<li class="left"><a href="#">网商银行</a></li>
+				</ul>
+				<div class="ul-bottom"></div>
+				<div class="footer-bottom">
+					<p>
+						<a href="#">关于淘宝</a>
+						<a href="#">合作伙伴</a>
+						<a href="#">营销中心</a>
+						<a href="#">廉政举报</a>
+						<a href="#">练习客服</a>
+						<a href="#">开放平台</a>
+						<a href="#">诚征英才</a>
+						<a href="#">联系我们</a>
+						<a href="#">网站地图</a>
+						<a href="#">法律声明及隐私权政策</a>
+						<a href="#">知识产权</a>
+						<b>|</b>
+						<i>© 2003-2017 Taobao.com 版权所有</i>
+					</p>
+					<p>
+						<span><a href="#">网络文化经营许可证：浙网文[2013]0268-027号</a></span>
+						<b>|</b>
+						<span><a href="#">增值电信业务经营许可证：浙B2-20080224</a></span>
+						<b>|</b>
+						<span>信息网络传播视听节目许可证：1109364号</span>
+						<b>|</b>
+						<span>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+					</p>
+					<p>
+						<em class="left"></em>
+						<a href="#" class="left"> 浙公网安备 33010002000078号</a>
+					</p>
+					<a href="#" class="left">1</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

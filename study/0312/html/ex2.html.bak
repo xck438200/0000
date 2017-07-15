@@ -1,0 +1,59 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Day 02</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<ol type="1">
+			<li>中国</li>
+			<li>俄罗斯</li>
+			<li>美国</li>
+			<li>韩国</li>
+			<li>日本</li>
+		</ol>
+		<ul type="square">
+			<li>
+				<a href="#">优才创智</a>
+				<ul type="disc">
+					<li>北京</li>
+					<li>上海</li>
+					<li>杭州</li>
+					<li>武汉</li>
+					<li>哈尔滨</li>
+					<li>长沙</li>
+					<li>成都</li>
+				</ul>
+			</li>
+			<li>俄罗斯</li>
+			<li>美国</li>
+			<li>韩国</li>
+			<li>日本</li>
+		</ul>
+		<ul>
+         <li>web基础知识
+           <ul>
+             <li>web列表项目</li>
+           </ul>
+         </li>
+        <li>web基础知识
+        <ul>
+        <li>web列表项目</li>
+        </ul>
+        </li>
+       </ul>
+		<dl>
+			<dt>蓝朋友</dt>
+			<dd>挣钱 养家  吃剩饭</dd>
+		</dl>
+
+
+		<ul>
+			<li>蓝朋友</li>
+			<li>挣钱 养家  吃剩饭</li>
+		</ul>
+		<iframe src="index2.html" frameborder="0">
+			改换浏览器了
+		</iframe>
+	</body>
+</html>

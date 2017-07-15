@@ -1,0 +1,78 @@
+*{margin:0;padding:0;font-size:12px;}
+a{text-decoration:none;}
+li{list-style:none;}
+/* 公共样式 */
+header{width:100%;height:65px;}
+#header{width:1200px;height:65px;margin:0 auto;}
+.header-left{float:left;margin-top:10px;}
+.header-left-right{float:right;margin-left:20px}
+.header-left-right input{width:338px;height:30px;border:1px solid #8ebefc;border-radius:5px 0px 0px 5px;outline:none;line-height:30px;margin-top:10px;box-shadow:2px 2px 1px 0 rgba(164, 203, 255, 0.25) inset;}
+.header-left-right button{width:44px;height:30px;margin:0 0 0 10px;border:0;position:relative;top:11px;left:-14px;border-radius:0px 5px 5px 0px;background-color:#2b82f4; background-image:url(../images/un_header_footer20160610.png);background-repeat:no-repeat;background-position:-51px -628px;}
+button:hover{background-color:#299cff; background-image:url(../images/un_header_footer20160610.png);background-repeat:no-repeat;background-position:-51px -653px;}
+.header-right{float:right;width:486px;height:65px;}
+.header-right-left{float:left;margin:20px 0 0 0;}
+.header-right-left span{font-size:15px;	}
+#li1,#li2{float:left;}
+#li1{width:150px;height:30px;position:relative;float:left;background:url(../images/un_header_footer20160610.png) -61px 9px no-repeat;}
+#li1 a{display:block;height:30px;width:130px;line-height:30px;color:#000;text-align:center;border:1px solid #fff;}
+#li1 b{position:relative;left:120px;top:5px;float:left;width:10px;height:10px;background:url(../images/un_header_footer20160610.png) -63px -254px no-repeat;}
+#li1 ul li{width:170px;height:32px;font-size:16px;line-height:20px;color:#000;}
+#li1 ul{box-shadow:0 0 0 2px #ccc;width:170px;display:none;}
+#li1 .il4{position:absolute;top:30px;left:-1px;z-index:7;width:132px;height:4px;background:#fff;display:none;border-left:1px solid #ccc;border-right:1px solid #ccc;}
+#li1:hover ul{display:block;box-shadow:0 0 0 2px #ccc;} 
+#li1:hover .il3{box-shadow:0 0 0 2px #ccc;}
+#li1:hover .il4{display:block;} 
+#li1 .box_list li:hover {background:#f5f5f5;}
+
+#li2{height:30px;}
+#li2 a{color:#000;font-size:14px;line-height:30px;}
+
+#li3{width:160px;height:30px;position:relative;float:left;border-right:none;margin-left: 3px;}
+#li3 i{font-style:normal;float:left;height:31px;line-height:31px;margin-left:10px;font-size:14px;}
+#li3 a{display:block;height:30px;width:160px;line-height:30px;color:blue;text-align:center;border:1px solid #fff;border-bottom:0;}
+#li3 b{position:relative;left:160px;top:-17px;float:left;width:10px;height:10px;background:url(../images/un_header_footer20160610.png) -63px -260px no-repeat;}
+#li3 ul li{font-size:14px;line-height:20px;padding: 0 10px;float:right;}
+#li3 .il2{position:absolute;top:31px;left:0px;z-index:7;width:100%;height:3px;background:#fff;display:none;border-left:1px solid #000;border-right:1px solid #000;}
+#li3 ul{display:none;border:1px solid #000;width:200px;position:absolute;top:33px;left:-40px;z-index:5;}
+#li3:hover ul{display:block;box-shadow:0 0 0 2px #ccc;}
+#li3:hover a{border:1px solid #000;border-bottom:1px solid #fff;box-shadow:0 0 0 2px #ccc;}
+#li3:hover .il2{display:block;}
+#li3:hover b{background:url(../images/un_header_footer20160610.png) 0px -260px no-repeat;}
+
+.cell {width:20px;height:22px;float:left;position:relative;margin:24px 0 0 20px;}
+.cell .cell_a{display:block;width:20px;height:22px;background:url(../images/un_header_footer20160610.png) 0 -53px no-repeat;}
+.cell img{width:112px;height:112px;display:none;position:absolute;top:50px;left:21px;}
+.cell i{display:none; float:left;width:13px;height:9px;position:absolute;top: 22px;left:-1px;z-index:5;background:url(../images/un_header_footer20160610.png) 0 -271px no-repeat;}
+.cell .cell_xc{width:155px;height:218px;float:left;border:1px solid #b8b8b8;box-shadow:0 0 0 2px #e4e7eb;z-index:3;position:absolute;top:30px;left:-44px;display:none;}
+.cell_xc span{text-align:center;margin:15px 0 150px 0;float: left;width: 155px;color:#3882e5;}
+.cell_xc a{float:left;width: 100%;height:37px;line-height: 37px;text-align:center;background:#f0f0f0;}
+.cell:hover img,.cell:hover i,.cell:hover .cell_xc{display:block;}
+.cell:hover .cell_a{display:block;background:url(../images/un_header_footer20160610.png) 0 -75px no-repeat;}
+
+.wx {width:20px;height:22px;float:left;position:relative;margin:24px 0 0 20px;}
+.wx .wx_a{display:block;width:20px;height:22px;background:url(../images/un_header_footer20160610.png) -20px -51px no-repeat;}
+.wx img{width:112px;height:112px;display:none;position:absolute;top:50px;left:21px;}
+.wx i{display:none; float:left;width:13px;height:9px;position:absolute;top: 22px;left:3px;z-index:5;background:url(../images/un_header_footer20160610.png) 0 -271px no-repeat;}
+.wx .wx_xc{width:155px;height:218px;float:left;border:1px solid #b8b8b8;box-shadow:0 0 0 2px #e4e7eb;z-index:3;position:absolute;top:30px;left:-84px;display:none;}
+.wx_xc span{text-align:center;margin:15px 0 150px 0;float: left;width: 155px;color:#3882e5;}
+.wx_xc a{float:left;width: 100%;height:37px;line-height: 37px;text-align:center;background:#f0f0f0;}
+.wx:hover img,.wx:hover i,.wx:hover .wx_xc{display:block;}
+.wx:hover .wx_a{display:block;background:url(../images/un_header_footer20160610.png) -20px -73px no-repeat;}
+/* 导航 */
+#nav{width:100%;height:40px;line-height:40px;background:gold;background:#2577e3;}
+.nav_box{margin:0 auto;width: 1180px;height:40px;position:relative;}
+.hotel{float:left;line-height:40px;}
+.hotel  a{float:left;color:#fff;font-size:15px;padding:0 8px 0 8px;position:relative;display:inline-block;}
+.hotel a i{display:inline-block;position:relative;top:1px;left:1px;width:0px;height:0px;border:4px solid transparent;border-top:4px solid #fff;}
+.hotel b{position:absolute;left:40%;bottom:0;width:0;height:0;border:8px solid transparent;border-bottom:8px solid #fff;display:none;}
+.hotel_ul1{display:none;position:absolute;width:1180px;left:0;top:40px;border:1px solid #2577e3;border-top:none;}
+.hotel_ul1 li{float:left;}
+.hotel .hotel_ul1 a{color:#000;font-size:14px;}
+.hotel .hotel_right{display:none;position: absolute;top:50px;right:18px;padding-left:20px;line-height:18px;font-size:14px;color: #333;}
+.hotel .hotel_right em{border:0;float: left;width:25px;height:22px;background:url(../images/un_icon_index_type.png) -23px -0 no-repeat;}
+.hotel .hotel_right span{float:right;height:22px;}
+.li-border1{border-left:1px solid #1d67dd;height:14px;float:left;margin-top:13px;}
+.li-border2{border-left:1px solid #cccccc;height:14px;float:left;margin-top:13px;}
+.hotel:hover b,.hotel:hover .hotel_ul1,.hotel:hover .hotel_right{display:block;}
+.hotel:hover i{border:4px solid transparent;border-bottom:4px solid #fff;position:relative;top:1px;left:1px;}
+

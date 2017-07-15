@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		*{margin:0;padding: 0;list-style: none;}
+		div{width:200px;height:200px;overflow: hidden;margin:100px auto;}
+		ul{width: 1400px;height: 200px;}
+		li{width:200px;height: 200px;float: left;}
+	</style>
+	<body>
+		<div>
+			<ul>
+				<li style="background:url(../images/qwer/0.jpg) no-repeat;">0</li>
+				<li style="background:url(../images/qwer/1.jpg) no-repeat;">1</li>
+				<li style="background:url(../images/qwer/2.jpg) no-repeat;">2</li>
+				<li style="background:url(../images/qwer/3.jpg) no-repeat;">3</li>
+				<li style="background:url(../images/qwer/4.jpg) no-repeat;">4</li>
+				<li style="background:url(../images/qwer/5.jpg) no-repeat;">5</li>
+				<li style="background:url(../images/qwer/6.jpg) no-repeat;">6</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var i=1;
+		var wtf=document.getElementsByTagName("ul")[0];
+		setInterval(function(){
+			wtf.style.marginLeft=i*-200+"px";
+			i++;
+			if (i==7) {
+				i=0;
+			}
+		},1000)
+	</script>
+</html>

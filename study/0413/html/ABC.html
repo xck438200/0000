@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>26字母轮播</title>
+	</head>
+	<style type="text/css">
+		*{margin: 0;padding: 0;list-style: none;}
+		#all{width: 512px;height: 384px;margin:100px auto;overflow:hidden;}
+		ul{height: 384px;width:13824px;}
+		li{width: 512px;height: 384px;float: left;}
+	</style>
+	<body>
+		<div id="all">
+			<ul>
+				<li style="background: url(../images/abc/001.jpg);"></li>
+				<li style="background: url(../images/abc/002.jpg);"></li>
+				<li style="background: url(../images/abc/003.jpg);"></li>
+				<li style="background: url(../images/abc/004.jpg);"></li>
+				<li style="background: url(../images/abc/005.jpg);"></li>
+				<li style="background: url(../images/abc/006.jpg);"></li>
+				<li style="background: url(../images/abc/007.jpg);"></li>
+				<li style="background: url(../images/abc/008.jpg);"></li>
+				<li style="background: url(../images/abc/009.jpg);"></li>
+				<li style="background: url(../images/abc/010.jpg);"></li>
+				<li style="background: url(../images/abc/011.jpg);"></li>
+				<li style="background: url(../images/abc/012.jpg);"></li>
+				<li style="background: url(../images/abc/013.jpg);"></li>
+				<li style="background: url(../images/abc/014.jpg);"></li>
+				<li style="background: url(../images/abc/015.jpg);"></li>
+				<li style="background: url(../images/abc/016.jpg);"></li>
+				<li style="background: url(../images/abc/017.jpg);"></li>
+				<li style="background: url(../images/abc/018.jpg);"></li>
+				<li style="background: url(../images/abc/019.jpg);"></li>
+				<li style="background: url(../images/abc/020.jpg);"></li>
+				<li style="background: url(../images/abc/021.jpg);"></li>
+				<li style="background: url(../images/abc/022.jpg);"></li>
+				<li style="background: url(../images/abc/023.jpg);"></li>
+				<li style="background: url(../images/abc/024.jpg);"></li>
+				<li style="background: url(../images/abc/025.jpg);"></li>
+				<li style="background: url(../images/abc/026.jpg);"></li>
+				<li style="background: url(../images/abc/001.jpg);"></li>
+			</ul>
+		</div>
+	</body>
+	<script src="../js/base.js"></script>
+	<script >
+		var wtf=document.getElementsByTagName("ul")[0];
+		var i=1;
+		setInterval(function() {
+			if (i==27) {
+				wtf.style.marginLeft=0;
+				i=1;
+			}
+			startMove(wtf,{"marginLeft":i*(-512)});
+			i++;
+		},1000)
+	</script>
+</html>

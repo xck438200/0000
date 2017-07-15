@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*var str = prompt("请输入");
+		var reg = /\s+/g;//  ^\s\w+\s$
+		qwe = function(str) {
+			if (reg.test(str)==true){
+				alert(str.replace(reg,""));
+			}
+		}
+		qwe(str);
+		console.log(reg.test(str));
+		//console.log(str.trim());//*/
+		
+		/*
+		var str = "今天是2017年4月26日首艘国产航母正式下水的日子";
+		String.prototype.tonumber = function(){
+			return this.match(/\d/g,"");
+		}
+		console.log(str.tonumber().join(""));
+		*/
+		
+		var reg = /今天是(2017)年(4)月(26)日首艘国产航母正式下水的日子\2\3,这个\2月\3日是值得纪念的一天/;
+        console.log(reg.test("今天是2017年4月26日首艘国产航母正式下水的日子426,这个4月26日是值得纪念的一天")); //true
+        console.log(reg.test("今天是2017年4月26日首艘国产航母正式下水的日子26,这个4月26日是值得纪念的一天")); //false
+		
+	</script>
+</html>

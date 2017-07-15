@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>练习3</title>
+	<link rel="stylesheet" type="text/css" href="../css/css3.css">
+  </head>
+<body>
+  <div id="qwer">
+    <div id="px1">皮皮虾
+	 <img src="../images/ppx.jpg">
+	</div>
+	<div id="px2">虹桥一姐</div>
+	<div id="px3">叶良辰</div>
+	<div id="px4">犀利哥</div>
+
+  </div>
+  <a href="#px1">皮皮虾</a> 
+  <a href="#px2">虹桥一姐</a>
+  <a href="#px3">叶良辰</a>
+  <a href="#px4">犀利哥</a>
+</body>
+</html>

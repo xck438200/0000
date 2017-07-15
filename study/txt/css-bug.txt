@@ -1,0 +1,40 @@
+css bug 
+css样式在浏览器中解析不一样的情况
+css样式在浏览器不能正确解析的情况
+css hank\hanker  css兼容的技巧和方法
+filter 过滤器 
+
+div中插入img,img可能会将div撑大3px;或者img和其他元素之间会有间隙问题
+1.将div和img设置在1行
+2.给img添加display:block;
+
+
+在IE6里面浮向边界的元素会有双倍的浮向边距，即最后一个元素会有双倍的左右边距
+hank:给这个元素添加 display:inline
+
+浏览器对按钮样式解析不一致
+hank1:给张图片
+hank2:自己对button写样式,不要用默认样式
+
+多个img放在一起的时候img之间可能有间隙
+hank:给img加float属性
+
+IE不支持opacity
+
+%百分比bug
+有些浏览器在解析%的时候会出现50%+50% >100%的情况
+给右边元素加clear right
+
+两个块元素之间可能有莫名其妙的间隙
+hank:给两个块元素之间加一个div,div只给1个属性{clear:both;}
+
+不要用hank直接用hanter
+
+给元素在加1个div,给这个div设置overflow:hidden;
+
+在IE6及以下部分块元素没有默认高度,给其加overflow:hidden
+
+!important IE6不识别
+
+_width:300px;只能被IE6及以下浏览器识别
+*width:300px;只能被IE7识别 

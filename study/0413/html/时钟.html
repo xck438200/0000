@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>时钟</title>
+</head>
+/*
+思路:
+1、先敲结构
+2、需要一个定时器-需要一个方法
+3、需要获取当前时间，把当前时间保存在数组中
+4、遍历图片，把时间和图片一一对应起来
+5、先运行定义方法
+*/
+<body>
+<div id="time" style="font-size: 30px;">
+	<image src="../images/0.png"></image>
+	<image src="../images/0.png"></image>:时
+	<image src="../images/0.png"></image>
+	<image src="../images/0.png"></image>:分
+	<image src="../images/0.png"></image>
+	<image src="../images/0.png"></image>:秒
+</div>
+</body>
+<script>
+	gotime();
+	setInterval(gotime,1000);
+	function gotime() {
+		var now=new Date();
+		var h=now.getHours();
+		var m=now.getMinutes();
+		var s=now.getSeconds();
+		var arr=[parseInt(h/10),h%10,parseInt(m/10),m%10,parseInt(s/10),s%10,];
+		//这个数组用来保存获取的当前时间对应的六个数字,即小时/分钟/秒的十位数,个位数
+		var getimg=document.getElementById("time").children;
+		//此处要获取的是每个image的节点,得到的是个数组,这个getimg用来保存获得的图片节点
+		for (var i=0;i<getimg.length;i++) {
+			getimg[i].src="../images/"+arr[i]+".png";
+			//此处是让时间与图片一一对应起来.获取的时间的数字是多少,图片就是多少,此处改变的是图片路径
+		}
+	}
+
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>复习</title>
+	</head>
+	<style type="text/css">
+		*{margin:0;padding:0;list-style: none;}
+		#dota li{float: left;margin:0 10px;padding:9px 0;}
+		#dota2{float: left;width:324px;height:300px;border:1px solid #0000FF;margin:41px 0 0 -324px;}
+		#dota2 li{padding:130px 0 0 130px;;display: none;}
+		#pm{float: left;padding: 100px;text-align: center;}
+		#pm span{color:red;}
+	</style>
+	<body>
+		<ul id="dota">
+			<li>徐志雷</li>
+			<li>月夜枫</li>
+			<li>龙弟弟</li>
+			<li>鱼周鲷</li>
+			<li>伍声</li>
+		</ul>
+		<ul id="dota2">
+			<li>徐志雷</li>
+			<li>月夜枫</li>
+			<li>龙弟弟</li>
+			<li>鱼周鲷</li>
+			<li>伍声</li>
+		</ul>
+		<div id="pm">
+			不管你信不信,再过
+			<span >5</span>
+			秒我就自动消失了
+		</div>
+	</body>
+	<script>
+		var rotk=document.getElementById("dota").getElementsByTagName("li");
+		var xiao8=document.getElementById("dota2").getElementsByTagName("li");
+		for(var i=0;i<xiao8.length;i++){
+			xiao8[i].index=i;
+		}
+		for (var j=0;j<rotk.length;j++) {
+			rotk[j].index=j;
+			rotk[j].onclick=function(){
+				for(var k=0;k<rotk.length;k++){
+					if (xiao8[k].index==this.index) {
+						this.style.borderBottom="2px solid red";
+						xiao8[k].style.display="block";
+					} else{
+						rotk[k].style.borderBottom="";
+						xiao8[k].style.display="none";
+					}
+				}
+			}
+		}
+		
+		var time=setInterval(function(){
+			var pm=document.getElementById("pm");
+			var span=pm.getElementsByTagName("span")[0];
+			span.innerHTML-=1;
+			if (span.innerHTML==0) {
+				pm.style.display="none";
+				clearInterval(time);
+			}
+		},1000)
+	</script>
+</html>

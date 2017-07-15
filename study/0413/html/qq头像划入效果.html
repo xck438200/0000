@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>qq头像划入效果</title>
+	</head>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		#qqq{width:200px;height: 500px;float: right;background:#CCCCCC;position:relative;}
+		#head{width:30px;height: 30px;background: #1FC0EF;position:absolute;top:250px;}
+		#section{width:300px;height: 100px;position:absolute;top:250px;left:-310px;
+		border: 1px solid black;display: none;}
+	</style>
+	<body>
+		<div id="qqq">
+			<div id="head"></div>
+			<div id="section"></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var what=false;
+		//声明了一个新的变量,先给一个值true/false;在后面判断这个变量的值是true还是false,再出现不同的效果
+		var head=document.getElementById("head");
+		var section=document.getElementById("section");
+		head.onmouseover=function(){
+			head.style.background="red";
+			setTimeout(function(){
+				section.style.display="block";
+			},500)
+		}
+		head.onmouseout=function(){
+			head.style.background="";
+			setTimeout(function(){
+				if (what==false) {
+					section.style.display="none";
+				}
+			},500)
+		}
+		section.onmouseover=function(){
+			what=true;
+			section.style.display="block";
+			section.style.background="pink";
+		}
+		section.onmouseout=function(){
+			what=false;
+			section.style.display="none";
+			section.style.background="";
+		}
+	</script>
+</html>

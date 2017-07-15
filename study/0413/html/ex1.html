@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ex1</title>
+	</head>
+	<style type="text/css">
+		*{margin: 0;padding: 0;list-style: none;}
+		#wtf li{float: left;width:27px;height:29px;background:url(../images/star.gif) no-repeat 0 0;}
+	</style>
+	<body>
+		<ul id="wtf">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<p id="pp"></p>
+	</body>
+	<script type="text/javascript">
+		var wtf=document.getElementById("wtf").children;
+		var pp=document.getElementById('pp');
+		var arr=['买了血亏','攒人品你就买吧','一般,凑合可以买','良好,买了不会亏的','值得购买,5星上将级别的品质'];
+		for (i=0;i<wtf.length;i++) {
+			wtf[i].index=i;
+			wtf[i].onmousemove=function(){
+				for(j=0;j<wtf.length;j++){
+					if (j<=this.index) {
+						wtf[j].style.background="url(../images/star.gif) no-repeat 0 -29px";
+					}else{
+						wtf[j].style.background="url(../images/star.gif) no-repeat 0 0";
+					}
+				}
+			}
+			wtf[i].onclick=function(){
+				alert("你打了"+(this.index+1)+"星");
+				pp.innerHTML=arr[this.index];
+			}
+		}
+	</script>
+</html>

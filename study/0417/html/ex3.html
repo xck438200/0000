@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			#qqq{width: 100px;
+			height: 100px;
+			padding:50px 0 0 200px;
+			border:3px dashed #CD0200;
+			background: cornflowerblue;
+			position: absolute;}
+			#qwer{width:500px;height: 500px;background: yellow;margin: 0 auto;}
+		</style>
+	</head>
+	<body>
+		<div id="qwer">
+			<div id="qqq"></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var odiv=document.getElementById("qqq");
+		document.onmousedown=function(qw) {
+			var qw=qw||event;
+			odiv.style.left=qw.clientX+"px";
+			odiv.style.top=qw.clientY+"px";
+			console.log(qw.clientX);
+			console.log(qw.clientY);
+			console.log(odiv.clientWidth)//获取对象可见内容的宽度，不包括滚动条，不包括边框:width+padding
+			console.log(odiv.clientHeight)//获取对象可见内容的高度，不包括滚动条，不包括边框:width+padding
+			console.log(odiv.offsetWidth)//当前对象的宽度:width+padding+border
+			console.log(odiv.offsetHeight)//当前对象的高度:width+padding+border
+			console.log(odiv.clientLeft)//获取对象的border宽度
+			console.log(odiv.clientTop)//获取对象的border高度
+			//console.log(odiv.style.left)//当前对象到其上级层左边的距离  带有单位"px"
+			//console.log(odiv.style.top)//当前对象到其上级层顶部边的距离 带有单位"px"
+			console.log(odiv.offsetLeft)//当前对象到其上级层左边的距离。
+			console.log(odiv.offsetTop)//当前对象到其上级层顶部边的距离。
+			document.body.scrollWidth;
+			document.body.scrollHeight;
+		}
+		
+	</script>
+</html>
