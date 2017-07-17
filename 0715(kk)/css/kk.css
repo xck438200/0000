@@ -4,6 +4,7 @@ li{list-style: none;}
 
 .kk-main{
     background: #fff;
+    margin-top: 44px;
 }
 .kk-ul{
     margin:auto 20px;
@@ -15,9 +16,6 @@ li{list-style: none;}
     border-bottom: 1px solid #d9d9d9;
     color: #000;
     font-size: 14px;
-}
-.kk-main{
-    margin-top: 44px;
 }
 .kk-li-msg{
     border-top: 1px solid #d9d9d9;
@@ -34,7 +32,7 @@ li{list-style: none;}
 }
 .kk-ul-div img{
     position: absolute;
-    top: 8px;
+    top: 14px;
     right: 0; 
 }
 .kk-li-name{
@@ -55,6 +53,24 @@ li{list-style: none;}
     top: 0.5rem;
     right: 1rem;
 }
+.kk-li-msg{
+    border-top: 0;
+}
 .bar-nav~.content{
     top: 0;
+}
+.kk-ul li input{
+    border: 0;
+    font-size: 12px;
+}
+.kk-save{
+    width: 90%;
+    height: 2rem;
+    background: #408ce0;
+    margin: auto 1rem;
+    border-radius: 7px;
+    margin-top: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+    color: #fff;
 }
