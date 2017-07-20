@@ -1,0 +1,134 @@
+*{margin: 0;padding: 0}
+a{text-decoration: none;}
+li{list-style: none;}
+
+.kk-main{
+    background: #fff;
+    margin-top: 1.8rem;
+}
+.kk-ul{
+    margin:auto 1rem;
+}
+.kk-ul li a{
+    display: block;
+    width:100%;
+    height:2rem;
+    border-bottom: 1px solid #d9d9d9;
+}
+.li{
+    width:100%;  
+    height: 2rem; 
+    display: inline;
+    line-height: 2rem;
+    border-bottom: 1px solid #d9d9d9; 
+    color: #000;
+    font-size: 0.7rem;
+}
+.kk-ul1{
+    margin:auto 1rem;
+}
+.kk-ul1 li{
+    display: block;
+}
+.kk-li-msg{
+    border-top: 1px solid #d9d9d9;
+}
+
+.kk-ul-div{
+    float: right;
+    height: 2rem;
+    font-size: 10px;
+    color: #999999;
+    position: relative;
+}
+.kk-ul-div p{
+    margin-right: 25px;
+}
+.kk-ul-div img{
+    width: 0.7rem;
+    height: 0.7rem;
+    position: absolute;
+    top: 0.65rem;
+    right: 0; 
+}
+.kk-li-name{
+    font-size:0.7rem; 
+    height:2rem;
+    line-height: 2rem;
+    padding-left: 1rem;
+    border-bottom: 4px solid #d9d9d9;
+}
+.kk-li-id{
+    border-bottom: 0;
+}
+.kk-li-changePwd a{
+    display: block;
+    font-size: 0.7rem;
+    height:2rem;
+    line-height: 2rem;
+    border-bottom: 0;
+    padding-left: 20px;
+    border-top: 4px solid #d9d9d9;
+    position: relative;
+}
+.kk-li-changePwd img{
+    width: 0.7rem;
+    height: 0.7rem;
+    position: absolute;
+    top: 0.55rem;
+    right: 1rem;
+}
+.kk-li-msg{
+    border-top: 0;
+}
+.bar-nav~.content{
+    top: 0;
+}
+.kk-ul li input{
+    border: 0;
+    font-size: 12px;
+}
+.kk-save{
+    width: 90%;
+    height: 2rem;
+    background: #408ce0;
+    margin: auto 1rem;
+    border-radius: 7px;
+    margin-top: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+    color: #fff;
+}
+.kk-div{
+    width: 100%;
+    height: 10rem;
+    padding: 0.5rem 0 0 0.5rem;
+}
+.kk-div img{
+    width:39%;
+    float: left;
+    /* margin:0 0.5rem 0;  */
+}
+.kk-coupon{
+    float: right;    
+    width: 57%;
+    padding-top: 1rem;
+}
+.kk-coupon h4{
+    color: #666;
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+.kk-coupon div i{
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #666;
+    border-radius: 50%;
+    margin-right:0.2rem; 
+}
+.kk-coupon div p{
+    font-size: 0.4rem;
+    line-height: 0.4rem;
+    display: inline;
+    color:#666;
+}

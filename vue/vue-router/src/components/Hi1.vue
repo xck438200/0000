@@ -5,7 +5,7 @@
     export default{
         data(){
             return{
-                msg: 'I an Hi1!'
+                msg: 'I am Hi1! are you ok'
             }
         }
     }

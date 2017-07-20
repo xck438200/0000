@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no,minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>个人信息</title>
+    <title>个人中心</title>
     <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
     <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/kk.css">
 </head>
 <body>
-    <div class="page ">
+    <div class="page" style="background: #fff;">
         <header class="bar bar-nav">
             <div class="applyContent"></div>
             <button class="button pull-left city">北京 <span class="icon icon-down"></span></button>
@@ -37,26 +37,36 @@
         </header>
         <div class="content">
             <div class="kk-main">
-                    <div class="kk-li-name li">姓 名:</div>
-                    <ul class="kk-ul">
-                        <li class="kk-li-phone li">手 机:
-
-                        </li>
-                        <li class="kk-li-sex li">性 别:
-
-                        </li>
-                        <li class="kk-li-id li">身份证号:
-
-                        </li>
-                    </ul>
-                    <div class="kk-li-changePwd li">
-                        修改登录密码
-                        <img src="images/right.png" >
-                    </div>
-                </div>
+                <ul class="kk-ul">
+                    <li class="kk-li-msg li">
+                        <a href="personal-message.html">个人信息
+                            <div class="kk-ul-div">
+                                <p>查看信息</p>
+                                <img src="images/right.png" >
+                            </div>
+                        </a>
+                    </li>
+                    <li class="kk-li-coupons li">
+                        <a href="mycoupon.html">我的优惠券
+                            <div class="kk-ul-div">
+                                <p>查看</p>
+                                <img src="images/right.png" >
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li class="kk-li-xiaofei li">
+                        <a href="#">消费记录
+                            <div class="kk-ul-div">
+                                <p>次</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-
 </body>
 <script src="js/main.js"></script>
+<!-- <script src="js/kk.js"></script> -->
 </html>

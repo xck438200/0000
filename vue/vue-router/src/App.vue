@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view></router-view>
+    <router-view style="background-color:yellow;"></router-view>
+    <router-view name="left" style="float:left;width:50%;height:300px;background-color:gold;"></router-view>
+    <router-view name="right" style="float:left;width:50%;height:300px;background-color:orange;"></router-view>
   </div>
 </template>
 
